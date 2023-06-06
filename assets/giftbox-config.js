@@ -1,1 +1,0 @@
-GIFTBOX_CUSTOM_BUTTON_SELECTORS = ".rebuy-button.rebuy-cart__checkout-button.block"
