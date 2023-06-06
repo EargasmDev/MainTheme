@@ -1,0 +1,1 @@
+!function(e){(function(e,t){}).bind(e('section[data-section-id="omdPRNe16i"]').get(0))({url:"https://library.layouthub.com/HUB/files/Tm92LS0yMDE5/NTc0ODY0ODc5/First_release/pages/Deru_Blog_Detail/blog/",settings:{}},jQuery)}(jQuery),console.log("This page layout has been built by https://www.layouthub.com");
