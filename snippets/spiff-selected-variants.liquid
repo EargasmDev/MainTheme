@@ -1,0 +1,5 @@
+ {% for property in line_item.properties %}
+     {% if property.first == "spiffTransactionId" %}
+         <div class='spiff-selected-variants-container' data-spiff-transaction-id="{{ property.last }}"></div>
+     {% endif %}
+ {% endfor %}

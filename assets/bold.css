@@ -1,0 +1,44 @@
+.bold_option_value_swatch{
+	width: 95px;
+	height: 95px;
+}
+
+
+.bold_option_checkbox .bold_option_title {
+  
+  font-weight: 900;
+  font-size: 20px;
+  
+}
+
+.bold_option_checkbox .bold_option_value_price {
+  
+  font-weight: 900;
+  font-size: 15px;
+  color: green;
+  
+}
+
+
+@media only screen and (max-width: 600px) {
+  .bold_option_value_swatch{
+	width: 55px;
+	height:55px;
+}
+  
+}
+
+
+
+.bold_option_checkbox::before {
+  
+  content: "👉";
+  font-size: 25px;
+  
+}
+
+
+.bold_option_hidden::before
+{
+  content: "";
+}

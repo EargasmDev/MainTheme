@@ -1,0 +1,11 @@
+<script type='text/javascript'>let shop ='strand-industries.myshopify.com'; let code = '1971812c8b76c4c08b3699a3d10b5981e6871adb';</script>﻿<!-- Start : BrokenLink Redirect -->
+<script type="text/javascript">
+window.fetch("https://api-brokenlinkmanager.giraffly.com/api/v1/receive_url?shop="+shop+"&code="+code+"&url="+window.location.pathname+window.location.search)
+.then(response => response.json())
+.then(data => {
+  if(data.code == 200){
+    window.location.href = data.data
+  }
+})
+</script>
+<!-- END : BrokenLink Redirect -->

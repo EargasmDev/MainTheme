@@ -1,0 +1,590 @@
+<!-- cart cache fix --> 
+<script type="text/javascript" charset="utf-8">
+//<![CDATA[
+  jQuery.ajaxSetup({cache: false});
+  Shopify.getCart(function(cart) {
+    alert("There are currently " + cart.item_count + " items in the cart.");
+  });
+//]]>
+</script>
+
+{{ 'api.jquery.js' | shopify_asset_url | script_tag }}
+
+<script type="text/javascript" charset="utf-8">
+Shopify.getCart(function(cart) {
+  CartJS.init(cart, {
+    "requestBodyClass": "cart-loading"
+  });
+});
+  </script>
+
+
+<script type="text/javascript" charset="utf-8">
+
+window.onpageshow = function(event) {
+    if (event.persisted) {
+        window.location.reload() 
+    }
+};
+
+$(window).bind("pageshow", function(event) {
+    if (event.originalEvent.persisted) {
+        window.location.reload() 
+    }
+});
+  </script>
+
+<!-- cart cache fix end --> 
+
+{% assign fitting_guide_icon = fitting_guide_icon | default: blank %}
+{% assign fitting_guide_url = fitting_guide_url | default: blank %}
+{% assign show_brand_names = show_brand_names | default: false %}
+{% assign show_email_link = show_email_link | default: false %}
+{% assign callout = callout | default: false %}
+
+
+{% assign show_quantity = show_quantity | default: false %}
+
+
+
+
+{% comment %}Dynamic checkout is not shown if selling plans are available{% endcomment %}
+
+{% assign selected_variant = product.selected_or_first_available_variant %}
+{% assign is_default = product.has_only_default_variant %}
+
+{% assign enable_image_zoom = enable_image_zoom | default: false %}
+{% assign gallery_layout = gallery_layout | default: 'list' %}
+{% assign show_media_borders = show_media_borders | default: false %}
+{% assign onboarding = onboarding | default: false %}
+{% assign details_alignment = details_alignment | default: section.settings.details_alignment %}
+
+{% assign selected_media = selected_variant.featured_media | default: product.featured_media %}
+
+<!-- remove custom code for changing variant image to 2nd -->
+<!-- {% if product.tags contains 'headphones' %}
+{% assign selected_variant = product.selected_or_first_available_variant %}
+{% endif %}
+
+
+{% if product.tags contains 'headphones-e' %}
+{% assign selected_variant = product.selected_or_first_available_variant %}
+{% endif %}		-->
+
+<!-- end remove custom code for changing variant image to 2nd -->
+
+{% if product.tags contains 'customcode' %}
+{% assign selected_media = product.media[1] | default: product.featured_image %}
+{% endif %}
+
+
+<section
+  class="
+    product-area
+    clearfix
+  "
+>
+  {%
+    render 'product-gallery',
+    product: product,
+    selected_media: selected_media,
+    gallery_layout: gallery_layout,
+    show_media_borders: show_media_borders,
+    enable_image_zoom: enable_image_zoom,
+  %}
+  
+  
+ 
+  
+
+  <div class="product-details-wrapper">
+    <div class="
+        product-details
+        product-details-alignment-{{ details_alignment }}
+        {% if product.media.size > 1 %}
+          border
+        {% endif %}
+        {% if is_default and show_quantity == false %}
+          no-options
+        {% endif %}
+      "
+    >
+      <div class="header">
+        {% if show_brand_names %}
+          <h3 class="brand">
+            {% if product != empty %}
+              {{ product.vendor }}
+            {% else %}
+              {{ 'onboarding.product_vendor' | t }}
+            {% endif %}
+          </h3>
+        {% endif %}
+
+        <h1 class="title">
+          {% if product != empty %}
+            {{ product.title }}
+          {% else %}
+            {{ 'onboarding.product_name' | t }}
+          {% endif %}
+        </h1>
+        
+        
+        {% if product.tags contains 'noadd'%}
+        
+<div class="options 
+            {% if show_quantity and product.variants.size > 0 %}has-no-variants
+            {% endif %} {% if product.available %}
+            available
+            {% endif %}">
+        
+        
+        {% endif %}
+        
+            {% unless product.tags contains 'headphones'%}
+ {% unless product.tags contains 'hifinew'%}
+ 
+         {% unless product.tags contains 'headphones-e'%}
+         {% unless product.tags contains 'noadd'%}
+        <div class="product-details__price sale">
+          {% if product != empty %}
+            {% if selected_variant.compare_at_price > selected_variant.price or product.has_only_default_variant == false %}
+              {% comment %} If product has variants, this will be dynamically hidden or shown {% endcomment %}
+              <s class="original money">{{ selected_variant.compare_at_price | money }}</s>
+            {% endif %}
+
+            <span class="money money--last">{{ selected_variant.price | money }}</span>
+          {% else %}
+            <span class="money money--last">{{ 'onboarding.product_price' | t }}</span>
+          {% endif %}
+          {% capture total_quantity %}<span class="product-details__total-quantity" data-total-quantity>{{ selected_variant.unit_price_measurement.quantity_value }}{{ selected_variant.unit_price_measurement.quantity_unit }}</span>{% endcapture %}
+          {% capture unit_price %}<span class="product-details__unit-price-amount money" data-unit-price-amount>{{ selected_variant.unit_price | money }}</span>{% endcapture %}
+          {% capture unit_measure %}<span class="product-details__unit-price-measure" data-unit-price-measure>{%- if selected_variant.unit_price_measurement.reference_value != 1 -%}{{ selected_variant.unit_price_measurement.reference_value }}{%- endif %}{{ selected_variant.unit_price_measurement.reference_unit }}</span>{% endcapture %}
+{% endunless %}
+          {% endunless %}
+                 {% endunless %}  
+       
+           {% endunless %}  
+           {% if product.tags contains 'hifinew'%}
+
+            <div class="product-details__price sale">
+          {% if product != empty %}
+   
+              <span class="bold_option_price_display money money--last">{{ selected_variant.price | money }}</span>
+            {% endif %}
+
+   
+          {% unless product.tags contains 'noadd'%}
+          {% capture total_quantity %}<span class="product-details__total-quantity" data-total-quantity>{{ selected_variant.unit_price_measurement.quantity_value }}{{ selected_variant.unit_price_measurement.quantity_unit }}</span>{% endcapture %}
+          {% capture unit_price %}<span class="product-details__unit-price-amount money" data-unit-price-amount>{{ selected_variant.unit_price | money }}</span>{% endcapture %}
+          {% capture unit_measure %}<span class="product-details__unit-price-measure" data-unit-price-measure>{%- if selected_variant.unit_price_measurement.reference_value != 1 -%}{{ selected_variant.unit_price_measurement.reference_value }}{%- endif %}{{ selected_variant.unit_price_measurement.reference_unit }}</span>{% endcapture %}
+{% endunless %}
+              
+              {% endif %}
+              
+              
+              
+              {% if product.tags contains 'headphones-e'%}
+
+            <div class="product-details__price sale">
+          {% if product != empty %}
+   
+              <span class="bold_option_price_display money money--last">{{ selected_variant.price | money }}</span>
+            {% endif %}
+
+   
+   {% unless product.tags contains 'noadd'%}       
+          {% capture total_quantity %}<span class="product-details__total-quantity" data-total-quantity>{{ selected_variant.unit_price_measurement.quantity_value }}{{ selected_variant.unit_price_measurement.quantity_unit }}</span>{% endcapture %}
+          {% capture unit_price %}<span class="product-details__unit-price-amount money" data-unit-price-amount>{{ selected_variant.unit_price | money }}</span>{% endcapture %}
+          {% capture unit_measure %}<span class="product-details__unit-price-measure" data-unit-price-measure>{%- if selected_variant.unit_price_measurement.reference_value != 1 -%}{{ selected_variant.unit_price_measurement.reference_value }}{%- endif %}{{ selected_variant.unit_price_measurement.reference_unit }}</span>{% endcapture %}
+{% endunless %}
+              
+              {% endif %}
+          
+    {% if product.tags contains 'headphones' %}
+
+        <div class="product-details__price sale">
+          {% if product != empty %}
+            {% if selected_variant.compare_at_price > selected_variant.price or product.has_only_default_variant == false %}
+              {% comment %} If product has variants, this will be dynamically hidden or shown {% endcomment %}
+              <s class="original money compareprice">{{ selected_variant.compare_at_price | money }}</s>
+            {% endif %}
+
+          <span class="money money--last">$399.99+ <i style = "color:grey;font-size: medium;"> Orders Ship in 3-5 Weeks** </i></span>
+          {% else %}
+            <span class="money money--last">{{ 'onboarding.product_price' | t }}</span>
+          {% endif %}
+         
+          {% capture unit_price %}<span class="product-details__unit-price-amount money" data-unit-price-amount>{{ selected_variant.unit_price | money }}</span>{% endcapture %}
+          {% capture unit_measure %}<span class="product-details__unit-price-measure" data-unit-price-measure>{%- if selected_variant.unit_price_measurement.reference_value != 1 -%}{{ selected_variant.unit_price_measurement.reference_value }}{%- endif %}{{ selected_variant.unit_price_measurement.reference_unit }}</span>{% endcapture %}
+{% endif %}    
+          
+          
+                 
+       {% if product.tags contains 'bundle' %}
+          
+          <i style = "color:grey;font-size: medium;"> Use Code 'BUNDLE10' to Save Even More! </i></span>
+          
+          
+          {% endif %} 
+
+           {% if product.tags contains 'db' %}
+          
+          <i style = "color:grey;font-size: medium;"> Discount Codes Are Not Applicable For This Product </i></span>
+          
+          
+          {% endif %} 
+          
+          
+          {% if product.tags contains 'outright' %}
+          
+          <!-- <i style = "color:grey;font-size: medium;"> This June,  10% of Proceeds from our Pride Edition Earplugs Will be Donated to the Outright Covid-19 Global LGBTIQ Emergency Relief Fund. </i></span> -->
+          
+          
+          {% endif %} 
+          
+           
+          {% if product.tags contains 'giftcard' %}
+          
+          <i style = "color:grey;font-size: medium;"> Pick Your Balance From the Options Below! </i></span>
+          
+          
+          {% endif %}  
+          
+          
+          
+          
+            {% if product.tags contains 'headphones-e' %}
+          
+          <i style = "color:grey;font-size: medium;"> Orders Ship in 4-7 Weeks** </i></span>
+          
+          
+          {% endif %}  
+          
+          
+          <div
+            class="
+              product-details__unit-price
+              {% unless selected_variant.unit_price_measurement %}hidden{% endunless %}
+            "
+            data-unit-price
+          >
+            {{ 'products.product.price_per_unit_html' | t: total_quantity: total_quantity, unit_price: unit_price, unit_measure: unit_measure | strip_newlines }}
+          </div>
+
+          {%- capture tax_text -%}
+            {{ 'products.product.tax_line_html' | t }}
+          {%- endcapture -%}
+
+          {%- if tax_text != blank -%}
+            <div class="
+                product-details__tax
+                {% unless selected_variant.taxable %}hidden{% endunless %}
+              "
+              data-tax-line
+            >
+              {{ tax_text }}
+            </div>
+          {%- endif -%}
+        </div>
+
+        {% if show_sku and selected_variant.sku != empty %}
+          <span class="product-variant-sku">
+            <strong>
+              {{ 'products.product.sku' | t }}
+            </strong>
+
+            <span
+              data-product-variant-sku
+            >
+              {{- selected_variant.sku | default: '' -}}
+            </span>
+          </span>
+        {% endif %}
+      </div>
+
+               {% unless product.tags contains 'noadd'%}   
+      <div class="options {% unless show_quantity and product.variants.size > 0 %}has-no-variants{% endunless %} {% unless product.available %}unavailable{% endunless %}">
+        
+        {% endunless }
+        {% assign form_id = product.id %}
+
+     
+
+        {% if product != empty and product.available %}
+          {%
+            form 'product',
+            product,
+            id: form_id,
+            class: form_classes,
+            data-product-form: ""
+          %}
+            <div class="product-form-grid product-form-grid-{{ variant_options_style }}">
+              {% unless is_default %}
+                {%
+                  render 'product-options',
+                  product: product,
+                  form_id: form_id,
+                  selected_variant: selected_variant,
+                  style: variant_options_style,
+                %}
+              {% else %}
+                <input
+                  class="
+                    product-select
+                  "
+                  name="id"
+                  value="{{ product.variants[0].id }}"
+                  type="hidden"
+                  data-variant-title="{{ product.variants[0].title }}"
+                />
+              {% endunless %}
+            <div class="bold_options" data-product-id="{{ product.id }}"></div>
+              <div class="mw-apo-options"></div>
+              <div class="product-infiniteoptions js-required side-labels" id="infiniteoptions-container"></div>
+              <div class="product-uploadery js-required side-labels" id="uploadery-container"></div>
+
+                
+        {% unless product.tags contains 'headphones' %} 
+                {% unless product.tags contains 'noadd' %} 
+              {% if show_quantity %}
+                <label
+                  class="
+                    product-quantity-label
+                  "
+                >
+                  {{ 'general.quantity' | t }}:
+                </label>
+                <input
+                  type="number"
+                  class="
+                    product-quantity-input
+                  "
+                  name="quantity"
+                  value="1"
+                  min="0"
+                  pattern="\d*"
+                >
+              {% else %}
+                <input
+                  type="hidden"
+                  name="quantity"
+                  value="1"
+                >
+              {% endif %}
+              {% endunless %}
+            </div>
+        {% endunless %}
+        
+    
+        
+        {% if product.tags contains 'headphones' %} 
+        
+          {% if selected_variant.available %}
+        <center>
+                  {% render 'spiff-button-design-product', product_handle: product.handle, label_text: '&nbsp;&nbsp;&nbsp; CLICK HERE TO CUSTOMIZE! &nbsp;&nbsp;&nbsp; ', label_colour: '#00D0FF', background_colour: 'black' width: '175', height: '75', redirect_to_cart: true %}
+<p class="affirm-as-low-as" data-page-type="product" data-amount="39900"></p>
+        </center>
+                {% else %}
+             <span class="product-card-interaction-addtocart-available">
+                  {{ 'products.product_item.sold_out' | t }}
+                  </span>
+                {% endif %}
+        
+        {% endif %}
+        
+        
+        <!-- load add to cart only when page loads -->
+       <script>
+document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'complete') {
+         document.getElementById('interactive');
+         document.getElementById('load').style.display="none";
+     document.getElementById('buttonload').style.display="block";
+    
+  }
+  else
+  {
+     document.getElementById('buttonload').style.display="none";
+  }
+}
+
+
+
+</script>
+        
+    {% unless product.tags contains 'headphones' %}
+        
+       <div id="load"><b><i>Please wait. The page is loading...</i></b>
+
+         <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/Spinner-1s-41px.gif?v=1617751643"></div>
+
+
+
+   <div id="buttonload">
+     
+   
+  <button 
+              class="addtocart 
+                product-submit
+                action-button
+                submit
+               
+              "
+              {% unless selected_variant.available %}
+                disabled
+              {% endunless %}
+              {% if onboarding %}
+                disabled
+              {% endif %}
+              data-product-submit
+              data-product-variant-id="{{ product.selected_or_first_available_variant.id }}"
+            >
+             
+                
+                {% if product.selected_or_first_available_variant.available %}
+               
+                 {{ 'products.product_item.add_to_cart' | t }}
+                {% else %}
+                  {{ 'products.product_item.sold_out' | t }}
+                {% endif %}
+              </span>
+
+              <span class="product-card-interaction-addtocart-error">
+                {{ 'products.product_item.unavailable' | t }}
+              </span>
+
+              <div class="product-card-interaction-addtocart-spinner">
+                {% render 'icon' with 'spinner' %}
+              </div>
+    
+     </button>
+           </div>
+        
+        {% endunless %}
+      
+
+
+ 
+        
+     
+       
+        
+              
+              
+        
+      
+        
+
+        
+    
+          {% endform %}
+        {% else %}
+          <div class="product-form unavailable">
+            <button
+              class="addtocart 
+                product-submit
+                action-button
+                submit
+                unavailable
+                disabled
+              "
+              data-product-submit
+            >
+              {{ 'products.product.sold_out' | t }}
+            </button>
+          </div>
+        {% endif %}
+            
+  
+        <div class="surface-pick-up" data-surface-pick-up></div>
+      </div>
+              
+              
+              
+              {% unless product.tags contains 'noadd' %}
+
+      {% assign product_interaction_count = 0 %}
+      {% if fitting_guide_url != blank %}
+        {% assign product_interaction_count = product_interaction_count | plus: 1 %}
+      {% endif %}
+      {% if show_email_link %}
+        {% assign product_interaction_count = product_interaction_count | plus: 1 %}
+      {% endif %}
+      {% if show_social_buttons %}
+        {% assign product_interaction_count = product_interaction_count | plus: 1 %}
+      {% endif %}
+
+               {% endunless %}
+              
+              
+              
+      {% if product_interaction_count > 0 %}
+             
+        <div class="product-interactions product-interactions-{{ product_interaction_count }}">
+          {% if fitting_guide_url != blank %}
+            <a
+              class="product-interaction fitting-guide"
+              href="{{ pages[fitting_guide_url].url }}"
+            >
+              {% render 'icon' with fitting_guide_icon %}
+              <span class="product-interaction-title">{{ 'products.product.fitting_guide' | t }}</span>
+            </a>
+          
+          {% endif %}
+        
+          
+          
+          
+              {% unless product.tags contains 'noadd' %}
+
+          {% if show_email_link %}
+            <a
+              class="product-interaction email-us"
+              href="mailto:{{ shop.email }}?Subject={{ product.title | escape }}"
+            >
+              {% render 'icon' with 'mail' %}
+              <span class="product-interaction-title">{{ 'products.product.email_us' | t }}</span>
+            </a>
+          {% endif %}
+{% unless product.tags contains 'headphones' %}
+       
+          {% if show_social_buttons %}
+            {% assign product_canonical_url = shop.url | append: product.url %}
+            {% assign product_email_subject = 'products.product.share_email_subject' | t: product: product.title %}
+            {% assign product_email_body = 'products.product.share_email_body' | t: product: product.title, product_url: product_canonical_url %}
+            {% assign product_image = product.featured_media.preview_image | default: page_image | img_url: '1024x1024' %}
+            {% assign product_description = product.title | escape %}
+
+          
+            <div class="product-interaction share-this">
+              {%
+                render 'share-this',
+                share_canonical_url: product_canonical_url,
+                email_subject: product_email_subject,
+                email_body: product_email_body,
+                image: product_image,
+                description: product_description,
+              %}
+            </div>
+          {% endif %}
+          {% endunless %}
+        
+          {% endunless %}
+        </div>
+      {% endif %}
+
+      {% if show_description and product.description.size > 0 %}
+        <div class="description">
+          <div class="rte">{{ product.description }}</div>
+        </div>
+      {% endif %}
+
+      {% if callout %}
+        <a class="product-callout" href="{{ product.url | within: collection }}">
+          {{ 'products.product.visit_page' | t }}<span>→</span>
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</section>

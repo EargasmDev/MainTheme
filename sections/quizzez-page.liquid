@@ -1,0 +1,124 @@
+<section class="container">
+  <h1 style="color:#000; text-align:center;">Pick a Quiz!</h1>
+  <br>
+  <div style="margin: auto; width: fit-content;">
+	<div id="left">
+		<span class="overlay">
+			<a href="{{ section.settings.left_link }}"><img class="hub-img" src="{{ section.settings.left_image | img_url: 'master' }}" alt="{{ section.settings.left_image.alt }}">
+                <div class="column" style="">
+                    <h1 class="button">{{ section.settings.left_title }}</h1>
+                </div>
+            </a>
+		</span>	
+	</div>
+	<div id="right">
+		<span class="overlay">
+			<a href='{{ section.settings.right_link }}'><img class="hub-img" src="{{ section.settings.right_image | img_url: 'master' }}" alt="{{ section.settings.right_image.alt }}">
+                <div class="column">
+                    <h1 class="button">{{ section.settings.right_title }}</h1>
+                </div>
+            </a>
+		</span>
+	</div>
+  </div>
+    <div>&nbsp;</div>
+
+</section>
+
+<style>
+	.container {
+		margin: auto;
+		color: #fff;
+        width: 90%;
+	}
+	#left,
+	#right {
+		position: relative; display: inline-block; vertical-align: top; /*float: left; width: 49%; margin: 0.5%*/;
+	}
+	.column {
+		position: absolute; margin-left: auto; margin-right: auto;left: 0; right: 0; text-align: center; top:45%;
+	}
+	.button {
+        width: 16rem;
+		background-color: #629bd7 ;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 13px;
+		border-radius: 10px;
+	}
+	.hub-img {
+      border-radius: 10px;
+		 width: 100%;
+		-moz-transition: all 1s;
+		-webkit-transition: all 1s;
+		transition: all 1s;
+		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+		filter: grayscale(100%);
+	}
+	.overlay {
+	display: block;
+    height: 100%;
+    width: 100%;
+	}
+
+	div#left:hover img,
+	div#right:hover img {
+		-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+		filter: grayscale(0%);
+	}
+
+
+	@media only screen and (max-width: 600px) {
+		#left, #right {
+			position: relative;
+			width: 100%;
+            margin-top: 10px;
+		}
+	}
+
+</style>
+
+{% schema %}
+	{	
+		"name": "Quiz-Page",
+		"settings": [
+			{
+				"type": "image_picker",
+				"id": "left_image",
+				"label": "Left Image"
+			},
+			{
+				"type": "text",
+				"id": "left_title",
+				"label": "Left Title"
+			},
+			{
+				"type": "url",
+				"id": "left_link",
+				"label": "Left Link"
+			},
+			{
+				"type": "image_picker",
+				"id": "right_image",
+				"label": "Right Image"
+			},
+			{
+				"type": "text",
+				"id": "right_title",
+				"label": "Rigth Title"
+			},
+			{
+				"type": "url",
+				"id": "right_link",
+				"label": "Right Link"
+			}
+			]
+		}
+
+{% endschema %}
+
+

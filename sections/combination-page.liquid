@@ -1,0 +1,194 @@
+<section class="container">
+    {% comment %} Image Section {% endcomment %}
+    <div style="position: relative;">
+        <img class="comb-img bg-desktop" src="{{ section.settings.bg_d_image | img_url: 'master' }}" alt="{{ section.settings.bg_d_image.alt }}">
+        <img class="comb-img bg-mobile" src="{{ section.settings.bg_m_image | img_url: 'master' }}" alt="{{ section.settings.bg_m_image.alt }}">
+        <div class="hero-img">
+            <div class="column" style="text-align: center;">
+              <h1>{{ section.settings.img_text }}</h1>
+              <p>Active on social media, but have less than 2K followers? No worries. Get 15% off our entire product list (an Earbassador exclusive), and earn up to a 15% commission on every sale you help generate! Join our Earbassador team and start earning commissions today!</p>
+              <a href="#join-form"><button class="button">Join the family</button></a>
+            </div>	
+        </div>
+    </div>
+    {% comment %} Program perks  {% endcomment %}
+    <div style="max-width: 1200px; margin: auto;">
+        <br><br>
+        <h1 style="color: #000; text-align: center; font-weight: 600;">{{ section.settings.perks_title }}</h1>
+        <br>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img class="perks-icon" style="width: 45px" src="https://cdn.shopify.com/s/files/1/1124/3298/files/dollar_sign_icon.svg?v=1658791366" alt="Dollar icon">
+                <p class="perks-text">Promote Eargasm using a custom discount and earn a 15% commission on every sale!</p>
+            </div> 
+            <div class="grid-item">
+                <img class="perks-icon" style="width: 45px" src="https://cdn.shopify.com/s/files/1/1124/3298/files/community_icon.svg?v=1658791366" alt="Community icon">
+                <p class="perks-text">Making sales? Easy-peasy. All you gotta do is get users over to the site, and we'll handle the rest! </p>
+            </div>
+            <div class="grid-item">
+                <img class="perks-icon" style="width: 45px" src="https://cdn.shopify.com/s/files/1/1124/3298/files/percent_icon.svg?v=1658791366" alt="Percent icon">
+                <p class="perks-text">Receive an exclusive 15% discount to use for your first Earbassador purchase!</p>
+            </div>  
+            <div class="grid-item">
+                <img class="perks-icon" style="width: 45px" src="https://cdn.shopify.com/s/files/1/1124/3298/files/search_icon.svg?v=1658791366" alt="Magnifying Glass icon">
+                <p class="perks-text">Be seen - Eargasm has top visibility across Instagram, Google, Amazon, and other digital platforms in the earplug space!</p>
+            </div>
+            <div class="grid-item">
+                <img class="perks-icon" style="width: 45px" src="https://cdn.shopify.com/s/files/1/1124/3298/files/star_icon.svg?v=1658791366" alt="Star icon">
+                <p class="perks-text">Join our community of 250,000+ users and growing!</p>
+            </div>
+            <div class="grid-item">
+                <img class="perks-icon" style="width: 45px" src="https://cdn.shopify.com/s/files/1/1124/3298/files/cash_stack_icon.svg?v=1658791366" alt="Money icon">
+                <p class="perks-text">Perfect for all types of influencers and content creators who are looking to associate with an internationally-known brand!</p>
+            </div>  
+        </div>
+
+        <br><br>
+        <h1 style="color: #000; text-align: center; font-weight: 600;">WHO YOU ARE</h1>
+        <br>
+        {% comment %} Who you are {% endcomment %}
+        <div>
+            <div class="wya_img">
+                <img src="{{ section.settings.wya_image | img_url: 'master' }}" alt="{{ section.settings.wya_image.alt }}" style="width:100%;">
+            </div>
+            <div class="wya_txt">
+                <p style="color: #000;">
+                    &bull; You care about hearing protection and/or music.<br><br>
+                    &bull; You are active on one or more of the following platforms: Instagram, YouTube, TikTok, Twitter, Facebook.<br><br>
+                    &bull; You post on a regular basis and interact with your community.<br><br>
+                    &bull; You love creating fresh, exciting, and new content for your userbase.<br><br>
+                    &bull; ⭐️ BONUS: You go to a lot of live events!<br><br>
+                </p>
+            </div>
+        </div>
+
+        <br><br>
+        <div id='join-form'>
+            <h1 style="color: #000; text-align: center; font-weight: 600;">JOIN US TODAY!</h1>
+            <br>
+            <iframe src="https://community.aspireiq.com/onboarding_form/earbassadors?clientId=cNA7YXY0uRIj5b6CYWLUL0WDoim2RJ9c" style="width:100%;height: 1000px;" title="Embedded"></iframe>
+        </div>
+    </div>
+</section>
+
+<style>
+	.container {
+		margin: auto;
+		color: #fff;
+        position: relative;
+	}
+	.column {
+		margin-left: auto; margin-right: auto; width: 70%;
+	}
+	.button {
+		background-color: #629bd7 ;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		border-radius: 10px;
+	}
+    .hero-img {
+        position: absolute; width: 100%; top:33%;
+    }
+    .comb-img {
+        width:100%;
+    }
+    .bg-mobile {
+        display: none;
+    }
+    .bg-desktop {
+        display: block;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+    }
+    .grid-item {
+        margin: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .perks-text {
+        color: #000;
+        font-size: 14px;
+    }
+    .wya_img {
+        display: inline-block;
+        width: 59%;
+    }
+    .wya_txt {
+        display: inline-block;
+        width: 40%;
+        padding-left: 40px;
+        vertical-align: middle;
+        font-size: 20px;
+    }
+
+	@media only screen and (max-width: 600px) {
+        .hero-img {
+        top: 23%;
+        }
+        .bg-mobile {
+            display: block;
+        }
+        .bg-desktop {
+            display: none;
+        }
+        .grid-container {
+            display: block;
+        }
+        .grid-item {
+            margin: 60px 20px;
+        }
+        .wya_img {
+            width: 100%;
+        }
+        .wya_txt {
+            padding-right: 40px;
+            width: 100%;
+        }
+	}
+
+
+</style>
+
+{% schema %}
+	{	
+		"name": "Combination Page",
+		"settings": [
+			{
+				"type": "image_picker",
+				"id": "bg_d_image",
+				"label": "Desktop Image"
+			},
+            {
+				"type": "image_picker",
+				"id": "bg_m_image",
+				"label": "Mobile Image"
+			},
+			{
+				"type": "richtext",
+				"id": "img_text",
+				"label": "Banner Text"
+			},
+            {
+                "type": "text",
+                "id": "perks_title",
+                "label": "Section Title"
+            },
+            {
+				"type": "image_picker",
+				"id": "wya_image",
+				"label": "Who You Are Image"
+			}
+			]
+		}
+
+{% endschema %}
+
+

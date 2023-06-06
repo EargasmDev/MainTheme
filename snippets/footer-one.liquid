@@ -1,0 +1,75 @@
+{% assign footerModules = 0 %}
+
+{% if footerMessage != blank %}
+  {% assign footerModules = footerModules | plus: 1 %}
+{% endif %}
+
+{% unless settings.twitter-url.size == 0 and settings.facebook-url.size == 0 and settings.pinterest-url.size == 0 and settings.instagram-url.size == 0 %}
+  {% assign footerModules = footerModules | plus: 1 %}
+{% endunless %}
+
+{% if mailingList %}
+  {% assign footerModules = footerModules | plus: 1 %}
+{% endif %}
+
+<footer class="main-footer content-area" id="main-footer">
+
+  <ul class="connect clearfix module-count-{{ footerModules }}">
+   
+
+    {% unless settings.twitter-url.size == 0 and
+      settings.facebook-url.size == 0 and
+      settings.pinterest-url.size == 0 and
+      settings.google-plus-url.size == 0 and
+      settings.instagram-url.size == 0 and
+      settings.tumblr-url.size == 0 and
+      settings.youtube-url.size == 0 and
+      settings.vimeo-url.size == 0
+    %}
+      <li class="social first footer-column">
+     {% if linklists.footer.links.size > 0 %}
+    <nav class="footer-nav">
+      <h2 class="title">INFORMATION</h2>
+      <ul>
+        {% for link in linklists.footer-menu-1.links %}
+          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    {% endif %}
+    </li>
+     <li class="newsletter footer-column">
+     {% if linklists.footer.links.size > 0 %}
+    <nav class="footer-nav">
+      <h2 class="title">JOIN THE FAMILY</h2>
+      <ul>
+        {% for link in linklists.footer-menu-2.links %}
+          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    {% endif %}
+    </li>
+      <li class="social footer-column">
+        <h2 class="title">{{ 'layout.footer.social_title' | t }}</h2>
+        {% render 'social-links' %}
+      </li>
+    {% endunless %}
+    
+
+    
+
+  
+ 
+    
+    
+    
+    
+  </ul>
+
+
+
+</footer>
+
+
+    

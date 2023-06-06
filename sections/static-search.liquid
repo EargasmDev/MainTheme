@@ -1,0 +1,421 @@
+
+<!-- BEGIN USF -->
+{% assign page_title  =  'general.search.header' | t %}
+<script>
+    document.title = '{{ page_title }} - {{ shop.name}}'; 
+</script>  
+{%- assign productsPerRow = section.settings.products_per_row | default: 3 -%}
+  {%- assign productsPerPage = productsPerRow | times: section.settings.rows -%}
+  {%- assign brandNames = settings.show-brand-names -%}
+  {%- assign enable_product_details_overlay = settings.enable_product_details_overlay -%}
+  {%- assign media_borders = settings.media_borders -%}
+  {%- assign enableQuickshop = settings.enable-quick-shop -%}
+  {%- assign enableATC = settings.show_atc -%}
+  {%- assign collectionSidebar = section.settings.collection-sidebar -%}
+  {%- assign sidebarMenu = section.settings.collection-sidebar-menu -%}
+  {%- assign collectionSorting = section.settings.enable-sorting -%}
+  {%- assign tagFilters = section.settings.enable-tagfilter -%}
+  {%- assign paginationStyle = section.settings.pagination-style -%}
+  {%- assign enableCollectionImage = section.settings.show-collection-image -%}
+
+<script>
+    window._usfProductsPerRow = {{ productsPerRow | json }};
+  window._usfGlobalSettings = {
+    'show_product_secondary_image' : {{settings.show_product_secondary_image | json}},
+    'media_borders' : {{media_borders | json}},
+    'enableQuickshop' : {{enableQuickshop | json}},
+    'enableATC' : {{enableATC | json}},
+    'enable_product_details_overlay' : {{enable_product_details_overlay|json}},
+    'brandNames': {{brandNames | json}},
+    'enableQuickshop': {{enableQuickshop | json}},
+    'enableATC': {{enableATC | json}},
+    'quickshop_enable_cart_redirect' : {{quickshop_enable_cart_redirect|json}},
+    product_grid_aspect_ratio: {{ settings.product_grid_aspect_ratio | json }}
+  }
+</script>
+
+<div
+  class="static-search {% unless search.performed %}search-no-search-performed{% endunless %}"
+  data-section-id="{{ section.id }}"
+  data-section-type="static-collection"
+>
+  <section class="content-area">
+    {% include 'breadcrumbs' %}
+
+    <div class="page-title">
+      <h1 class="label">
+        {{ 'general.search.header' | t }}
+      </h1>
+    </div>
+
+    <main class="results">
+      <form
+        class="results-search-form"
+        action="/search"
+        method="get"
+      >
+        <input
+          class="rs-form-input"
+          name="q"
+          type="text"
+          placeholder="{{ 'general.search.input_placeholder' | t }}"
+          value=""
+          data-live-search-form-input
+        >
+
+        <button
+          class="rs-form-button-search"
+          type="submit"
+          aria-label="{{ 'general.search.form_search' | t }}"
+          data-live-search-form-button-search
+        >
+          {% include 'icon' with 'search' %}
+        </button>
+      </form>
+      <style>
+#usf_container{
+    visibility:hidden;
+}
+</style>
+<div id="usf_container"></div>
+<div class="usf-skeleton-container">
+	<style>              
+	  @media (max-width: 749px){
+		.usf-mobile-hidden{
+		  display: none !important;
+		}
+		.usf-skeleton-container .usf-sr-config__mobile-filters-wrapper{
+		  display: flex;
+		  width: 100%;
+		  flex-wrap: wrap;
+		}
+		.usf-skeleton-container .usf-filters, 
+		.usf-skeleton-container .usf-sr-config__mobile-filters-wrapper .usf-c-select{
+		  height: 49px;
+		  border: 1px solid #ededed;
+		  width: 50%;
+		  border-left: none;
+		  display: flex !important;
+		  align-items: center;
+		}
+		.usf-skeleton-container .usf-filters{
+		  border-left: 1px solid #ededed;
+		}
+
+		.usf-skeleton-container .usf-results{
+		  height: 400px;
+		  margin-left: -20px;
+		  display: flex;
+		  flex-wrap: wrap;
+		}
+		.usf-skeleton-container .usf-sr-config{
+		  display: flex;
+		  align-items: center;
+		  justify-content: space-between;
+		  margin-top: 13px;
+		  flex-wrap: wrap;
+		}
+		
+		.usf-skeleton-container .usf-sr-summary:before{
+		  margin: 0 !important;
+		  width: 100px !important;
+		}
+		.usf-skeleton-container .usf-views:before{
+		  margin: 0 !important;
+		  width: 50px !important;
+		  margin-left: auto !important;
+		}
+		.usf-skeleton-container .usf-grid__item{
+		  width: 50%;
+		  padding-left: 20px;
+		}
+		.usf-skeleton-container .usf-sr-summary, 
+		.usf-skeleton-container .usf-views{
+		  margin: 30px 0 20px 0;
+		  display: block;
+		  width: 50%;
+		}
+		
+		.usf-skeleton-container .usf-filters:before,
+		.usf-skeleton-container .usf-c-select:before{
+		  margin: 30px;
+		}
+	  }
+	  
+	  .usf-skeleton-container .usf-filters:before,
+	  .usf-skeleton-container .usf-c-select:before,
+	  .usf-skeleton-container .usf-sr-summary:before,
+	  .usf-skeleton-container .usf-views:before,
+	  .usf-skeleton-container .usf-facet .usf-title:before,
+	  .usf-skeleton-container .usf-facet .usf-body:before,
+	  .usf-skeleton-container .usf-facet .usf-body:after              
+	  {
+		content:'';
+		display: block;
+		background-color: #0000000b;
+		-webkit-animation: usf-skeleton-animation 2.3s infinite;
+		animation: usf-skeleton-animation 2.3s infinite;
+		height: 10px;
+		border-radius: 10px;
+		width: 100%;                
+	  }
+	  
+	  @keyframes usf-skeleton-animation {
+		0% {
+			opacity: 1
+		}
+
+		50% {
+			opacity: .5
+		}
+
+		100% {
+			opacity: 1
+		}
+	  }
+	  
+	  @media (min-width: 750px){
+		.usf-skeleton-container .usf-desktop-hidden{
+		  display: none !important;
+		}
+		.usf-skeleton-container .usf-facet .usf-title,
+		.usf-skeleton-container .usf-facet .usf-body,
+		.usf-skeleton-container .usf-c-select
+		{
+		  display: block !important;
+		}              
+	  
+		.usf-skeleton-container .usf-sr-config__mobile-filters-wrapper{
+		  display: none;
+		}
+		
+		.usf-skeleton-container .usf-facets{
+		  display: block;
+		  width: 23%;
+		  float: left;
+		  margin-top: 17px;
+		}
+		
+		.usf-skeleton-container .usf-sr-container {
+		  width: 77%;
+		  float: left;
+		  padding-left: 30px;
+		  margin-top: 17px;
+		}
+		
+		.usf-skeleton-container .usf-sr-config{
+		  display: flex;
+		}
+		
+		.usf-skeleton-container .usf-sr-config > .usf-c-select{
+		  width: 200px;
+		}
+		
+		.usf-skeleton-container .usf-sr-summary{
+		  width: 100%;
+		}
+		.usf-skeleton-container .usf-sr-summary:before{
+		  margin: auto;
+		  width: 200px;
+		}
+		.usf-skeleton-container .usf-views:before{
+		}
+		.usf-skeleton-container .usf-grid__item{
+		  width: 50%;
+		  padding-left: 20px;
+		}
+		.usf-skeleton-container .usf-views{
+		  display: block;
+		  width: 50px;
+		}
+		
+		.usf-skeleton-container .usf-sr-container{
+		  min-height: 700px;
+		}
+	  }  
+	  
+	  .usf-skeleton-container .usf-facet{
+		margin-bottom: 40px;
+	  }
+	  
+	  .usf-skeleton-container .usf-facet .usf-title:before{                
+		margin-bottom: 25px;
+		width: 70%;
+	  }
+	  
+	  .usf-skeleton-container .usf-facet .usf-body:before,
+	  .usf-skeleton-container .usf-facet .usf-body:after
+	  {
+		margin-bottom: 16px;
+	  }
+	</style>
+  
+	<div class="usf-facets usf-mobile-hidden">
+	  <div class="usf-facet">
+		<div class="usf-title"></div>
+		<div class="usf-body"></div>                
+	  </div>
+	  <div class="usf-facet">
+		<div class="usf-title"></div>
+		<div class="usf-body"></div>
+	  </div>
+	</div>
+	<div class="usf-sr-container">
+	  <div class="usf-sr-config">
+		<div class="usf-sr-config__mobile-filters-wrapper">
+		  <div class="usf-filters"></div>
+		  <div class="usf-c-select"></div>
+		</div>
+		<div class="usf-views usf-mobile-hidden"></div>
+		<span class="usf-sr-summary"></span>
+		<div class="usf-views usf-desktop-hidden"></div>
+		<div class="usf-c-select usf-mobile-hidden"></div>
+	  </div>
+	  <div class="usf-results usf-grid">
+		<div class="usf-grid__item"></div>
+		<div class="usf-grid__item"></div>
+		<div class="usf-grid__item"></div>
+		<div class="usf-grid__item"></div>
+	  </div>
+	</div>       
+</div>
+    </main>
+  </section>
+</div>
+<!-- END USF -->
+
+{% comment %}USF
+<div
+  class="static-search {% unless search.performed  %}search-no-search-performed{% endunless %}"
+  data-section-id="{{ section.id }}"
+  data-section-type="static-search"
+>
+
+
+  
+  
+  <section class="content-area">
+    {% render 'breadcrumbs' %}
+
+    <div class="page-title">
+      <h1 class="label">
+        {%- if search.performed -%}
+          {{ 'general.search.results_header' | t }}
+        {%- else -%}
+        <p class="results-label">{{ 'Your Results' }}</p>
+        {%- endif -%}
+      </h1>
+    </div>
+
+    <main class="results">
+      {% if search.performed %}
+        {% capture results %}
+          {{ 'general.search.results' | t: count: search.results_count }}
+        {% endcapture %}
+        <p class="results-label">{{ 'Your Results' }}</p>
+      {% endif %}
+
+      <form
+        class="results-search-form"
+        action="{{ routes.search_url }}"
+        method="get"
+      >
+        <input
+          class="rs-form-input"
+          name="q"
+          type="text"
+          placeholder="{{ 'general.search.input_placeholder' | t }}"
+          value=""
+          data-live-search-form-input
+        >
+
+        <button
+          class="rs-form-button-search"
+          type="submit"
+          aria-label="{{ 'general.search.form_search' | t }}"
+          data-live-search-form-button-search
+        >
+          {% render 'icon' with 'search' %}
+        </button>
+      </form>
+
+      
+      {% paginate search.results by 10 %}
+   
+        {% for item in search.results %}
+{%- if item.metafields.inventory.ShappifyHidden == 'true' -%}{%- continue -%}{%- endif -%}
+  {% if item.object_type == 'product' and item.type == 'SHOPSTORM_HIDDEN_PRODUCT' %}{% continue %}{% endif %}
+
+  {% if item.object_type == 'product' and item.type == 'SHOPSTORM_HIDDEN_PRODUCT' %}{% continue %}{% endif %}
+
+  {% if item.object_type == 'product' and item.type == 'SHOPSTORM_HIDDEN_PRODUCT' %}{% continue %}{% endif %}
+ 
+           {% unless item.tags contains 'foo' %}
+          {%
+            render 'search-result',
+            item: item,
+            paginate: paginate,
+          %}
+          {% endunless %}
+        {% endfor %}
+           
+
+        {% if paginate.previous or paginate.next %}
+      		      
+
+          {%
+            render 'pagination',
+            paginate: paginate,
+            paginationStyle: section.settings.pagination-style
+          %}
+
+        {% endif %}
+
+      {% endpaginate %}
+      
+      
+           
+    </main>
+  </section>
+</div>
+
+
+USF{% endcomment %}
+{% schema %}
+{
+  "name": "Search result pages",
+  "settings": [
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "checkbox",
+      "id": "show-breadcrumbs",
+      "label": "Show breadcrumbs",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Pagination"
+    },
+    {
+      "type": "select",
+      "id": "pagination-style",
+      "label": "Style",
+      "options": [
+        {
+          "value": "standard",
+          "label": "Standard pagination"
+        },
+        {
+          "value": "jump-to-page",
+          "label": "Jump-to-page pagination"
+        }
+      ],
+      "default": "standard"
+    }
+  ]
+}
+
+{% endschema %}

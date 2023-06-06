@@ -1,0 +1,631 @@
+
+<!-- BEGIN USF -->
+{%- assign productsPerRow = section.settings.products_per_row -%}
+{%- assign productsPerPage = productsPerRow | times: section.settings.rows -%}
+{%- assign brandNames = settings.show-brand-names -%}
+{%- assign enable_product_details_overlay = settings.enable_product_details_overlay -%}
+{%- assign media_borders = settings.media_borders -%}
+{%- assign enableQuickshop = settings.enable-quick-shop -%}
+{%- assign enableATC = settings.show_atc -%}
+{%- assign collectionSidebar = section.settings.collection-sidebar -%}
+{%- assign sidebarMenu = section.settings.collection-sidebar-menu -%}
+{%- assign collectionSorting = section.settings.enable-sorting -%}
+{%- assign tagFilters = section.settings.enable-tagfilter -%}
+{%- assign paginationStyle = section.settings.pagination-style -%}
+{%- assign enableCollectionImage = section.settings.show-collection-image -%}
+
+<script>
+window._usfProductsPerRow = {{ productsPerRow | json }};
+window._usfGlobalSettings = {
+  'show_product_secondary_image' : {{settings.show_product_secondary_image | json}},
+  'media_borders' : {{media_borders | json}},
+  'enableQuickshop' : {{enableQuickshop | json}},
+  'enableATC' : {{enableATC | json}},
+  'enable_product_details_overlay' : {{enable_product_details_overlay|json}},
+  'brandNames': {{brandNames | json}},
+  'enableQuickshop': {{enableQuickshop | json}},
+  'enableATC': {{enableATC | json}},
+  'quickshop_enable_cart_redirect' : {{quickshop_enable_cart_redirect|json}}
+}
+</script>
+
+<div data-section-id="{{ section.id }}" data-section-type="static-collection">
+
+
+{% if collection.image and enableCollectionImage %}
+  {% assign showCollectionImage = true %}
+{% endif %}
+
+  {% capture collection_url %}{% if collection.url.size == 0 %}/collections/all{% else %}{{ collection.url }}{% endif %}{% endcapture %}
+
+  <main class="content">
+    {% if showCollectionImage %}
+      {%
+        include 'rimg'
+        img: collection.image,
+        class: 'collection-image',
+        lazy: true
+      %}
+    {% endif %}
+
+    <header
+      class="
+        collection-title-header
+        {% if collectionSidebar and collectionSorting or sidebarMenu != empty or collection.all_tags.size > 0 and tagFilters %}
+          sidebar-active
+        {% endif %}
+      "
+    >
+      <div class="collection-title page-title">
+        {% include 'breadcrumbs' %}
+
+        <h1 class="label">{{ collection.title }}</h1>
+
+        {% if collection.description != blank %}
+          <div class="rte description">{{ collection.description }}</div>
+        {% endif %}
+      </div>
+    </header>
+
+      <style>
+#usf_container{
+    visibility:hidden;
+}
+</style>
+<div id="usf_container"></div>
+<div class="usf-skeleton-container">
+	<style>              
+	  @media (max-width: 749px){
+		.usf-mobile-hidden{
+		  display: none !important;
+		}
+		.usf-skeleton-container .usf-sr-config__mobile-filters-wrapper{
+		  display: flex;
+		  width: 100%;
+		  flex-wrap: wrap;
+		}
+		.usf-skeleton-container .usf-filters, 
+		.usf-skeleton-container .usf-sr-config__mobile-filters-wrapper .usf-c-select{
+		  height: 49px;
+		  border: 1px solid #ededed;
+		  width: 50%;
+		  border-left: none;
+		  display: flex !important;
+		  align-items: center;
+		}
+		.usf-skeleton-container .usf-filters{
+		  border-left: 1px solid #ededed;
+		}
+
+		.usf-skeleton-container .usf-results{
+		  height: 400px;
+		  margin-left: -20px;
+		  display: flex;
+		  flex-wrap: wrap;
+		}
+		.usf-skeleton-container .usf-sr-config{
+		  display: flex;
+		  align-items: center;
+		  justify-content: space-between;
+		  margin-top: 13px;
+		  flex-wrap: wrap;
+		}
+		
+		.usf-skeleton-container .usf-sr-summary:before{
+		  margin: 0 !important;
+		  width: 100px !important;
+		}
+		.usf-skeleton-container .usf-views:before{
+		  margin: 0 !important;
+		  width: 50px !important;
+		  margin-left: auto !important;
+		}
+		.usf-skeleton-container .usf-grid__item{
+		  width: 50%;
+		  padding-left: 20px;
+		}
+		.usf-skeleton-container .usf-sr-summary, 
+		.usf-skeleton-container .usf-views{
+		  margin: 30px 0 20px 0;
+		  display: block;
+		  width: 50%;
+		}
+		
+		.usf-skeleton-container .usf-filters:before,
+		.usf-skeleton-container .usf-c-select:before{
+		  margin: 30px;
+		}
+	  }
+	  
+	  .usf-skeleton-container .usf-filters:before,
+	  .usf-skeleton-container .usf-c-select:before,
+	  .usf-skeleton-container .usf-sr-summary:before,
+	  .usf-skeleton-container .usf-views:before,
+	  .usf-skeleton-container .usf-facet .usf-title:before,
+	  .usf-skeleton-container .usf-facet .usf-body:before,
+	  .usf-skeleton-container .usf-facet .usf-body:after              
+	  {
+		content:'';
+		display: block;
+		background-color: #0000000b;
+		-webkit-animation: usf-skeleton-animation 2.3s infinite;
+		animation: usf-skeleton-animation 2.3s infinite;
+		height: 10px;
+		border-radius: 10px;
+		width: 100%;                
+	  }
+	  
+	  @keyframes usf-skeleton-animation {
+		0% {
+			opacity: 1
+		}
+
+		50% {
+			opacity: .5
+		}
+
+		100% {
+			opacity: 1
+		}
+	  }
+	  
+	  @media (min-width: 750px){
+		.usf-skeleton-container .usf-desktop-hidden{
+		  display: none !important;
+		}
+		.usf-skeleton-container .usf-facet .usf-title,
+		.usf-skeleton-container .usf-facet .usf-body,
+		.usf-skeleton-container .usf-c-select
+		{
+		  display: block !important;
+		}              
+	  
+		.usf-skeleton-container .usf-sr-config__mobile-filters-wrapper{
+		  display: none;
+		}
+		
+		.usf-skeleton-container .usf-facets{
+		  display: block;
+		  width: 23%;
+		  float: left;
+		  margin-top: 17px;
+		}
+		
+		.usf-skeleton-container .usf-sr-container {
+		  width: 77%;
+		  float: left;
+		  padding-left: 30px;
+		  margin-top: 17px;
+		}
+		
+		.usf-skeleton-container .usf-sr-config{
+		  display: flex;
+		}
+		
+		.usf-skeleton-container .usf-sr-config > .usf-c-select{
+		  width: 200px;
+		}
+		
+		.usf-skeleton-container .usf-sr-summary{
+		  width: 100%;
+		}
+		.usf-skeleton-container .usf-sr-summary:before{
+		  margin: auto;
+		  width: 200px;
+		}
+		.usf-skeleton-container .usf-views:before{
+		}
+		.usf-skeleton-container .usf-grid__item{
+		  width: 50%;
+		  padding-left: 20px;
+		}
+		.usf-skeleton-container .usf-views{
+		  display: block;
+		  width: 50px;
+		}
+		
+		.usf-skeleton-container .usf-sr-container{
+		  min-height: 700px;
+		}
+	  }  
+	  
+	  .usf-skeleton-container .usf-facet{
+		margin-bottom: 40px;
+	  }
+	  
+	  .usf-skeleton-container .usf-facet .usf-title:before{                
+		margin-bottom: 25px;
+		width: 70%;
+	  }
+	  
+	  .usf-skeleton-container .usf-facet .usf-body:before,
+	  .usf-skeleton-container .usf-facet .usf-body:after
+	  {
+		margin-bottom: 16px;
+	  }
+	</style>
+  
+	<div class="usf-facets usf-mobile-hidden">
+	  <div class="usf-facet">
+		<div class="usf-title"></div>
+		<div class="usf-body"></div>                
+	  </div>
+	  <div class="usf-facet">
+		<div class="usf-title"></div>
+		<div class="usf-body"></div>
+	  </div>
+	</div>
+	<div class="usf-sr-container">
+	  <div class="usf-sr-config">
+		<div class="usf-sr-config__mobile-filters-wrapper">
+		  <div class="usf-filters"></div>
+		  <div class="usf-c-select"></div>
+		</div>
+		<div class="usf-views usf-mobile-hidden"></div>
+		<span class="usf-sr-summary"></span>
+		<div class="usf-views usf-desktop-hidden"></div>
+		<div class="usf-c-select usf-mobile-hidden"></div>
+	  </div>
+	  <div class="usf-results usf-grid">
+		<div class="usf-grid__item"></div>
+		<div class="usf-grid__item"></div>
+		<div class="usf-grid__item"></div>
+		<div class="usf-grid__item"></div>
+	  </div>
+	</div>       
+</div>
+      
+  </main>
+</div>
+<!-- END USF -->
+
+{% comment %}USF
+<div data-section-id="{{ section.id }}" data-section-type="static-collection">
+  {%- assign productsPerRow = section.settings.products_per_row -%}
+  {%- assign productsPerPage = productsPerRow | times: section.settings.rows -%}
+  {%- assign enable_product_details_overlay = settings.enable_product_details_overlay -%}
+  {%- assign collectionSidebar = section.settings.collection-sidebar -%}
+  {%- assign sidebarMenu = section.settings.collection-sidebar-menu -%}
+  {%- assign collectionSorting = section.settings.enable-sorting -%}
+  {%- assign tagFilters = section.settings.enable-tagfilter -%}
+  {%- assign enableCollectionImage = section.settings.show-collection-image -%}
+
+  {% if collection.image and enableCollectionImage %}
+    {% assign showCollectionImage = true %}
+  {% endif %}
+
+  {% paginate collection.products by productsPerPage %}
+
+    {% capture collection_url %}{% if collection.url.size == 0 %}/collections/all{% else %}{{ collection.url }}{% endif %}{% endcapture %}
+
+    <main class="content">
+      {% if showCollectionImage %}
+        {%
+          render 'rimg'
+          img: collection.image,
+          class: 'collection-image',
+          lazy: true
+        %}
+      {% endif %}
+
+      <header
+        class="
+          collection-title-header
+          {% if collectionSidebar and collectionSorting or sidebarMenu != empty or collection.all_tags.size > 0 and tagFilters %}
+            sidebar-active
+          {% endif %}
+        "
+      >
+        <div class="collection-title page-title">
+          {% render 'breadcrumbs' %}
+
+          <h1 class="label">{{ collection.title }}</h1>
+
+          {% if collection.description != blank %}
+            <div class="rte description">{{ collection.description }}</div>
+          {% endif %}
+        </div>
+      </header>
+
+      <div class="content-area clearfix">
+        <div class="collection-header clearfix">
+          {% unless collectionSidebar %}
+            {% if collectionSorting or collection.all_tags.size > 0 and tagFilters %}
+              <div class="collection-heading-tools">
+                <div class="collection-tools-left">
+                  {% if collectionSorting %}
+                    <div class="tools-wrap">
+                      {% render 'collection-sort' %}
+                    </div>
+                  {% endif %}
+
+                  {% if collection.all_tags.size > 0 and tagFilters %}
+                    <div class="tools-wrap">
+                      {% render 'tags-dropdown' %}
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endunless %}
+
+          {% if collection.products.size == 0 %}
+            <p class="empty">{{ 'collections.collection.no_products' | t }}</p>
+          {% else %}
+        </div>
+
+        <div class="collection-content">
+          <ul class="product-list row-of-{{ productsPerRow }}
+            {% if collectionSidebar and collectionSorting or sidebarMenu != empty or collection.all_tags.size > 0 and tagFilters %}
+              product-list-withsidebar
+            {% endif %}">
+            
+            {% for product in collection.products limit: productsPerPage %}
+{%- if product.metafields.inventory.ShappifyHidden == 'true' -%}{%- continue -%}{%- endif -%}
+  {% if product.object_type == 'product' and product.type == 'SHOPSTORM_HIDDEN_PRODUCT' %}{% continue %}{% endif %}
+
+  {% if product.object_type == 'product' and product.type == 'SHOPSTORM_HIDDEN_PRODUCT' %}{% continue %}{% endif %}
+
+  {% if product.object_type == 'product' and product.type == 'SHOPSTORM_HIDDEN_PRODUCT' %}{% continue %}{% endif %}
+
+              {% assign index = forloop.index0 | downcase %}
+
+              {% if section.blocks.size > 0 %}
+                {% for block in section.blocks %}
+
+                  {% if block.settings.position != blank and block.settings.position == index %}
+                    {% unless block.settings.collection != empty and block.settings.collection != collection.handle %}
+                      {%
+                        render 'promo-block',
+                        block: block,
+                        enableQuickshop: settings.enable-quick-shop
+                      %}
+                      {% break %}
+                    {% endunless %}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+
+              {%
+                render 'product-item',
+                product: product,
+                forloop: forloop,
+                paginate: paginate,
+                onboarding: false
+              %}
+            {% endfor %}
+          </ul>
+
+          {% if collectionSidebar and collectionSorting or sidebarMenu != empty or collection.all_tags.size > 0 and tagFilters %}
+            <aside
+              class="
+                product-list-sidebar
+                {% if collectionSorting and collection.all_tags.size > 0 and tagFilters %}
+                  filters-enabled
+                {% endif %}
+              "
+            >
+              {% if collectionSorting %}
+                {% render 'collection-sort' %}
+              {% endif %}
+
+              {% if collection.all_tags.size > 0 and tagFilters %}
+                {% render 'tags-dropdown' %}
+              {% endif %}
+
+              {% unless sidebarMenu == '' %}
+                <div class="sidebar-menu--desktop">
+                  <h2 class="sidebar-title">{{ linklists[sidebarMenu].title }}</h2>
+                  <ul class="collection-sidebar-menu">
+                    {% for link in linklists[sidebarMenu].links %}
+                      <li>
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+
+                        {% if link.links != blank %}
+                          <ul>
+                            {% for link in link.links %}
+                              <li>
+                                <a href="{{ link.url }}">{{ link.title }}</a>
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endunless %}
+            </aside>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if paginate.previous or paginate.next %}
+        {%
+          render 'pagination',
+          paginate: paginate,
+          paginationStyle: section.settings.pagination-style
+        %}
+      {% endif %}
+
+      {% if sidebarMenu != '' and collectionSidebar %}
+        <div class="sidebar-menu--mobile">
+          <h2 class="sidebar-title">{{ linklists[sidebarMenu].title }}</h2>
+          <ul class="collection-sidebar-menu">
+            {% for link in linklists[sidebarMenu].links %}
+              <li>
+                <a href="{{ link.url }}">{{ link.title }}</a>
+
+                {% if link.links != blank %}
+                  <ul>
+                    {% for link in link.links %}
+                      <li>
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    </div>
+  </main>
+
+  {% endpaginate %}
+</div>
+
+
+USF{% endcomment %}
+{% schema %}
+{
+  "name": "Collection pages",
+  "settings": [
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "checkbox",
+      "id": "show-breadcrumbs",
+      "label": "Show breadcrumbs",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show-collection-image",
+      "label": "Show collection image"
+    },
+    {
+      "type": "header",
+      "content": "Products"
+    },
+    {
+      "type": "range",
+      "id": "rows",
+      "label": "Rows",
+      "min": 1,
+      "max": 11,
+      "step": 1,
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "products_per_row",
+      "label": "Number of products per row",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "header",
+      "content": "Filtering"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable-sorting",
+      "label": "Enable sorting",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable-tagfilter",
+      "label": "Enable tag filter",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Sidebar"
+    },
+    {
+      "type": "checkbox",
+      "id": "collection-sidebar",
+      "label": "Enable sidebar",
+      "default": false
+    },
+    {
+      "type": "link_list",
+      "id": "collection-sidebar-menu",
+      "label": "Collection sidebar menu",
+      "info": "This menu has limited support for dropdown items"
+    },
+    {
+      "type": "header",
+      "content": "Pagination"
+    },
+    {
+      "type": "select",
+      "id": "pagination-style",
+      "label": "Style",
+      "options": [
+        {
+          "value": "standard",
+          "label": "Standard pagination"
+        },
+        {
+          "value": "jump-to-page",
+          "label": "Jump-to-page pagination"
+        }
+      ],
+      "default": "standard"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Promo block",
+      "settings": [
+        {
+          "type": "select",
+          "id": "style",
+          "label": "Style",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "secondary",
+              "label": "Secondary"
+            }
+          ],
+          "default": "primary"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection",
+          "info": "Unless specified, promotion will appear on all collection pages"
+        },
+        {
+          "type": "text",
+          "id": "position",
+          "label": "Display after X products",
+          "default": "4"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Title",
+          "default": "<p>Promotion text<p>"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "text",
+          "id": "button",
+          "label": "Button text",
+          "default": "More info"
+        }
+      ]
+    }
+  ]
+}
+
+{% endschema %}

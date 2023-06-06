@@ -1,0 +1,338 @@
+
+<!-- cart cache fix --> 
+
+<script type="text/javascript" charset="utf-8">
+//<![CDATA[
+  jQuery.ajaxSetup({cache: false});
+  Shopify.getCart(function(cart) {
+    alert("There are currently " + cart.item_count + " items in the cart.");
+  });
+//]]>
+</script>
+
+{{ 'api.jquery.js' | shopify_asset_url | script_tag }}
+
+<script type="text/javascript" charset="utf-8">
+Shopify.getCart(function(cart) {
+  CartJS.init(cart, {
+    "requestBodyClass": "cart-loading"
+  });
+});
+  </script>
+
+
+<script type="text/javascript" charset="utf-8">
+
+window.onpageshow = function(event) {
+    if (event.persisted) {
+        window.location.reload() 
+    }
+};
+
+$(window).bind("pageshow", function(event) {
+    if (event.originalEvent.persisted) {
+        window.location.reload() 
+    }
+});
+  </script>
+
+<!-- cart cache fix end --> 
+
+{%- assign imageBorders = settings.image-borders -%}
+{%- assign brandNames = settings.show-brand-names -%}
+{%- assign shippingCalculator = section.settings.shipping-calculator -%}
+{%- assign shippingCalculatorDefaultCountry = section.settings.shipping-calculator-default-country | escape -%}
+
+<script
+  type="application/json"
+  data-section-type="static-cart"
+  data-section-id="{{ section.id }}"
+>
+</script>
+
+<section
+  class="
+    content
+    content-area
+  "
+>
+  {% include 'breadcrumbs' %}
+
+  <div class="page-title">
+    <h1 class="label">{{ 'cart.header' | t }}</h1>
+  </div>
+
+  {% if cart.item_count > 0 %}
+    <form class="cart" action="/cart" method="post">
+      <table class="cart-table table">
+        <thead>
+          <tr class="table-header">
+            <th class="first">{{ 'general.product' | t }}</th>
+            <th>{{ 'general.price' | t }}</th>
+            <th>{{ 'general.quantity' | t }}</th>
+            <th class="last">{{ 'general.total' | t }}</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for item in cart.items %}
+{%- comment -%}Bold:PO 2.0 - Hybrid Input{%- endcomment -%}
+{%- if item.properties._boldBuilderId  and item.properties._boldVariantIds == null -%}
+<input type="hidden" name="updates[]" id="updates_{{- item.key -}}" class="bold_hidden_input cart__product-qty" value="{{- item.quantity -}}" min="0" data-id="{{- item.key -}}">
+{%- continue -%}
+{%- endif -%}
+
+            <tr
+              class="
+                table-row
+                {% include 'for-looper' %}
+              "
+              data-cart-item
+            >
+              <td
+                class="
+                  cart-item-column
+                  product-item
+                  first
+                "
+              >
+                <div class="image-wrap">
+
+                  <a class="image" href="{{ item.url }}">
+                     {% render 'spiff-line-item-image', line_item: item %}
+                    
+                    {% if imageBorders %}
+                      <span class="outline"></span>
+                    {% endif %}
+                  </a>
+                </div>
+
+                <div class="wrap">
+                  {% if brandNames %}
+                    <span class="label vendor">{{ item.vendor }}</span>
+                  {% endif %}
+
+                  <span class="label title">{{ item.product.title | link_to: item.url }}</span>
+
+                  
+
+                  
+
+                  <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_properties" style="display:none !important;"></span>{% if item.properties %}
+                    <div class="item-properties">
+                      {% for property in item.properties %}
+{%- if property.first.first == '_' -%}{%- continue -%}{%- endif -%}
+                      {% assign first_char = property.first | slice: 0 %}
+ 				{% if first_char == "_" %}{% continue %}{% endif %}
+                        {% unless property.last == blank %}
+                          <div class="item-property">
+                            <span class="item-property-label">
+                              {{ property.first }}:
+                            </span>
+
+                            {% if property.last contains '/uploads/' %}
+                              <a
+                                class="item-property-image"
+                                href="{{ property.last }}"
+                              >
+                                {{ property.last | split: '/' | last }}
+                              </a>
+                            {% else %}
+                              <span class="item-property-value">
+                                {{ property.last }}
+                              </span>
+                            {% endif %}
+                          </div>
+                        {% endunless %}
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+                </div>
+              </td>
+
+              <td
+                class="
+                  cart-item-column
+                  price
+                "
+              >
+                <span class="cart-item-label-mobile">
+                  Price
+                </span>
+
+                <div class="cart-item-column-contents">
+                  <span class="">
+                    
+<span class="saso-cart-item-price" data-key="{{item.key}}"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price" data-item-key="{{item.key}}" style="display:none !important;"></span>{{ item.price | money }}</span>
+
+                  </span>
+                </div>
+              </td>
+
+              <td
+                class="
+                  cart-item-column
+                  cart-item-column-quantity
+                  quantity
+                "
+              >
+                <span class="cart-item-label-mobile">
+                  Quantity
+                </span>
+
+                <div class="cart-item-column-contents">
+                  <input
+                    class="
+                      cart-item-quantity
+                      field
+                    "
+                    type="text"
+                    name="updates[]"
+                    value="{{ item.quantity }}"
+                    data-id="{{ item.variant.id }}"
+                  >
+                  <a
+                    class="cart-item-remove"
+                    href="/cart/change/{{ item.variant.id }}?line={{ forloop.index }}&quantity=0"
+                  >
+                    Remove
+                  </a>
+                </div>
+              </td>
+
+              <td
+                class="
+                  cart-item-column
+                  total
+                  last
+                "
+              >
+                <span class="cart-item-label-mobile">
+                  Total
+                </span>
+
+                <div class="cart-item-column-contents">
+                 <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_total" data-item-key="{{item.key}}" style="display:none !important;"></span>
+ <span class="">
+                    {{ item.quantity | times: item.price | money }}
+                  </span>
+                </div>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      {% if shippingCalculator %}
+        {% include 'shipping-calculator' %}
+      {% endif %}
+
+      <!-- REMOVE SPECIAL INSTRUCTIONS BEGIN -->
+      
+     
+      <div class="cart-tools clearfix">
+         <!--
+        <div class="instructions">
+          <p>{{ 'cart.note' | t }}</p>
+          <textarea class="field" name="note">{{- cart.note -}}</textarea>
+        </div>
+-->
+         <!-- REMOVE SPECIAL INSTRUCTIONS END -->
+
+        <div class="totals">
+          <p class="price">
+            
+<span class="saso-cart-original-total"><span class="">
+              <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_total" style="display:none !important;"></span>{{ cart.total_price | money }}
+            </span></span>
+<span class="saso-cart-total"></span>
+
+          </p>
+
+          <p class="message">
+            {{ 'cart.tax_and_shipping' | t }}
+          </p>
+          <div><img src="https://cdn.shopify.com/s/files/1/1124/3298/files/eargasm-banner-edit.jpg?v=1615597687" style="width: 40%;" /></div>
+          <div class="route-div" style="letter-spacing: -0.2px; margin-top: -10px; margin-bottom: -25px;"></div>
+          <br>
+<!--           <div style="font-size: 12px; letter-spacing: -0.1px; margin-top: -15px; margin-bottom: 15px;">*By deselecting shipping protection, Eargasm Earplugs<br> is not liable for lost, damaged, or stolen items</div> -->
+          <div class="checkout">
+            <input
+              class="action-button desaturated cart-update"
+              type="submit"
+              name="update"
+              value="{{ 'cart.update' | t }}"
+            >
+
+            <button
+              class="action-button cart-submit"
+              type="submit"
+              name="checkout"
+              onclick="recurringOrdersCheckout(event)"
+              value="{{ 'cart.submit' | t }}"
+            >
+              {% if settings.enable_checkout_lock_icon %}
+                {% include 'icon' with 'checkout-lock' %}
+              {% endif %}
+              <span>{{ 'cart.submit' | t }}</span>
+            </button>
+
+            {% if additional_checkout_buttons %}
+              <div class="additional-checkout-buttons">
+                {{ content_for_additional_checkout_buttons }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </form>
+  {% else %}
+    <p class="empty">
+      {{ 'cart.empty' | t }}
+
+      <a href="{{ shop.url }}/collections/eargasm-earplugs-product-line">
+        {{ 'cart.continue' | t }}
+      </a>
+    </p>
+  {% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "Cart pages",
+  "class": "section-cart",
+  "settings": [
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "checkbox",
+      "id": "show-breadcrumbs",
+      "label": "Show breadcrumbs",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Shipping calculator"
+    },
+    {
+      "type": "checkbox",
+      "id": "shipping-calculator",
+      "label": "Enable shipping calculator",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "shipping-calculator-default-country",
+      "label": "Default country selection",
+      "default": "United States"
+    },
+    {
+      "type": "paragraph",
+      "content": "If your customer is logged in, the country in his or her default shipping address will be selected."
+    }
+  ]
+}
+
+{% endschema %}
