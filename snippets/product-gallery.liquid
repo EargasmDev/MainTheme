@@ -39,7 +39,7 @@
       </script>
     {%- endif -%}
     {% assign first_model = models | first %}
-    {% for media in product.media | limit: 4 %}
+    {% for media in product.media %}
       <figure
         class="product-gallery--viewport--figure"
         tabindex="-1"
