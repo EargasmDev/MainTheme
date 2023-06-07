@@ -48,19 +48,19 @@
 
             {% assign is_selected = true %}
           {% endif %}
-          <figure
-            class="product-gallery--viewport--figure"
-            tabindex="-1"
-            {% if gallery_layout != 'list' %}
-              {% unless is_selected %}
-                aria-hidden="true"
-              {% endunless %}
-            {% endif %}
-            data-product-gallery-figure="{{ forloop.index0 }}"
-            data-product-gallery-selected="{%- if is_selected -%}true{%- else -%}false{%- endif -%}"
-            data-media="{{ media.id }}"
-            data-media-type="{{ media.media_type }}"
-          >
+         <figure
+  class="product-gallery--viewport--figure"
+  tabindex="-1"
+  {% if gallery_layout != 'list' %}
+    {% unless is_selected %}
+      aria-hidden="true"
+    {% endunless %}
+  {% endif %}
+  data-product-gallery-figure="{{ forloop.index0 }}"
+  data-product-gallery-selected="{%- if is_selected -%}true{%- else -%}false{%- endif -%}"
+  data-media="{{ media.id }}"
+  data-media-type="{{ media.media_type }}"
+>
             <div class="product-gallery--media-wrapper">
               {% capture data_attr %}
                 {% if enable_image_zoom %}data-image-zoom="{{ media.id }}"{% endif %}
