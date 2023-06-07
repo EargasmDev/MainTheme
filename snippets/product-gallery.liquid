@@ -15,8 +15,6 @@
     Whether to use image zoom
 {% endcomment %}
 
-{% assign product_media = product.media | limit: 4 %}
-
 <div
   class="
     product-gallery
@@ -29,7 +27,7 @@
   <div
     class="
       product-gallery--viewport
-      {% if gallery_layout != 'list' and product_media.size > 1 %}product-gallery--viewport--has-navigation{% endif %}
+      {% if gallery_layout != 'list' and product.media.size > 1 %}product-gallery--viewport--has-navigation{% endif %}
     "
     data-product-gallery-viewport
   >
@@ -41,114 +39,113 @@
       </script>
     {%- endif -%}
     {% assign first_model = models | first %}
-    {% for media in product_media %}
-      <figure
-        class="product-gallery--viewport--figure"
-        tabindex="-1"
-        {% if gallery_layout != 'list' %}
-          {% if selected_media.id != media.id %}
-            aria-hidden="true"
-          {% else %}
-            aria-hidden="false"
+    {% assign image_counter = 0 %}
+    {% for media in product.media %}
+      {% if media.media_type == 'image' and image_counter < 4 %}
+        <figure
+          class="product-gallery--viewport--figure"
+          tabindex="-1"
+          {% if gallery_layout != 'list' %}
+            {% if selected_media.id != media.id %}
+              aria-hidden="true"
+            {% else %}
+              aria-hidden="false"
+            {% endif %}
           {% endif %}
-        {% endif %}
-        data-product-gallery-figure="{{ forloop.index0 }}"
-        data-product-gallery-selected="{%- if selected_media.id == media.id -%}true{%- else -%}false{%- endif -%}"
-        data-media="{{ media.id }}"
-        data-media-type="{{ media.media_type }}"
-      >
-        <div class="product-gallery--media-wrapper">
-          {% case media.media_type %}
-          {% when 'image' %}
-            {%- capture data_attr -%}
-              {% if enable_image_zoom %}data-image-zoom="{{ media.id }}"{% endif %}
-            {%- endcapture -%}
-            {%
-              render 'rimg'
-              img: media.preview_image,
-              size: '1024x1024',
-              attr: data_attr,
-            %}
-          {% when 'model' %}
-            {{ media | model_viewer_tag: image_size: '1024x', reveal: 'interaction' , toggleable: true, interaction-prompt-threshold: 0 }}
-          {% when 'video' %}
-            {{ media | media_tag: image_size: '1024x' }}
-          {% when 'external_video' %}
-            {{ media | media_tag: image_size: '1024x' }}
-          {% else %}
-            {{ media | media_tag }}
-          {% endcase %}
-          {% if show_media_borders %}
-            <div class="product-gallery--border-overlay"></div>
-          {% endif %}
-        </div>
-      {% if media.media_type == 'model' %}
-        {% assign model = media %}
-      {% else %}
-        {% assign model = first_model %}
-      {% endif %}
-      {% if model %}
-        <button
-          class="product-gallery--viewinyourspace"
-          data-shopify-xr
-          data-shopify-model3d-id="{{ model.id }}"
-          data-shopify-title="{{ product.title }}"
-          data-shopify-xr-hidden
-        >
-          {% render 'icon' with 'ar' %}
-          {{ 'products.media.view_in_your_space' | t }}
-        </button>
-      {% endif %}
-      </figure>
-    {% else %}
-      <figure
-        class="product-gallery--viewport--figure"
-        data-product-gallery-selected="true"
-      >
-        {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
-      </figure>
-    {% endfor %}
-
-    {% if enable_image_zoom %}
-      {% assign ps_images = product_media | where: "media_type", "image"  %}
-      {% render 'photoswipe', ps_images: ps_images %}
-    {% endif %}
-  </div>
-
-  {% if gallery_layout != 'list' and product_media.size > 1 %}
-    <div
-      class="product-gallery--navigation"
-      data-product-gallery-navigation
-    >
-      {% for media in product_media %}
-        <button
-          class="
-            product-gallery--media-thumbnail
-            product-gallery--{{ media.media_type }}-thumbnail
-          "
-          type="button"
-          tab-index="0"
-          aria-label="{{ media.alt }} {{ 'general.accessibility.nav_product_thumbnail' | t }}"
-          data-product-gallery-thumbnail="{{ forloop.index0 }}"
+          data-product-gallery-figure="{{ forloop.index0 }}"
           data-product-gallery-selected="{%- if selected_media.id == media.id -%}true{%- else -%}false{%- endif -%}"
           data-media="{{ media.id }}"
           data-media-type="{{ media.media_type }}"
         >
-          {%
-            render 'rimg'
-            img: media.preview_image,
-            size: '100x100',
-          %}
+          <div class="product-gallery--media-wrapper">
+            {% case media.media_type %}
+            {% when 'image' %}
+              {%- capture data_attr -%}
+                {% if enable_image_zoom %}data-image-zoom="{{ media.id }}"{% endif %}
+              {%- endcapture -%}
+              {%
+                render 'rimg'
+                img: media.preview_image,
+                size: '1024x1024',
+                attr: data_attr,
+              %}
+            {% when 'model' %}
+              {{ media | model_viewer_tag: image_size: '1024x', reveal: 'interaction' , toggleable: true, interaction-prompt-threshold: 0 }}
+            {% when 'video' %}
+              {{ media | media_tag: image_size: '1024x' }}
+            {% when 'external_video' %}
+              {{ media | media_tag: image_size: '1024x' }}
+            {% else %}
+              {{ media | media_tag }}
+            {% endcase %}
+            {% if show_media_borders %}
+              <div class="product-gallery--border-overlay"></div>
+            {% endif %}
+          </div>
+        {% if media.media_type == 'model' %}
+          {% assign model = media %}
+        {% else %}
+          {% assign model = first_model %}
+        {% endif %}
+        {% if model %}
+          <button
+            class="product-gallery--viewinyourspace"
+            data-shopify-xr
+            data-shopify-model3d-id="{{ model.id }}"
+            data-shopify-title="{{ product.title }}"
+            data-shopify-xr-hidden
+          >
+            {% render 'icon' with 'ar' %}
+            {{ 'products.media.view_in_your_space' | t }}
+          </button>
+        {% endif %}
+        </figure>
+        {% assign image_counter = image_counter | plus: 1 %}
+      {% endif %}
+    {% endfor %}
 
-          {% case media.media_type %}
-          {% when 'model' %}
-            {% render 'icon' with 'model-thumb' %}
-          {% when 'video' %}
-            {% render 'icon' with 'play-thumb' %}
-          {% when 'external_video' %}
-            {% render 'icon' with 'play-thumb' %}
-          {% endcase %}
-        </button>
+    {% if enable_image_zoom %}
+      {% assign ps_images = product.media | where: "media_type", "image"  %}
+      {% render 'photoswipe', ps_images: ps_images %}
+    {% endif %}
+  </div>
+
+  {% if gallery_layout != 'list' and product.media.size > 1 %}
+    <div
+      class="product-gallery--navigation"
+      data-product-gallery-navigation
+    >
+      {% for media in product.media %}
+        {% if media.media_type == 'image' and forloop.index0 < 4 %}
+          <button
+            class="
+              product-gallery--media-thumbnail
+              product-gallery--{{ media.media_type }}-thumbnail
+            "
+            type="button"
+            tab-index="0"
+            aria-label="{{ media.alt }} {{ 'general.accessibility.nav_product_thumbnail' | t }}"
+            data-product-gallery-thumbnail="{{ forloop.index0 }}"
+            data-product-gallery-selected="{%- if selected_media.id == media.id -%}true{%- else -%}false{%- endif -%}"
+            data-media="{{ media.id }}"
+            data-media-type="{{ media.media_type }}"
+          >
+            {%
+              render 'rimg'
+              img: media.preview_image,
+              size: '100x100',
+            %}
+
+            {% case media.media_type %}
+            {% when 'model' %}
+              {% render 'icon' with 'model-thumb' %}
+            {% when 'video' %}
+              {% render 'icon' with 'play-thumb' %}
+            {% when 'external_video' %}
+              {% render 'icon' with 'play-thumb' %}
+            {% endcase %}
+          </button>
+        {% endif %}
       {% endfor %}
     </div>
   {% endif %}
