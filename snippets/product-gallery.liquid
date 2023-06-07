@@ -68,29 +68,29 @@
             </div>
           </figure>
           {% assign image_counter = image_counter | plus: 1 %}
-        {% elsif selected_media.id == media.id %}
-          <figure
-            class="product-gallery--viewport--figure"
-            tabindex="-1"
-            {% if gallery_layout != 'list' %}
-              aria-hidden="false"
-            {% endif %}
-            data-product-gallery-figure="{{ forloop.index0 }}"
-            data-product-gallery-selected="true"
-            data-media="{{ media.id }}"
-            data-media-type="{{ media.media_type }}"
-          >
-            <div class="product-gallery--media-wrapper">
-              {% capture data_attr %}
-                {% if enable_image_zoom %}data-image-zoom="{{ media.id }}"{% endif %}
-              {% endcapture %}
-              {% render 'rimg' img: media.preview_image, size: '1024x1024', attr: data_attr %}
-              {% if show_media_borders %}
-                <div class="product-gallery--border-overlay"></div>
-              {% endif %}
-            </div>
-          </figure>
         {% endif %}
+      {% elsif selected_media.id == media.id %}
+        <figure
+          class="product-gallery--viewport--figure"
+          tabindex="-1"
+          {% if gallery_layout != 'list' %}
+            aria-hidden="false"
+          {% endif %}
+          data-product-gallery-figure="{{ forloop.index0 }}"
+          data-product-gallery-selected="true"
+          data-media="{{ media.id }}"
+          data-media-type="{{ media.media_type }}"
+        >
+          <div class="product-gallery--media-wrapper">
+            {% capture data_attr %}
+              {% if enable_image_zoom %}data-image-zoom="{{ media.id }}"{% endif %}
+            {% endcapture %}
+            {% render 'rimg' img: media.preview_image, size: '1024x1024', attr: data_attr %}
+            {% if show_media_borders %}
+              <div class="product-gallery--border-overlay"></div>
+            {% endif %}
+          </div>
+        </figure>
       {% endif %}
     {% endfor %}
 
