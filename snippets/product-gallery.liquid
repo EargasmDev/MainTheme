@@ -33,7 +33,7 @@
     "
     data-product-gallery-viewport
   >
-    {% assign models = product_media | where: 'media_type', 'model' %}
+    {% assign models = product.media | where: 'media_type', 'model' %}
     {%- if models.size > 0 -%}
       <script>
         window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)}
