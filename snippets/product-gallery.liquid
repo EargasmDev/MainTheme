@@ -41,13 +41,13 @@
     {% assign first_model = models | first %}
     {% assign image_counter = 0 %}
     {% for media in product.media %}
-      {% if media.media_type == 'image' and image_counter < 4 %}
+      {% if media.media_type == 'image' %}
         <figure
           class="product-gallery--viewport--figure"
           tabindex="-1"
           {% if gallery_layout != 'list' %}
             {% if selected_media.id != media.id %}
-              aria-hidden="true"
+              {% if image_counter > 3 %}aria-hidden="true"{% endif %}
             {% else %}
               aria-hidden="false"
             {% endif %}
@@ -116,7 +116,7 @@
       data-product-gallery-navigation
     >
       {% for media in product.media %}
-        {% if media.media_type == 'image' and forloop.index0 < 4 %}
+        {% if media.media_type == 'image' %}
           <button
             class="
               product-gallery--media-thumbnail
