@@ -40,6 +40,14 @@
     {%- endif -%}
     {% assign first_model = models | first %}
     {% for media in product.media %}
+
+      {% assign image_counter = 0 %}
+{% for media in product.media %}
+  {% if media.media_type == 'image' and image_counter < 4 %}
+    <!-- Code to display each image goes here -->
+    {% assign image_counter = image_counter | plus: 1 %}
+  {% endif %}
+{% endfor %}
       <figure
         class="product-gallery--viewport--figure"
         tabindex="-1"
