@@ -44,7 +44,8 @@
       {% if media.media_type == 'image' %}
         {% if image_counter < 4 %}
           {% assign is_selected = false %}
-          {% if selected_media.id == media.id %}
+          {% if selected_variant.image.id == media.id or (media.variant_ids contains selected_variant.id and media.media_type != 'image') %}
+
             {% assign is_selected = true %}
           {% endif %}
           <figure
