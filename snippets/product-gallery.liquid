@@ -51,9 +51,9 @@
             class="product-gallery--viewport--figure"
             tabindex="-1"
             {% if gallery_layout != 'list' %}
-              {% if not is_selected %}
+              {% unless is_selected %}
                 aria-hidden="true"
-              {% endif %}
+              {% endunless %}
             {% endif %}
             data-product-gallery-figure="{{ forloop.index0 }}"
             data-product-gallery-selected="{%- if is_selected -%}true{%- else -%}false{%- endif -%}"
@@ -85,9 +85,6 @@
           data-media-type="{{ media.media_type }}"
         >
           <div class="product-gallery--media-wrapper">
-            {% capture data_attr %}
-              {% if enable_image_zoom %}data-image-zoom="{{ media.id }}"{% endif %}
-            {% endcapture %}
             {% case media.media_type %}
               {% when 'model' %}{{ media | model_viewer_tag: image_size: '1024x', reveal: 'interaction', toggleable: true, interaction-prompt-threshold: 0 }}
               {% when 'video' %}{{ media | media_tag: image_size: '1024x' }}
@@ -98,23 +95,6 @@
               <div class="product-gallery--border-overlay"></div>
             {% endif %}
           </div>
-          {% if media.media_type == 'model' %}
-            {% assign model = media %}
-          {% else %}
-            {% assign model = first_model %}
-          {% endif %}
-          {% if model %}
-            <button
-              class="product-gallery--viewinyourspace"
-              data-shopify-xr
-              data-shopify-model3d-id="{{ model.id }}"
-              data-shopify-title="{{ product.title }}"
-              data-shopify-xr-hidden
-            >
-              {% render 'icon' with 'ar' %}
-              {{ 'products.media.view_in_your_space' | t }}
-            </button>
-          {% endif %}
         </figure>
       {% endif %}
     {% endfor %}
