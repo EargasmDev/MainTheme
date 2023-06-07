@@ -43,7 +43,10 @@
     {% for media in product.media %}
       {% if media.media_type == 'image' %}
         {% if image_counter < 4 %}
-          {% assign is_selected = selected_media.id == media.id %}
+          {% assign is_selected = false %}
+          {% if selected_media.id == media.id %}
+            {% assign is_selected = true %}
+          {% endif %}
           <figure
             class="product-gallery--viewport--figure"
             tabindex="-1"
@@ -69,7 +72,7 @@
           </figure>
           {% assign image_counter = image_counter | plus: 1 %}
         {% endif %}
-      {% elsif selected_media.id == media.id %}
+      {% elsif media.media_type != 'image' and selected_media.id == media.id %}
         <figure
           class="product-gallery--viewport--figure"
           tabindex="-1"
@@ -85,11 +88,33 @@
             {% capture data_attr %}
               {% if enable_image_zoom %}data-image-zoom="{{ media.id }}"{% endif %}
             {% endcapture %}
-            {% render 'rimg' img: media.preview_image, size: '1024x1024', attr: data_attr %}
+            {% case media.media_type %}
+              {% when 'model' %}{{ media | model_viewer_tag: image_size: '1024x', reveal: 'interaction', toggleable: true, interaction-prompt-threshold: 0 }}
+              {% when 'video' %}{{ media | media_tag: image_size: '1024x' }}
+              {% when 'external_video' %}{{ media | media_tag: image_size: '1024x' }}
+              {% else %}{{ media | media_tag }}
+            {% endcase %}
             {% if show_media_borders %}
               <div class="product-gallery--border-overlay"></div>
             {% endif %}
           </div>
+          {% if media.media_type == 'model' %}
+            {% assign model = media %}
+          {% else %}
+            {% assign model = first_model %}
+          {% endif %}
+          {% if model %}
+            <button
+              class="product-gallery--viewinyourspace"
+              data-shopify-xr
+              data-shopify-model3d-id="{{ model.id }}"
+              data-shopify-title="{{ product.title }}"
+              data-shopify-xr-hidden
+            >
+              {% render 'icon' with 'ar' %}
+              {{ 'products.media.view_in_your_space' | t }}
+            </button>
+          {% endif %}
         </figure>
       {% endif %}
     {% endfor %}
@@ -101,11 +126,17 @@
   </div>
 
   {% if gallery_layout != 'list' and product.media.size > 1 %}
-    <div class="product-gallery--navigation" data-product-gallery-navigation>
+    <div
+      class="product-gallery--navigation"
+      data-product-gallery-navigation
+    >
       {% for media in product.media %}
         {% if media.media_type == 'image' and forloop.index0 < 4 %}
           <button
-            class="product-gallery--media-thumbnail product-gallery--{{ media.media_type }}-thumbnail"
+            class="
+              product-gallery--media-thumbnail
+              product-gallery--{{ media.media_type }}-thumbnail
+            "
             type="button"
             tab-index="0"
             aria-label="{{ media.alt }} {{ 'general.accessibility.nav_product_thumbnail' | t }}"
@@ -114,11 +145,19 @@
             data-media="{{ media.id }}"
             data-media-type="{{ media.media_type }}"
           >
-            {% render 'rimg' img: media.preview_image, size: '100x100' %}
+            {%
+              render 'rimg'
+              img: media.preview_image,
+              size: '100x100',
+            %}
+
             {% case media.media_type %}
-              {% when 'model' %}{% render 'icon' with 'model-thumb' %}
-              {% when 'video' %}{% render 'icon' with 'play-thumb' %}
-              {% when 'external_video' %}{% render 'icon' with 'play-thumb' %}
+            {% when 'model' %}
+              {% render 'icon' with 'model-thumb' %}
+            {% when 'video' %}
+              {% render 'icon' with 'play-thumb' %}
+            {% when 'external_video' %}
+              {% render 'icon' with 'play-thumb' %}
             {% endcase %}
           </button>
         {% endif %}
