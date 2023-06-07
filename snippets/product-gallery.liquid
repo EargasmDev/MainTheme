@@ -44,30 +44,45 @@
       {% if media.media_type == 'image' %}
         {% if image_counter < 4 %}
           {% assign is_selected = false %}
-{% if selected_variant.image.id == media.id %}
-  {% assign is_selected = true %}
-{% elsif media.variant_ids contains selected_variant.id and media.media_type != 'image' %}
-  {% assign is_selected = true %}
-{% endif %}
+          {% if selected_variant.image.id == media.id %}
+            {% assign is_selected = true %}
+          {% elsif media.variant_ids contains selected_variant.id and media.media_type != 'image' %}
+            {% assign is_selected = true %}
+          {% endif %}
 
-<figure
-  class="product-gallery--viewport--figure"
-  tabindex="-1"
-  {% if gallery_layout != 'list' %}
-    {% unless is_selected %}
-      aria-hidden="true"
-    {% endunless %}
-  {% endif %}
-  data-product-gallery-figure="{{ forloop.index0 }}"
-  data-product-gallery-selected="{%- if is_selected -%}true{%- else -%}false{%- endif -%}"
-  data-media="{{ media.id }}"
-  data-media-type="{{ media.media_type }}"
->
+          {% assign is_hidden_image = false %}
+          {% for hidden_image_id in product.hidden_image_ids %}
+            {% if hidden_image_id == media.id %}
+              {% assign is_hidden_image = true %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+
+          <figure
+            class="product-gallery--viewport--figure"
+            tabindex="-1"
+            {% if gallery_layout != 'list' %}
+              {% unless is_selected %}
+                aria-hidden="true"
+              {% endunless %}
+            {% endif %}
+            data-product-gallery-figure="{{ forloop.index0 }}"
+            data-product-gallery-selected="{%- if is_selected -%}true{%- else -%}false{%- endif -%}"
+            data-media="{{ media.id }}"
+            data-media-type="{{ media.media_type }}"
+          >
             <div class="product-gallery--media-wrapper">
-              {% capture data_attr %}
-                {% if enable_image_zoom %}data-image-zoom="{{ media.id }}"{% endif %}
-              {% endcapture %}
-              {% render 'rimg' img: media.preview_image, size: '1024x1024', attr: data_attr %}
+              {% if is_hidden_image %}
+                <!-- Display placeholder or fallback image for hidden image -->
+                <!-- Replace this with your desired content -->
+                <img src="{{ 'placeholder-image.jpg' | asset_url }}" alt="Hidden Image">
+              {% else %}
+                {% capture data_attr %}
+                  {% if enable_image_zoom %}data-image-zoom="{{ media.id }}"{% endif %}
+                {% endcapture %}
+                {% render 'rimg' img: media.preview_image, size: '1024x1024', attr: data_attr %}
+              {% endif %}
+
               {% if show_media_borders %}
                 <div class="product-gallery--border-overlay"></div>
               {% endif %}
