@@ -101,17 +101,11 @@
   </div>
 
   {% if gallery_layout != 'list' and product.media.size > 1 %}
-    <div
-      class="product-gallery--navigation"
-      data-product-gallery-navigation
-    >
+    <div class="product-gallery--navigation" data-product-gallery-navigation>
       {% for media in product.media %}
         {% if media.media_type == 'image' and forloop.index0 < 4 %}
           <button
-            class="
-              product-gallery--media-thumbnail
-              product-gallery--{{ media.media_type }}-thumbnail
-            "
+            class="product-gallery--media-thumbnail product-gallery--{{ media.media_type }}-thumbnail"
             type="button"
             tab-index="0"
             aria-label="{{ media.alt }} {{ 'general.accessibility.nav_product_thumbnail' | t }}"
@@ -120,19 +114,11 @@
             data-media="{{ media.id }}"
             data-media-type="{{ media.media_type }}"
           >
-            {%
-              render 'rimg'
-              img: media.preview_image,
-              size: '100x100',
-            %}
-
+            {% render 'rimg' img: media.preview_image, size: '100x100' %}
             {% case media.media_type %}
-            {% when 'model' %}
-              {% render 'icon' with 'model-thumb' %}
-            {% when 'video' %}
-              {% render 'icon' with 'play-thumb' %}
-            {% when 'external_video' %}
-              {% render 'icon' with 'play-thumb' %}
+              {% when 'model' %}{% render 'icon' with 'model-thumb' %}
+              {% when 'video' %}{% render 'icon' with 'play-thumb' %}
+              {% when 'external_video' %}{% render 'icon' with 'play-thumb' %}
             {% endcase %}
           </button>
         {% endif %}
