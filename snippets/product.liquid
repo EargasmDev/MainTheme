@@ -391,7 +391,9 @@ $(window).bind("pageshow", function(event) {
                 {% endif %}
         
         {% endif %}
-        
+
+        <!-- Juo Subscription Widget -->
+        {%- render 'juo-widget', block: block, product: product %}
         
         <!-- load add to cart only when page loads -->
        <script>

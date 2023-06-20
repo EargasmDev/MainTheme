@@ -38,7 +38,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
  {%- render 'layouthub_header' -%}
   {% include 'shop-sheriff-amp' %}
-{%- render 'bold-ro-init' -%} 
  
    
   
@@ -104,12 +103,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {% render 'usf' %}
 
 {% render 'globo.alsobought.script' %}
-{%- render 'bold-options-hybrid' -%}
-{%- render 'bold-common' -%}
 {%- render 'sc-includes' -%}
-{%- render 'bold-includes' -%}
 {% if template == 'product' and product.metafields.inventory.ShappifyHidden or product.type contains '_HIDDEN_' %}<meta name='robots' content='noindex'>{% endif %}
-   {%- include 'bold-product' with product, hide_action: 'header' -%}
     
 
 
@@ -127,13 +122,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <!-- Theme CSS -->
   <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
-    {{ 'bold-msp.css' | asset_url | stylesheet_tag }}
-{{ 'bold.css' | asset_url | stylesheet_tag }}
 
   <!-- Store object -->
   {% render 'theme-options' %}
   
-       {% include 'bold-checkout-fix' %}
 
     
   <script type="text/javascript">
@@ -614,19 +606,6 @@ document.addEventListener("userway:init_completed", function(event) {
 
  
 <div data-app="mm" data-product="{{product.id}}"></div>
-<script>
-  if(window.BOLD && BOLD.common){
-    var variant = document.querySelectorAll('.option-value');
-    for (var i = 0; i < variant.length; i++) {
-      variant[i].addEventListener('click', e => {
-        setTimeout(function(){
-          BOLD.common.eventEmitter.emit("BOLD_COMMON_variant_changed");
-          console.log('variant changed');
-        }, 200);
-      });
-    }
-  }
-</script>
 
 <script async src="https://cdn.rebuyengine.com/onsite/js/rebuy.js?shop={{ shop.permanent_domain }}"></script>
 
