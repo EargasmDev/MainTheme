@@ -3,8 +3,14 @@
  You SHOULD NOT modify source code in this page because
  It is automatically generated from LayoutHub
  {% endcomment %} 
- 
  <div class="lh-sections-wrapper" data-id="60de4c936bfd72139f10af72" data-type="collection">
+{% comment %}
+ LayoutHub (https://layouthub.com)
+ You SHOULD NOT modify source code in this page because
+ It is automatically generated from LayoutHub
+ {% endcomment %} 
+ <div class="lh-sections-wrapper" data-id="60de4c936bfd72139f10af72" data-type="collection">
+  
 <section id="" data-section-id="y84x8nistjg" data-section="collection-24" data-dev="trong-dai" data-lh-page-id="1345" data-lh-page-name="Koka" data-layouthub="section">  
  {%- if 'eargasm-product-line' != ""-%}
 					{%- assign tpl =  template | replace: '.', ' ' | truncatewords: 1, '' | handle  -%}
@@ -69,9 +75,226 @@
 		 {%- endif -%}<div class="lh-wrapper lh-collection-page lh-sidebar-yes lh-sidebar-left" data-team="The4" data-hub-attr-state="class%3D%22lh-wrapper%20lh-collection-page%20lh-sidebar-%257B%253A%257Bsection.settings.use_sidebar%257D%253A%257D%20lh-sidebar-%257B%253A%257Bsection.settings.style_sidebar%257D%253A%257D%22%20data-team%3D%22The4%22"  data-hub-attr-use_sidebar  data-hub-attr-style_sidebar >
   <div class="lh-wrapper-container">
       <div id="qab_placeholder"></div>
-     
+
+ 
+<!--   BEGINNING OF THE BANNER   -->
+
+{% assign col_bg = 'https://cdn.shopify.com/s/files/1/1124/3298/t/50/assets/col77lectionbanner-website9_EbtC.png?v=1636613577' %}
+{%- for tag in current_tags -%}
+
+	{%- if tag == 'concerts' -%}
+		{% assign col_tag = 'concerts' %}
+        {% assign col_bg = 'https://cdn.shopify.com/s/files/1/1124/3298/files/Concert_Collection_Banner_copy.webp?v=1659998426' %}
+        {% assign col_txt = 'Hear the Music | Not the Noise' %}
+
+{% comment %}
+Michael - Code for individual collection
+{% endcomment %}
+<div class="lh-banner" style="background: #ffffff url({{ col_bg }}) center no-repeat ; background-size: cover" data-hub-attr-bg_banner="" data-lh-image-helper="bg_banner" > 
+     <div class="lh-container">
+            <h1 class="lh-banner-title"  spellcheck="false" data-lhi="banner_title" data-lh-lang="" style="color:white; text-shadow: 3px 3px 5px black; text-align: center; font-weight:600; margin: auto; margin-top: 1rem; text-transform: uppercase">{{ col_tag }}</h1>
+        </div>
+    </div>
+ <div class="subtextConcerts" style="text-align: center; color: black; margin: auto; margin-top: 2rem; font-weight:600; width: 93%; font-size: 2rem">{{ col_txt }} </div>
+  {% comment %}  <h1 style="text-align: center; margin: auto; margin-top: 2rem; font-weight:600; width: 180%; font-size: 2rem">{{ col_txt }}</h1> {% endcomment %}
+
+
+    {%- elsif tag == 'musicians' -%}
+		{% assign col_tag = 'musicians' %}
+        {% assign col_bg = 'https://cdn.shopify.com/s/files/1/1124/3298/files/Musician_Collection_Banner_copy.webp?v=1659998426' %}
+        {% assign col_txt = 'Perform and Rehearse Safely | Maximum Sound Clarity' %}
+
+{% comment %}
+Michael - Code for individual collection
+{% endcomment %}
+<div class="lh-banner" style="background: #ffffff url({{ col_bg }}) center no-repeat ; background-size: cover" data-hub-attr-bg_banner="" data-lh-image-helper="bg_banner" > 
+     <div class="lh-container">
+            <h1 class="lh-banner-title"  spellcheck="false" data-lhi="banner_title" data-lh-lang="" style="color:white; text-shadow: 3px 3px 5px black; text-align: center; font-weight:600; margin: auto; margin-top: 1rem; text-transform: uppercase">{{ col_tag }}</h1>
+        </div>
+    </div>
+ <div class="subtextMusicians" style="text-align: center; color: black; margin: auto; margin-top: 2rem; font-weight:600; width: 93%; font-size: 2rem">{{ col_txt }} </div>
+  {% comment %}  <h1 style="text-align: center; margin: auto; margin-top: 2rem; font-weight:600; width: 80%; font-size: 2rem">{{ col_txt }}</h1> {% endcomment %}
+
+
+
+
+    {%- elsif tag == 'motorcyclists' -%}
+		{% assign col_tag = 'on the road' %}
+        {% assign col_bg = 'https://cdn.shopify.com/s/files/1/1124/3298/files/Motorcycle_Collection_Banner_copy.webp?v=1659998426' %}
+        {% assign col_txt = 'Reduce Wind and Road Noise | Enjoy the Ride' %}
+
+{% comment %}
+Michael - Code for individual collection
+{% endcomment %}
+<div class="lh-banner" style="background: #ffffff url({{ col_bg }}) center no-repeat ; background-size: cover" data-hub-attr-bg_banner="" data-lh-image-helper="bg_banner" > 
+     <div class="lh-container">
+            <h1 class="lh-banner-title"  spellcheck="false" data-lhi="banner_title" data-lh-lang="" style="color:white; text-shadow: 3px 3px 5px black; text-align: center; font-weight:600; margin: auto; margin-top: 1rem; text-transform: uppercase">{{ col_tag }}</h1>
+        </div>
+    </div>
+ <div class="subtextMoto" style="text-align: center; color: black; margin: auto; margin-top: 2rem; font-weight:600; width: 93%; font-size: 2rem">{{ col_txt }} </div>
+  {% comment %}  <h1 style="text-align: center; margin: auto; margin-top: 2rem; font-weight:600; width: 80%; font-size: 2rem">{{ col_txt }}</h1> {% endcomment %}
+
+
+
+    {%- elsif tag == 'sleeping' -%}
+		{% assign col_tag = 'sleeping' %}
+        {% assign col_bg = 'https://cdn.shopify.com/s/files/1/1124/3298/files/Sleep_Collection_Banner_copy_651a8c8b-9d64-4b0d-a0de-bb4d9b8fcb55.webp?v=1660084041' %}
+        {% assign col_txt = "Maximum Noise Reduction | Get a Good Night's Rest" %}
+
+{% comment %}
+Michael - Code for individual collection
+{% endcomment %}
+<div class="lh-banner" style="background: #ffffff url({{ col_bg }}) center no-repeat ; background-size: cover" data-hub-attr-bg_banner="" data-lh-image-helper="bg_banner" > 
+     <div class="lh-container">
+            <h1 class="lh-banner-title" spellcheck="false" data-lhi="banner_title" data-lh-lang="" style="color:white; text-shadow: 3px 3px 5px black; text-align: center; font-weight:600; margin: auto; margin-top: 1rem; text-transform: uppercase">{{ col_tag }}</h1>
+        </div>
+    </div>
+ <div class="subtextSleep" style="text-align: center; color: black; margin: auto; margin-top: 2rem; font-weight:600; width: 93%; font-size: 2rem">{{ col_txt }} </div>
+  {% comment %}  <h1 style="text-align: center; margin: auto; margin-top: 2rem; font-weight:600; width: 80%; font-size: 2rem">{{ col_txt }}</h1> {% endcomment %}
+
+
+
+
+    {%- elsif tag == 'noise sensitivities' -%}
+		{% assign col_tag = 'noise sensitivities' %}
+        {% assign col_bg = 'https://cdn.shopify.com/s/files/1/1124/3298/files/Noise_Sensitivity_Collection_Banner_copy_ae6d8d62-df42-4503-8074-e7b3939240cf.webp?v=1660080424' %}
+        {% assign col_txt = 'Remove Unnecessary Noise | Remain Focused' %}
+
+{% comment %}
+Michael - Code for individual collection
+{% endcomment %}
+<div class="lh-banner" style="background: #ffffff url({{ col_bg }}) center no-repeat ; background-size: cover" data-hub-attr-bg_banner="" data-lh-image-helper="bg_banner" > 
+     <div class="lh-container">
+            <h1 class="lh-banner-title" spellcheck="false" data-lhi="banner_title" data-lh-lang="" style="color:white; text-shadow: 3px 3px 5px black; text-align: center; font-weight:600; margin: auto; margin-top: 1rem; text-transform: uppercase">{{ col_tag }}</h1>
+        </div>
+    </div>
+ <div class="subtextNoise" style="text-align: center; color: black; margin: auto; margin-top: 2rem; font-weight:600; width: 93%; font-size: 2rem">{{ col_txt }} </div>
+  {% comment %}  <h1 style="text-align: center; margin: auto; margin-top: 2rem; font-weight:600; width: 80%; font-size: 2rem">{{ col_txt }}</h1> {% endcomment %}
+
+
+
+
+    {%- elsif tag == 'child friendly' -%}
+		{% assign col_tag = 'child friendly' %}
+        {% assign col_bg = 'https://cdn.shopify.com/s/files/1/1124/3298/files/Child_Friendly_Collection_Banner_copy.webp?v=1659998426' %}
+        {% assign col_txt = 'For the Little Ones | Protecting Your Ears Starts Early' %}
+
+{% comment %}
+Michael - Code for individual collection
+{% endcomment %}
+<div class="lh-banner" style="background: #ffffff url({{ col_bg }}) center no-repeat ; background-size: cover" data-hub-attr-bg_banner="" data-lh-image-helper="bg_banner" > 
+     <div class="lh-container">
+            <h1 class="lh-banner-title"  spellcheck="false" data-lhi="banner_title" data-lh-lang="" style="color:white; text-shadow: 3px 3px 5px black; text-align: center; font-weight:600; margin: auto; margin-top: 1rem; text-transform: uppercase">{{ col_tag }}</h1>
+        </div>
+    </div>
+ <div class="subtextChild" style="text-align: center; color: black; margin: auto; margin-top: 2rem; font-weight:600; width: 93%; font-size: 2rem">{{ col_txt }} </div>
+  {% comment %}  <h1 style="text-align: center; margin: auto; margin-top: 2rem; font-weight:600; width: 100%; font-size: 2rem">{{ col_txt }}</h1> {% endcomment %}
+
+
+
+
+    {%- elsif tag == 'traveling' -%}
+		{% assign col_tag = 'traveling' %}
+        {% assign col_bg = 'https://cdn.shopify.com/s/files/1/1124/3298/files/Travel_Collection_Banner_copy.webp?v=1659998426' %}
+        {% assign col_txt = 'Reduce Ear Pain During Flight | Stress Free Travel' %}
+
+{% comment %}
+Michael - Code for individual collection
+{% endcomment %}
+<div class="lh-banner" style="background: #ffffff url({{ col_bg }}) center no-repeat; background-size: cover" data-hub-attr-bg_banner="" data-lh-image-helper="bg_banner" > 
+     <div class="lh-container" >
+            <h1 class="lh-banner-title"  spellcheck="false" data-lhi="banner_title" data-lh-lang="" style="color:white; text-shadow: 3px 3px 5px black; text-align: center; font-weight:600; margin: auto; margin-top: 1rem; text-transform: uppercase">{{ col_tag }}</h1>
+        </div>
+    </div>
+ <div class="subtextTravel" style="text-align: center; color: black; margin: auto; margin-top: 2rem; font-weight:600; width: 93%; font-size: 2rem">{{ col_txt }} </div>
+  {% comment %}  <h1 style="text-align: center; margin: auto; margin-top: 2rem; font-weight:600; width: 100%; font-size: 2rem">{{ col_txt }}</h1> {% endcomment %}
+
+
+
+
+    {%- elsif tag == 'construction' -%}
+		{% assign col_tag = 'construction' %}
+        {% assign col_bg = 'https://cdn.shopify.com/s/files/1/1124/3298/files/Construction_Collection_Banner_copy_efe6296e-920e-4f21-9e24-8d1524c3621d.webp?v=1660080425' %}
+        {% assign col_txt = 'Reduce Loud Noises | For Use With Machinery and Tools' %}
+
+{% comment %}
+Michael - Code for individual collection
+{% endcomment %}
+<div class="lh-banner" style="background: #ffffff url({{ col_bg }}) center no-repeat ; background-size: cover" data-hub-attr-bg_banner="" data-lh-image-helper="bg_banner" > 
+     <div class="lh-container">
+            <h1 class="lh-banner-title"  spellcheck="false" data-lhi="banner_title" data-lh-lang="" style="color:white; text-shadow: 3px 3px 5px black; text-align: center; font-weight:600; margin: auto; margin-top: 1rem; text-transform: uppercase">{{ col_tag }}</h1>
+        </div>
+    </div>
+ <div class="subtextCon" style="text-align: center; color: black; margin: auto; margin-top: 2rem; font-weight:600; width: 93%; font-size: 2rem">{{ col_txt }} </div>
+  {% comment %}  <h1 style="text-align: center; margin: auto; margin-top: 2rem; font-weight:600; width: 100%; font-size: 2rem">{{ col_txt }}</h1> {% endcomment %}
+
+
+
+    {%- elsif tag == 'swimming' -%}
+		{% assign col_tag = 'swimming' %}
+        {% assign col_bg = 'https://cdn.shopify.com/s/files/1/1124/3298/files/Swimming_Collection_Banner_Test_22b94d84-4f9e-49c8-8457-d65fc499a0ed.png?v=1659986282' %}
+        {% assign col_txt = 'Sound in | Water Out' %}
+
+{% comment %}
+Michael - Code for individual collection
+{% endcomment %}
+<div class="lh-banner" style="background: #ffffff url({{ col_bg }}) center no-repeat ; background-size: cover" data-hub-attr-bg_banner="" data-lh-image-helper="bg_banner" > 
+     <div class="lh-container">
+            <h1 class="lh-banner-title"  spellcheck="false" data-lhi="banner_title" data-lh-lang="" style="color:white; text-shadow: 3px 3px 5px black; text-align: center; font-weight:600; margin: auto; margin-top: 1rem; text-transform: uppercase">{{ col_tag }}</h1>
+        </div>
+    </div>
+ <div class="subtextSwim" style="text-align: center; color: black; margin: auto; margin-top: 2rem; font-weight:600; width: 93%; font-size: 2rem">{{ col_txt }} </div>
+  {% comment %}  <h1 style="text-align: center; margin: auto; margin-top: 2rem; font-weight:600; width: 100%; font-size: 2rem">{{ col_txt }}</h1> {% endcomment %}
+
+
+
+
+   
+    {%- elsif tag == 'shooting' -%}
+		{% assign col_tag = 'shooting' %}
+        {% assign col_bg = 'https://cdn.shopify.com/s/files/1/1124/3298/files/Shooting_Collection_Banner_copy.webp?v=1659998426' %}
+        {% assign col_txt = 'For the Range and Hunting | Impulse Noise Reduction' %}
+{% comment %}
+Michael - Code for individual collection
+{% endcomment %}
+<div class="lh-banner" style="background: #ffffff url({{ col_bg }}) center no-repeat ; background-size: cover" data-hub-attr-bg_banner="" data-lh-image-helper="bg_banner" > 
+     <div class="lh-container">
+            <h1 class="lh-banner-title"  spellcheck="false" data-lhi="banner_title" data-lh-lang="" style="color:white; text-shadow: 3px 3px 5px black; text-align: center; font-weight:600; margin: auto; margin-top: 1rem; text-transform: uppercase">{{ col_tag }}</h1>
+        </div>
+    </div>
+ <div class="subtextShoot" style="text-align: center; color: black; margin: auto; margin-top: 2rem; font-weight:600; width: 93%; font-size: 2rem">{{ col_txt }} </div>
+  {% comment %}  <h1 style="text-align: center; margin: auto; margin-top: 2rem; font-weight:600; width: 100%; font-size: 2rem">{{ col_txt }}</h1> {% endcomment %}
+
+
+       {%- elsif tag == 'bundles' -%}
+		{% assign col_tag = 'bundles' %}
+        {% assign col_bg = 'https://cdn.shopify.com/s/files/1/1124/3298/files/Banner_Bundle-Collections_20221220_2.jpg?v=1671570698' %}
+        {% assign col_txt = 'Bundle Deals | Maximum Savings' %}
+{% comment %}
+Michael - Code for individual collection
+{% endcomment %}
+<div class="lh-banner" style="background: #ffffff url({{ col_bg }}) center no-repeat ; background-size: cover" data-hub-attr-bg_banner="" data-lh-image-helper="bg_banner" > 
+     <div class="lh-container">
+            <h1 class="lh-banner-title"  spellcheck="false" data-lhi="banner_title" data-lh-lang="" style="color:white; text-shadow: 3px 3px 5px black; text-align: center; font-weight:600; margin: auto; margin-top: 1rem; text-transform: uppercase">{{ col_tag }}</h1>
+        </div>
+    </div>
+ <div class="subtextBundles" style="text-align: center; color: black; margin: auto; margin-top: 2rem; font-weight:600; width: 93%; font-size: 2rem">{{ col_txt }} </div>
+  {% comment %}  <h1 style="text-align: center; margin: auto; margin-top: 2rem; font-weight:600; width: 100%; font-size: 2rem">{{ col_txt }}</h1> {% endcomment %}
+
+
+
+    {%- else -%}
+      {% assign col_bg = 'https://cdn.shopify.com/s/files/1/1124/3298/t/50/assets/collectionbanner-website9_EbtC.png?v=1636613577' %}
+	{%- break -%}
+	{%- endif -%}
+  
+{%- endfor -%}
 
      
+    
+<!-- END OF THE BANNER -->
+
+    
     <div class="lh-container">
       <div class="lh-top-collection">
         <div class="lh-row">
@@ -136,7 +359,7 @@
 										{%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
 												replace:'\/','/' |
 												replace:'%20',' ' |
-												replace:'\\\\\\\\\\\\\\\\u0026','&'
+												replace:'\\u0026','&'
 										-%}
 										{%- assign view = '' -%}
 										{%- if pageUrl contains 'view=' -%}
@@ -193,6 +416,22 @@
 												{{  tag | link_to_add_tag:  tag_down  | replace_first: '>',' class="" >'}}
 											{% endif %}
 										</li>
+                                  {% assign tag =  ' Festival Collabs' | strip %}
+										{% assign tag_down =  tag | downcase %}
+										{% assign tag_handle = tag | handleize %}
+										<li class="lh-item-filter" data-tag="{{tag | escape}}" data-handle="{{tag_handle}}">
+											{% assign tag_filter = blank %}
+											{% if current_tags contains tag_down %}
+												{% assign tag_filter = tag_down %}
+											{% elsif current_tags contains tag_handle %}
+												{% assign tag_filter = tag_handle %}
+											{% endif %}
+											{% if tag_filter != blank %}
+												{{  tag |  link_to_remove_tag:  tag_filter  | replace_first: '>',' class="active" >' }}
+											{% else %}
+												{{  tag | link_to_add_tag:  tag_down  | replace_first: '>',' class="" >'}}
+											{% endif %}
+										</li>
 									 {% assign tag =  '  Accessories' | strip %}
 										{% assign tag_down =  tag | downcase %}
 										{% assign tag_handle = tag | handleize %}
@@ -209,6 +448,7 @@
 												{{  tag | link_to_add_tag:  tag_down  | replace_first: '>',' class="" >'}}
 											{% endif %}
 										</li>
+                                  {% comment %}
 									 {% assign tag =  ' Bundles' | strip %}
 										{% assign tag_down =  tag | downcase %}
 										{% assign tag_handle = tag | handleize %}
@@ -225,6 +465,7 @@
 												{{  tag | link_to_add_tag:  tag_down  | replace_first: '>',' class="" >'}}
 											{% endif %}
 										</li>
+          {% endcomment %}
 									 {% assign tag =  ' Custom Products' | strip %}
 										{% assign tag_down =  tag | downcase %}
 										{% assign tag_handle = tag | handleize %}
@@ -241,22 +482,7 @@
 												{{  tag | link_to_add_tag:  tag_down  | replace_first: '>',' class="" >'}}
 											{% endif %}
 										</li>
-									 {% assign tag =  ' Headphones' | strip %}
-										{% assign tag_down =  tag | downcase %}
-										{% assign tag_handle = tag | handleize %}
-										<li class="lh-item-filter" data-tag="{{tag | escape}}" data-handle="{{tag_handle}}">
-											{% assign tag_filter = blank %}
-											{% if current_tags contains tag_down %}
-												{% assign tag_filter = tag_down %}
-											{% elsif current_tags contains tag_handle %}
-												{% assign tag_filter = tag_handle %}
-											{% endif %}
-											{% if tag_filter != blank %}
-												{{  tag |  link_to_remove_tag:  tag_filter  | replace_first: '>',' class="active" >' }}
-											{% else %}
-												{{  tag | link_to_add_tag:  tag_down  | replace_first: '>',' class="" >'}}
-											{% endif %}
-										</li>
+									 
 									 {% assign tag =  ' Waterproof Products' | strip %}
 										{% assign tag_down =  tag | downcase %}
 										{% assign tag_handle = tag | handleize %}
@@ -524,7 +750,7 @@
 																	{{ tag | link_to_add_tag : tag_down | split: '>' | first | append: ' class=""><span class="lh-color-back" style="background-color:' | append: bg | append : ';color:' | append: bg | append : '"></span>'| append: c | append: '</a>' }}
 															{% endif %}
 														</li>
-													 {% assign tag = 'Gold' | strip %}
+													  {% assign tag = 'Gold' | strip %}
 														{% assign tag_down = tag | downcase %}
 														{% assign tag_handle = tag | handleize   %}
 														<li class="lh-item-filter lh-tooltip_top" data-lh-tooltip="{{tag | escape}}" data-tag="{{tag | escape}}" data-handle="{{tag_handle}}">
@@ -726,6 +952,22 @@
 												{{  tag | link_to_add_tag:  tag_down  | replace_first: '>',' class="" >'}}
 											{% endif %}
 										</li>
+                                  {% assign tag =  'Bundles' | strip %}
+										{% assign tag_down =  tag | downcase %}
+										{% assign tag_handle = tag | handleize %}
+										<li class="lh-item-filter" data-tag="{{tag | escape}}" data-handle="{{tag_handle}}">
+											{% assign tag_filter = blank %}
+											{% if current_tags contains tag_down %}
+												{% assign tag_filter = tag_down %}
+											{% elsif current_tags contains tag_handle %}
+												{% assign tag_filter = tag_handle %}
+											{% endif %}
+											{% if tag_filter != blank %}
+												{{  tag |  link_to_remove_tag:  tag_filter  | replace_first: '>',' class="active" >' }}
+											{% else %}
+												{{  tag | link_to_add_tag:  tag_down  | replace_first: '>',' class="" >'}}
+											{% endif %}
+										</li>
 									 
 								</ul>
 							</div>
@@ -906,6 +1148,7 @@
 							<h4 class="lh-product-title">
 								<a class="" href="{{product.url | with: collection }}">{{ product.title}}</a>
 							</h4>
+               <div class="targetbay_star_container" id="{{product.id}}"></div>
 						
 						{% unless product.tags contains 'headphones-e' %}
 						{% unless product.tags contains 'highfi' %}
@@ -915,6 +1158,12 @@
 							{% unless product.tags contains 'hgold' %}
 							{% unless product.tags contains 'ef2022' %}
 							{% unless product.tags contains 'ccase' %}
+                              {% unless product.tags contains 'ebbundle' %}
+                               {% unless product.tags contains 'ebuddybundle' %}
+                                 {% unless product.tags contains 'festbundle' %}
+                                   {% unless product.tags contains 'daynightbundle' %}
+                                      {% unless product.tags contains 'tbundle' %}
+                                 
 							
 							<div class="lh-price-box">
 								{% if first_variant.compare_at_price > first_variant.price  %}
@@ -929,6 +1178,7 @@
 								
 							</div>
 							{% endunless %}
+                              {% endunless %}
 							{% endunless %}
 								{% endunless %}
 								{% endunless %}
@@ -936,6 +1186,10 @@
 							{% endunless %}
 							{% endunless %}
 							{% endunless %}
+                          {% endunless %}
+                          {% endunless %}
+                          {% endunless %}
+                          {% endunless %}
 								{% if product.tags contains 'headphones-e' %}
 							<div class="lh-price-box">
 								{% if first_variant.compare_at_price > first_variant.price  %}
@@ -949,6 +1203,9 @@
 								
 								
 							</div>
+
+
+                                  
 							{% endif %}
 							
 								{% if product.tags contains 'hgold' %}
@@ -964,6 +1221,81 @@
 								
 								
 							</div>
+
+                               
+							{% endif %}
+							
+								{% if product.tags contains 'ebbundle' %}
+							<div class="lh-price-box">
+								{% if first_variant.compare_at_price > first_variant.price  %}
+									<del>{{ first_variant.compare_at_price | money }}</del>
+								{% endif %}
+									
+									<ins>$ 119.88</ins> 
+								
+									
+								
+								
+								
+							</div>
+                                  {% endif %}
+							
+								{% if product.tags contains 'ebuddybundle' %}
+							<div class="lh-price-box">
+								{% if first_variant.compare_at_price > first_variant.price  %}
+									<del>{{ first_variant.compare_at_price | money }}</del>
+								{% endif %}
+									
+									<ins>$ 109.88</ins> 
+								
+									
+								
+								
+								
+							</div>
+
+                                   {% endif %}
+							
+								{% if product.tags contains 'daynightbundle' %}
+							<div class="lh-price-box">
+								{% if first_variant.compare_at_price > first_variant.price  %}
+									<del>{{ first_variant.compare_at_price | money }}</del>
+								{% endif %}
+									
+									<ins>$ 70.00</ins> 
+								
+									
+								
+								
+								
+							</div>
+
+                                      {% endif %}
+							
+								{% if product.tags contains 'tbundle' %}
+							<div class="lh-price-box">
+								{% if first_variant.compare_at_price > first_variant.price  %}
+									<del>{{ first_variant.compare_at_price | money }}</del>
+								{% endif %}
+									
+									<ins>$ 79.00</ins> 
+								
+									
+								
+								
+								
+							</div>
+
+                                  {% endif %}
+							
+								{% if product.tags contains 'festbundle' %}
+							<div class="lh-price-box">
+								{% if first_variant.compare_at_price > first_variant.price  %}
+									<del>{{ first_variant.compare_at_price | money }}</del>
+								{% endif %}
+									
+									<ins>$ 76.88</ins> 
+                                  </div>
 							{% endif %}
 							
 							
@@ -1088,6 +1420,8 @@
  
   </section>
 </div>
+</div>
  {%schema%} 
 {"locales":{"en":{"y84x8nistjg":{"lh_pcvexl_title":"Current filter","lh_u4i8zz_text":"Clear all","lh_pcvexk_title":"Shop by","lh_pcvexj_title":"Size","lh_pcvexi_title":"Color","lh_pcvexh_title":"Category","lh_pcvexg_title":"Price","lh_sjlit0_soldout":"SOLD OUT","lh_sjlit0_new":"NEW","wishlist":"Wishlist","lh_2spkq0_text":"Filter"}}},"name":"collection page"}
  {%endschema%}
+
