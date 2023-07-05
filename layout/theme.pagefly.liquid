@@ -42,7 +42,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
  {%- render 'layouthub_header' -%}
   {% include 'shop-sheriff-amp' %}
-{%- render 'bold-ro-init' -%} 
  
    
   
@@ -108,12 +107,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {% render 'usf' %}
 
 {% render 'globo.alsobought.script' %}
-{%- render 'bold-options-hybrid' -%}
-{%- render 'bold-common' -%}
 {%- render 'sc-includes' -%}
-{%- render 'bold-includes' -%}
 {% if template == 'product' and product.metafields.inventory.ShappifyHidden or product.type contains '_HIDDEN_' %}<meta name='robots' content='noindex'>{% endif %}
-   {%- include 'bold-product' with product, hide_action: 'header' -%}
     
 
 
@@ -131,13 +126,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <!-- Theme CSS -->
   <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
-    {{ 'bold-msp.css' | asset_url | stylesheet_tag }}
-{{ 'bold.css' | asset_url | stylesheet_tag }}
 
   <!-- Store object -->
   {% render 'theme-options' %}
   
-       {% include 'bold-checkout-fix' %}
 
     
   <script type="text/javascript">
@@ -191,7 +183,7 @@ _affirm_config = {
   
   
  {% include 'discount-combine' %}
-  <script src="https://cdn.younet.network/main.js"></script>
+  <script src="https://cdn.younet.network/main.js" async></script>
   {% comment %} <script src="https://shopoe.net/app.js"></script>{% endcomment %}
   {{ 'shopstorm-apps.scss.css' | asset_url | stylesheet_tag }}
   {% render 'shopstorm-scripttags' %}
@@ -201,19 +193,10 @@ _affirm_config = {
   
   
  
-{% render 'digismoothie-giftbox' %}
+
 <script async src="https://assets.apphero.co/script_tags/356929_827693.js"></script>
 
-  {% comment %}
-  <script type='text/javascript'>
-  window.smartlook||(function(d) {
-    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
-    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
-    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
-    })(document);
-    smartlook('init', '36a65fbfe5d1be138a8dc52ab5822635d230418f', { region: 'eu' });
-</script>
-  {% endcomment %}
+
   
   <script async src="https://assets.apphero.co/script_tags/641609_148417.js"></script><script async src="https://assets.apphero.co/script_tags/994024_175054.js"></script><script async src="https://assets.apphero.co/script_tags/982142_593130.js"></script><script async src="https://assets.apphero.co/script_tags/564753_365660.js"></script><script async src="https://assets.apphero.co/script_tags/4642_200453.js"></script><script async src="https://assets.apphero.co/script_tags/624467_541343.js"></script><script async src="https://assets.apphero.co/script_tags/86097_953293.js"></script></head>
 
