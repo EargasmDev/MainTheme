@@ -774,6 +774,30 @@ Michael - Code for individual collection
 																	{{ tag | link_to_add_tag : tag_down | split: '>' | first | append: ' class=""><span class="lh-color-back" style="background-color:' | append: bg | append : ';color:' | append: bg | append : '"></span>'| append: c | append: '</a>' }}
 															{% endif %}
 														</li>
+                                                  {% assign tag = 'Pink' | strip %}
+														{% assign tag_down = tag | downcase %}
+														{% assign tag_handle = tag | handleize   %}
+														<li class="lh-item-filter lh-tooltip_top" data-lh-tooltip="{{tag | escape}}" data-tag="{{tag | escape}}" data-handle="{{tag_handle}}">
+															{% assign bg = '#eea2c2' %}
+															{%- for c in color_names_downcase -%}
+																{%- if c == tag_down -%}
+																	{% assign bg = color_values[forloop.index0] %}
+																	{%- break -%}
+																{%- endif -%}
+															{%- endfor -%}
+															{% assign c = 'Pink' %}
+															{% assign tag_filter = blank %}
+															{% if current_tags contains tag_down %}
+																	{% assign tag_filter = tag_down %}
+															{% elsif current_tags contains tag_handle %}
+																	{% assign tag_filter = tag_handle %}
+															{% endif %}
+															{% if tag_filter != blank %}
+																	{{ tag | link_to_remove_tag : tag_filter | split: '>' | first | append: ' class="active"><span class="lh-color-back" style="background-color:' | append: bg | append : ';color:' | append: bg | append : '"></span>' | append: c | append: '</a>' }}
+															{% else %}
+																	{{ tag | link_to_add_tag : tag_down | split: '>' | first | append: ' class=""><span class="lh-color-back" style="background-color:' | append: bg | append : ';color:' | append: bg | append : '"></span>'| append: c | append: '</a>' }}
+															{% endif %}
+														</li>
 													 
 												</ul>
 									</div>
