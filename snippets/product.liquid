@@ -340,15 +340,14 @@ $(window).bind("pageshow", function(event) {
               {% endunless %}
              <!-- Juo Subscription Widget -->
         {%- render 'juo-widget', block: block, product: product %}
+            
             <div class="bold_options" data-product-id="{{ product.id }}"></div>
               <div class="mw-apo-options"></div>
               <div class="product-infiniteoptions js-required side-labels" id="infiniteoptions-container"></div>
               <div class="product-uploadery js-required side-labels" id="uploadery-container"></div>
 
         
-        <!-- Juo Subscription Widget -->
-        {%- render 'juo-widget', block: block, product: product %}
-        
+       
                 
         {% unless product.tags contains 'headphones' %} 
                 {% unless product.tags contains 'noadd' %} 
