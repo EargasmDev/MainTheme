@@ -84,7 +84,15 @@ $(window).bind("pageshow", function(event) {
     clearfix
   "
 >
-
+  {%
+    render 'product-gallery',
+    product: product,
+    selected_media: selected_media,
+    gallery_layout: gallery_layout,
+    show_media_borders: show_media_borders,
+    enable_image_zoom: enable_image_zoom,
+  %}
+  
   
  
   
