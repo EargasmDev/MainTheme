@@ -24,13 +24,14 @@
   data-product-gallery-layout="{{ gallery_layout }}"
   {% if enable_image_zoom %}data-product-gallery-image-zoom{% endif %}
 >
+  {% comment %}
   <div
     class="
       product-gallery--viewport
       {% if gallery_layout != 'list' and product.media.size > 1 %}product-gallery--viewport--has-navigation{% endif %}
     "
     data-product-gallery-viewport
-  >
+  >{% endcomment %}
     {% assign models = product.media | where: 'media_type', 'model' %}
     {%- if models.size > 0 -%}
       <script>
