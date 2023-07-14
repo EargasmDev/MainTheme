@@ -1,0 +1,41 @@
+{% if template.name == 'product' %}
+	<style>
+      #ymq_img_drag{
+          width: 100%;
+          height: 100%;
+          z-index: 9999999;
+          position: fixed;
+          background: white;
+        	display:block !important;
+      }
+    </style>
+    <div id="ymq_img_drag"></div>
+
+	<link href='https://cdn.shopify.com/s/files/1/0411/8639/4277/t/11/assets/ymq_img.css' rel='stylesheet'>  
+    <link href='https://image.ymq.cool/shop/css/bottom.css' rel='stylesheet'>  
+
+    {% assign ymq_timestamp = 'now' | date: "%s" %} 
+	
+	<script>
+      window.ymq_image = window.ymq_image || {};
+      
+	
+      ymq_image.shop = '{{ shop.permanent_domain }}';
+
+      ymq_image.timestamp = '{{ ymq_timestamp }}'; 
+
+      ymq_image.page = '{{template.name}}';
+
+      ymq_image.ymq_image_branding = {}; 
+      {% if shop.metafields.ymq_image.branding %}  
+          ymq_image.ymq_image_branding = {{ shop.metafields.ymq_image.branding }}; 
+      {% endif %} 
+
+      ymq_image.product = {{ product | json }}; 
+
+      ymq_image.imageParentDom = '';
+      ymq_image.form_box = '';
+	</script>
+	<script src="https://image.ymq.cool/shop/ymq_img.js"></script>
+	
+{% endif %}
