@@ -54,7 +54,7 @@ $(window).bind("pageshow", function(event) {
 {% assign is_default = product.has_only_default_variant %}
 
 {% assign enable_image_zoom = enable_image_zoom | default: false %}
-
+{% assign gallery_layout = gallery_layout | default: 'list' %}
 {% assign show_media_borders = show_media_borders | default: false %}
 {% assign onboarding = onboarding | default: false %}
 {% assign details_alignment = details_alignment | default: section.settings.details_alignment %}
