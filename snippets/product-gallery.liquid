@@ -115,10 +115,12 @@
   </div>
 
   {% if gallery_layout != 'list' and product.media.size > 1 %}
+    {% comment %}
     <div
       class="product-gallery--navigation"
       data-product-gallery-navigation
     >
+    {% endcomment %}
       {% for media in product.media %}
         <button
           class="
