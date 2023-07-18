@@ -1189,6 +1189,7 @@ Michael - Code for individual collection
                                    {% unless product.tags contains 'daynightbundle' %}
                                       {% unless product.tags contains 'tbundle' %}
                                         {% unless product.tags contains 'mbundle' %}
+                                           {% unless product.tags contains 'bheadbundle' %}
                                  
 							
 							<div class="lh-price-box">
@@ -1212,6 +1213,7 @@ Michael - Code for individual collection
 							{% endunless %}
 							{% endunless %}
 							{% endunless %}
+                          {% endunless %}
                           {% endunless %}
                           {% endunless %}
                           {% endunless %}
@@ -1251,6 +1253,25 @@ Michael - Code for individual collection
 
                                
 							{% endif %}
+                              	{% if product.tags contains 'bheadbundle' %}
+							<div class="lh-price-box">
+								{% if first_variant.compare_at_price > first_variant.price  %}
+									<del>{{ first_variant.compare_at_price | money }}</del>
+								{% endif %}
+									
+									<ins>$ 99.88</ins> 
+								
+									
+								
+								
+								
+							</div>
+
+                               
+							{% endif %}
+
+
+                          
               {% if product.tags contains 'mbundle' %}
 							<div class="lh-price-box">
 								{% if first_variant.compare_at_price > first_variant.price  %}
