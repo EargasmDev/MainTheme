@@ -338,16 +338,12 @@ $(window).bind("pageshow", function(event) {
                   data-variant-title="{{ product.variants[0].title }}"
                 />
               {% endunless %}
-             <!-- Juo Subscription Widget -->
-        {%- render 'juo-widget', block: block, product: product %}
-            
             <div class="bold_options" data-product-id="{{ product.id }}"></div>
               <div class="mw-apo-options"></div>
               <div class="product-infiniteoptions js-required side-labels" id="infiniteoptions-container"></div>
               <div class="product-uploadery js-required side-labels" id="uploadery-container"></div>
 
         
-       
                 
         {% unless product.tags contains 'headphones' %} 
                 {% unless product.tags contains 'noadd' %} 
@@ -380,6 +376,11 @@ $(window).bind("pageshow", function(event) {
             </div>
         {% endunless %}
         
+
+        <!-- Juo Subscription Widget -->
+        <div class="juo-wrapper">
+        {%- render 'juo-widget', block: block, product: product %}
+        </div>
     
         
         {% if product.tags contains 'headphones' %} 
