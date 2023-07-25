@@ -382,12 +382,12 @@ $(window).bind("pageshow", function(event) {
             </div>
         {% endunless %}
         
-
+{% comment %} 
         <!-- Juo Subscription Widget -->
         <div class="juo-wrapper">
         {%- render 'juo-widget', block: block, product: product %}
         </div>
-    
+    {% endcomment %} 
         
         {% if product.tags contains 'headphones' %} 
         
