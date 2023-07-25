@@ -318,6 +318,12 @@ $(window).bind("pageshow", function(event) {
             class: form_classes,
             data-product-form: ""
           %}
+          
+        <!-- Juo Subscription Widget -->
+        <div class="juo-wrapper">
+        {%- render 'juo-widget', block: block, product: product %}
+        </div>
+            
             <div class="product-form-grid product-form-grid-{{ variant_options_style }}">
               {% unless is_default %}
                 {%
