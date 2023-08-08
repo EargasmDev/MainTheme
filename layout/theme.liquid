@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html class="no-js no-touch" lang="{{ request.locale.iso_code }}">
-<head>{% include 'ymq_image-initializer' %}
+<head>
+ {% render 'favicon' %}
+{% include 'ymq_image-initializer' %}
 
 	{% include "pandectes-rules" %}
 	{% include "pandectes-rules" %}
@@ -92,7 +94,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="description" content="{% if page_description %}{{ page_description }}{% else %}{{ shop.description }}{% endif %}">
   {% endif %}
 
-  {% render 'favicon' %}
+ 
 
   {% if template contains 'collection' and current_tags %}
     <meta name="robots" content="noindex" />
