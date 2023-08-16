@@ -268,7 +268,6 @@ $(window).bind("pageshow", function(event) {
               class="action-button cart-submit"
               type="submit"
               name="checkout"
-              onclick="recurringOrdersCheckout(event)"
               value="{{ 'cart.submit' | t }}"
             >
               {% if settings.enable_checkout_lock_icon %}
