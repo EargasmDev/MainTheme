@@ -118,7 +118,7 @@ $(window).bind("pageshow", function(event) {
 
                   
 
-                  <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_properties" style="display:none !important;"></span>{% if item.properties %}
+                  {% if item.properties %}
                     <div class="item-properties">
                       {% for property in item.properties %}
 {%- if property.first.first == '_' -%}{%- continue -%}{%- endif -%}
@@ -163,7 +163,7 @@ $(window).bind("pageshow", function(event) {
                 <div class="cart-item-column-contents">
                   <span class="">
                     
-<span class="saso-cart-item-price" data-key="{{item.key}}"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price" data-item-key="{{item.key}}" style="display:none !important;"></span>{{ item.price | money }}</span>
+<span class="saso-cart-item-price" data-key="{{item.key}}">{{ item.price | money }}</span>
 
                   </span>
                 </div>
@@ -212,7 +212,6 @@ $(window).bind("pageshow", function(event) {
                 </span>
 
                 <div class="cart-item-column-contents">
-                 <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_total" data-item-key="{{item.key}}" style="display:none !important;"></span>
  <span class="">
                     {{ item.quantity | times: item.price | money }}
                   </span>
@@ -243,7 +242,7 @@ $(window).bind("pageshow", function(event) {
           <p class="price">
             
 <span class="saso-cart-original-total"><span class="">
-              <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_total" style="display:none !important;"></span>{{ cart.total_price | money }}
+              {{ cart.total_price | money }}
             </span></span>
 <span class="saso-cart-total"></span>
 
