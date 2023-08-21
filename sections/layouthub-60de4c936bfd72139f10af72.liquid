@@ -400,6 +400,22 @@ Michael - Code for individual collection
 												{{  tag | link_to_add_tag:  tag_down  | replace_first: '>',' class="" >'}}
 											{% endif %}
 										</li>
+                                  {% assign tag =  'New Arrivals' | strip %}
+										{% assign tag_down =  tag | downcase %}
+										{% assign tag_handle = tag | handleize %}
+										<li class="lh-item-filter" data-tag="{{tag | escape}}" data-handle="{{tag_handle}}">
+											{% assign tag_filter = blank %}
+											{% if current_tags contains tag_down %}
+												{% assign tag_filter = tag_down %}
+											{% elsif current_tags contains tag_handle %}
+												{% assign tag_filter = tag_handle %}
+											{% endif %}
+											{% if tag_filter != blank %}
+												{{  tag |  link_to_remove_tag:  tag_filter  | replace_first: '>',' class="active" >' }}
+											{% else %}
+												{{  tag | link_to_add_tag:  tag_down  | replace_first: '>',' class="" >'}}
+											{% endif %}
+										</li>
 									 {% assign tag =  ' Earplugs' | strip %}
 										{% assign tag_down =  tag | downcase %}
 										{% assign tag_handle = tag | handleize %}
