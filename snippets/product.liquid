@@ -230,6 +230,14 @@ $(window).bind("pageshow", function(event) {
           
           {% endif %} 
 
+
+             {% if product.tags contains 'lolla' %}
+          
+          <i style = "color:red;font-size: medium;"> Take 10% off for a limited time — order now! </i></span>
+          
+          
+          {% endif %} 
+
            {% if product.tags contains 'db' %}
           
           <i style = "color:grey;font-size: medium;"> Discount Codes Are Not Applicable For This Product </i></span>
