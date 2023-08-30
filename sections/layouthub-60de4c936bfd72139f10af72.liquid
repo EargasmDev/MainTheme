@@ -1257,7 +1257,9 @@ Michael - Code for individual collection
     {% if first_variant.compare_at_price > first_variant.price  %}
       <del>{{ first_variant.compare_at_price | money }}</del>
     {% endif %}
-    <ins style="color: red;">$ 39.88</ins> 
+   <ins>
+      <span style="color: red;">$ 39.88</span>
+    </ins> 
   </div>
 {% endif %}
 
