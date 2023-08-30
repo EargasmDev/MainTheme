@@ -821,7 +821,24 @@ Michael - Code for individual collection
 							</div>
 						 
 					 
-				  
+				  {% for product in collection.products %}
+  <div class="lh-product">
+    <h2 class="lh-product-title">{{ product.title }}</h2>
+    <div class="lh-price-box">
+      {{ product.price | money }}
+    </div>
+    <!-- Other product details -->
+  </div>
+
+  {% if product.tags contains 'lolla' %}
+    <style>
+      .lh-product .lh-price-box {
+        color: red;
+      }
+    </style>
+  {% endif %}
+{% endfor %}
+
 						
 						 
 							<div class="lh-sidebar-block active lh-block-filter-tags" data-multi-select="false">
