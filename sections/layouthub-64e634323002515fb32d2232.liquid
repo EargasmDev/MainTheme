@@ -525,6 +525,10 @@
 
     </div>
   </div>
+
+   <section id="scrollTarget">
+     
+    </section>
 </div>  </include></div>
 
 				<form class="lh-summary lh-product-form {% if product.variants.size > 1%} lh-form-product-variants{% else %} lh-form-product-variant {% endif%}" method="POST" accept-charset="utf-8" enctype="multipart/form-data" action="/cart/add" data-pid="{{- product.id -}}">
@@ -831,6 +835,13 @@
 </div>
   </section>
 </div>
+
+                  <script>
+    document.getElementById('btn').addEventListener('click', function() {
+        const targetSection = document.getElementById('scrollTarget');
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
 
 
                  
