@@ -151,7 +151,9 @@ section[data-layouthub="section"] img{
 }
 
 .targetbay_star_container {
-margin-left: -50px;
+    text-align: center !important;
+    margin-left: -300px !important;
+    margin-top: -20px  !important;
 }
 
 
