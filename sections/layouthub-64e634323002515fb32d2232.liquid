@@ -421,7 +421,6 @@
         </div>
     </div>
   </section>  
-<section id="shopnow" data-section-id="dr97b158798" data-section="product-5" data-dev="trong-dai" data-lh-page-id="1332" data-lh-page-name="Kai - Landing" data-layouthub="section">  
  <!--  Product single Swatch images -->
 
 {%- assign tpl =  template | replace: '.', ' ' | truncatewords: 1, '' | handle  -%}
@@ -431,7 +430,8 @@
 		 		{%- if  p.id != ""  and tpl != 'product' -%}
 		 			{% assign product  = p  %}
 		 		{%- endif -%}
-		 	 
+		 	 <section id="shopnow" data-section-id="dr97b158798" data-section="product-5" data-dev="trong-dai" data-lh-page-id="1332" data-lh-page-name="Kai - Landing" data-layouthub="section">  
+
 
 			{% assign first_variant = product.selected_or_first_available_variant %}{%- assign color_names = '' | split: ',' -%}
 		{%- assign color_names_downcase = '' | split: ',' -%}
