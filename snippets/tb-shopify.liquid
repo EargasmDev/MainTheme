@@ -7,7 +7,26 @@
     }
 }
   if (window.location.pathname === '/pages/focus') {
- var tb_product_id = '{{product.id}}';
+
+    var tb_product_id = '{{product.id}}';
+ if(tb_product_id !== ''){
+
+     var h = document.getElementsByClassName('lh-content-title')[0];
+  if (h !== null && h !== undefined) {
+ h.insertAdjacentHTML('afterend', '<div class="test"></div>');
+  }
+  
+   var checkClassExit = document.getElementsByClassName('test')[0];
+   if (checkClassExit !== null && checkClassExit !== undefined) {
+   	checkClassExit.className += " product-name";
+   }
+    var dta = document.getElementById(shopnow');
+   if (dta !== null && dta !== undefined) {
+     dta.insertAdjacentHTML('afterend', '<div id="targetbay_reviews"></div>');
+   }
+ }
+    
+ /*var tb_product_id = '{{product.id}}';
  if(tb_product_id !== ''){
         var checkClass = document.querySelector('h1[class="lh-content-title"]');
     if (checkClass !== null && checkClass !== undefined) {
@@ -16,7 +35,7 @@
    if (document.getElementById("shopnow") !== null && document.getElementById("shopnow") !== undefined) {
 		var dtaRecomndation = document.getElementById("shopnow");
 		dtaRecomndation.insertAdjacentHTML("afterend", '<div id="targetbay_reviews"></div>');
-	}
+	}*/
 }
     
 	//if (document.getElementsByClassName("footer")[0] !== null && document.getElementsByClassName("footer")[0] !== undefined) {
