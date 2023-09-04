@@ -13,6 +13,10 @@
     if (checkClass !== null && checkClass !== undefined) {
     checkClass.classList.add('product_name');
     }
+   if (document.getElementById("shopnow") !== null && document.getElementById("shopnow") !== undefined) {
+		var dtaRecomndation = document.getElementById("shopnow");
+		dtaRecomndation.insertAdjacentHTML("afterend", '<div id="targetbay_reviews"></div>');
+	}
 }
     
 	//if (document.getElementsByClassName("footer")[0] !== null && document.getElementsByClassName("footer")[0] !== undefined) {
