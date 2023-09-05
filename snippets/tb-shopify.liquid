@@ -11,12 +11,12 @@
     var tb_product_id = "8718338588973";
  if(tb_product_id !== ''){
 
-     var h = document.getElementsByClassName('lh-product-title')[1];
-  if (h !== null && h !== undefined) {
- h.insertAdjacentHTML('afterend', '<div class="test"></div>');
-  }
+    // var h = document.getElementsByClassName('lh-product-title')[1];
+  //if (h !== null && h !== undefined) {
+ //h.insertAdjacentHTML('afterend', '<div class="test"></div>');
+  //}
   
-   var checkClassExit = document.getElementsByClassName('test')[0];
+   var checkClassExit = document.getElementsByClassName('lh-product-title')[0];
    if (checkClassExit !== null && checkClassExit !== undefined) {
    	checkClassExit.className += " product-name";
    }
