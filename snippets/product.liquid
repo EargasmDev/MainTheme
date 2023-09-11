@@ -332,9 +332,12 @@ $(window).bind("pageshow", function(event) {
           
         
             <!-- Juo Subscription Widget -->
-        <div class="juo-wrapper">
-        {%- render 'juo-widget', block: block, product: product %}
-        </div>
+            {% assign selling_plan_groups = product.selling_plan_groups | where: 'app_id', 'juo-subscriptions' %}
+            {% if selling_plan_groups.size > 0 %}
+            <div class="juo-wrapper">
+            {%- render 'juo-widget', block: block, product: product %}
+            </div>
+            {% endif %}
             <div class="product-form-grid product-form-grid-{{ variant_options_style }}">
               {% unless is_default %}
                 {%
@@ -393,14 +396,7 @@ $(window).bind("pageshow", function(event) {
               {% endunless %}
             </div>
         {% endunless %}
-        
-{% comment %} 
-        <!-- Juo Subscription Widget -->
-        <div class="juo-wrapper">
-        {%- render 'juo-widget', block: block, product: product %}
-        </div>
-    {% endcomment %} 
-        
+    
         {% if product.tags contains 'headphones' %} 
         
           {% if selected_variant.available %}

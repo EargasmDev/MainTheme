@@ -53,7 +53,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
  {%- render 'layouthub_header' -%}
   {% include 'shop-sheriff-amp' %}
-{%- render 'bold-ro-init' -%} 
  
    
   
@@ -122,7 +121,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {%- render 'bold-options-hybrid' -%}
 {%- render 'bold-common' -%}
 {%- render 'sc-includes' -%}
-{%- render 'bold-includes' -%}
+
 {% if template == 'product' and product.metafields.inventory.ShappifyHidden or product.type contains '_HIDDEN_' %}<meta name='robots' content='noindex'>{% endif %}
    {%- include 'bold-product' with product, hide_action: 'header' -%}
     
@@ -148,8 +147,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- Store object -->
   {% render 'theme-options' %}
   
-       {% include 'bold-checkout-fix' %}
-
     
   <script type="text/javascript">
 !function(e){if(!window.pintrk){window.pintrk=function()
