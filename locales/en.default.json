@@ -1,1 +1,1299 @@
-{"store_availability":{"general":{"in_stock":"In stock","out_of_stock":"Out of stock","view_store_info":"View store information","check_other_stores":"Check availability at other stores","available_for_pick_up_at_html":"Pickup available at <b>{{ location_name }}<\/b>","unavailable_for_pick_up_at_html":"Pickup currently unavailable at <b>{{ location_name }}<\/b>","available_for_pick_up_at_time_html":"Pickup available, {{ pick_up_time }}","unavailable_for_pick_up_at_time_html":"Pickup currently unavailable","kilometers":"km","miles":"mi"}},"structured_data":{"breadcrumbs":{"cart":"Cart","collections":"Collections","page":"Page {{ page }}","products":"Products","search":"Search","tags_html":"Tagged \"{{ tags }}\""}},"general":{"404":{"title":"Page not found","home_link":"homepage","subtext_html":"We're sorry, but the page you're looking for could not be found.","subtext_collection_html":"We're sorry, but the page you're looking for could not be found. Go back to our {{ link }}, or check out some of our favourite items below:"},"accessibility":{"nav_product_thumbnail":"thumbnail","close":"Close"},"account":"Account","name":"Name","name_placeholder":"Your name","email":"Email","email_placeholder":"your@email.com","message":"Message","password":"Password","price":"Price","product":"Product","quantity":"Quantity","sign_up":"Sign up","submit":"Submit","subtotal":"Subtotal","tax":"Tax","total":"Total","share":{"sharethis":"Share this"},"livesearch":{"form_open":"Open search","form_search":"Search","form_close":"Close search","button_label":"Search","input_placeholder":"What are you looking for?","products_title":"Products","products_empty":"No products found for \"{{ term }}\"","products_viewall":"View all products","posts_title":"Posts","pages_title":"Pages","postspages_title":"Posts & Pages","postspages_empty":"No results.","viewall":"View all results"},"password_page":{"opening_soon":"Opening Soon","spread_the_word":"Spread the word:","login_form_heading":"Enter store using password","login_form_password_label":"Your password:","login_form_submit":"Enter","signup_form_email_label":"Email","signup_form_email_placeholder":"Your email","signup_form_submit":"Submit","signup_form_success":"We will send you an email right before we open!","admin_link_question":"Are you the store owner?","admin_link_direction":"Log in here","password_link":"Enter using password","powered_by_shopify_html":"This shop will be powered by {{ shopify }}"},"breadcrumbs":{"404":"404","home":"Home","collections":"Collections","products":"Products","tagged":"Tagged","cart":"Cart"},"search":{"header":"Search","results_header":"Search Results","results_text":"{{ results_count }} {{ results }} for '{{ search_terms }}'","results":{"one":"result","other":"results"},"input_placeholder":"What are you looking for?","form_search":"Search"},"pagination":{"summary":"Page {{ current_page }} of {{ pages }}","previous":"Previous","next":"Next","seo_title":"Page"}},"layout":{"mini_cart":{"heading":"Your cart","checkout":"Checkout","view_cart":"View cart","remove_item":"Remove","quantity_item":"Qty: {{ qty }}","subtotal":"Subtotal","empty":"You have no items in your cart"},"header":{"checkout":"Checkout","no_items":"Your cart is currently empty!","view_cart":"View cart","more":"More...","item_count":{"one":"item","other":"items"},"login":"Login"},"footer":{"contact_title":"Get in touch","social_title":"Follow us out there","newsletter_title":"Newsletter","email":"Email address","success":"Thanks for subscribing!","copyright_text_html":"&copy; {{ year }}. All rights reserved."}},"blogs":{"article_item":{"written_by":"Written by","filed_under":"Filed under","discussion":"Discussion","continue_reading":"Continue reading","post_author":"Post author","comments_html":"Comments on this post {{ comment_count }}","comment_count":{"one":"comment","other":"comments"},"leave_comment":"Leave a comment","error_message":"Error! Something went wrong.","success_message":"Your comment has been submitted."},"blog_sidebar":{"recent_posts":"Recent posts","tags":"Tags"}},"cart":{"header":"Cart","empty":"You don't have any items in your cart yet.","continue":"Continue shopping.","note":"Special instructions","tax_and_shipping":"Shipping and taxes calculated at checkout","submit":"Check out","update":"Update","remove":"Remove","stock_limit":"You can only add {{ quantity }} {{ title }} to your cart.","shipping_calculator":{"error":"Error: zip \/ postal code --error_message--","submit":"Calculate Shipping","working":"Calculating...","rates_html":"There are --number_of_rates-- shipping rates available for --address--, starting at --rate--.","rate":"There is one shipping rate available for --address--.","no_rates":"We do not ship to this destination.","rate_values_html":"--rate_title-- at --rate--"}},"collections":{"listing":{"header":"Collections","taglist":"Tags","filter-by":"Filter by:","sort-by":"Sort by:","current":"Current Tag"},"collection":{"browse":"Browse","all_items":"All","quick_shop":"Quick shop","no_products":"No products in this collection","shop_collection":"Shop collection","less":"Less","more":"More"}},"contact":{"success":"Thanks for getting in touch! We'll respond to your message shortly.","error":"Error! Something went wrong."},"customer":{"general":{"logout":"Sign out","password_confirmation":"Repeat password","back_to_account":"Back to account","or":"or","cancel":"cancel"},"account":{"view_addresses":"View Addresses"},"orders":{"header":"Order history","order":"Order","payment_status":"Payment","fulfillment_status":"Fulfillment","none":"You haven't placed any orders yet."},"activate_account":{"header":"Activate your account","subtext":"To activate your account, choose a password and enter it below.","decline":"decline activation"},"addresses":{"header":"Addresses","add_new":"Add new address","default_address":"default address","edit":"Edit","delete":"Delete","first_name":"First Name","last_name":"Last Name","company":"Company","address1":"Address line 1","address2":"Address line 2","city":"City","country":"Country","phone":"Phone","province":"State \/ Province","zip":"ZIP \/ Postal code","set_as_default":"Set as Default Address?"},"login":{"header":"Customer Login","forgot_password":"Forgot your password?","error":"Sorry! Please try that again.","new_customer":"New customer?","sign_up":"Sign up for an account"},"reset_password":{"header":"Reset Account Password","submit":"Reset password","subtext":"We’ll send you an email to reset your password."},"guest_login":{"no_login":"No login required.","submit":"Continue checkout as a guest."},"order":{"header":"Order","header_details":"Order details","discount":"Discount","billing_address":"Billing address","shipping_address":"Shipping address","shipping":"Shipping","fulfillment_status":"Fulfillment Status"}},"gift_cards":{"issued":{"title":"Here's your {{ value }} gift card for {{ shop }}!","subtext":"Here's your gift card!","disabled":"Disabled","expired":"Expired on {{ expiry }}","active":"Expires on {{ expiry }}","redeem":"Use this code at checkout to redeem your gift card","shop_link":"Start shopping","print":"Print","balance":"{{ balance }} left","apple_wallet":"Add To Apple Wallet"}},"home_page":{"video_button_text":"Watch the video","featured_collections":{"title":"Featured collections"},"featured_collection":{"title":"Featured collection"},"featured_blog":{"title":"From the blog"},"menu_list":{"title":"Menu list","link":"Link"}},"articles":{"article":{"share_email_subject":"{{ article }}","share_email_body":"Check out the article {{ article }} at {{ article_url }}!"}},"products":{"product":{"add_to_cart":"Add to cart","email_us":"Email us about this product","share_email_subject":"{{ product }}","share_email_body":"Check out {{ product }} at {{ product_url }}!","fitting_guide":"Fitting guide","on_sale":"On sale","new":"New","please_wait":"Please wait","pre_order":"Pre-order","sku":"SKU","sold_out":"Sold out","unavailable":"Unavailable","view_fullsize_image":"View fullsize image","visit_page":"Visit product page","error_message_stock":"Unfortunately, we only have --stock-- in stock.","error_message_general":"We were unable to add this product to your cart. Please try again later. Contact us if you continue to have issues.","price_per_unit_html":"{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}","tax_line_html":""},"product_item":{"quickshop":"Quickshop","add_to_cart":"Add to cart","sold_out":"Sold out","unavailable":"Unavailable"},"media":{"view_in_your_space":"View in your space"}},"onboarding":{"welcome_title":"Rich text","welcome_text_html":"Use this section to welcome customers to your store, say a bit about your brand, or share news and seasonal promotions.","blog_section_title":"Blog posts","blog_title":"Blog Post","blog_excerpt":"Your store hasn’t published any blog posts yet. A blog can be used to talk about new product launches, tips, or other news you want to share with your customers. You can check out Shopify’s ecommerce blog for inspiration and advice for your own store and blog.","collection_title":"Collection list","product_vendor":"Vendor","product_name":"Product title","product_price":"$0.00","product_cost":"0","product_compare_price":"0","image_block_title":"Image with text","image_block_caption":"Say a bit about your brand, a specific product, or promotion.","twitter_posted":"Posted on","twitter_tweet":"Connect your Twitter account to engage customers on and off your site!","twitter_username":"@youraccount","menu_list":{"item":"Link"}},"date_formats":{"short_month":"%b %d, %Y","full_month":"%B %d, %Y","gift_card_expiry":"%d\/%m\/%y"},"pagefly":{"products":{"product":{"regular_price":"Regular price","sold_out":"Sold out","unavailable":"Unavailable","on_sale":"Sale","quantity":"Quantity","add_to_cart":"Add to cart","back_to_collection":"Back to {{ title }}","view_details":"View details"}},"article":{"tags":"Tags:","all_topics":"All topics","by_author":"by {{ author }}","posted_in":"Posted in","read_more":"Read more","back_to_blog":"Back to {{ title }}"},"comments":{"title":"Leave a comment","name":"Name","email":"Email","message":"Message","post":"Post comment","moderated":"Please note, comments must be approved before they are published","success_moderated":"Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.","success":"Your comment was posted successfully! Thank you!","comments_with_count":{"one":"{{ count }} comment","other":"{{ count }} comments"}},"password_page":{"login_form_message":"Enter store using password:","login_form_password_label":"Password","login_form_password_placeholder":"Your password","login_form_submit":"Enter","signup_form_email_label":"Email","signup_form_success":"We will send you an email right before we open!","password_link":"Enter using password"}},"sections":{"layouthub-5e73baa3fcf09d7878159963":{"0yq90ds6bsb":{"lh_h7oza_more":"Read more","title":"Newest Blogs"},"ln3pw7nvlj":{"lh_hifzh_title":"Eargasm Blogs"},"o0p7hbnm6hd":{"lh_h7oza_more":"Read more","title":"Our blog"}},"layouthub-60481121f04f246b16633bd2":{"fua6e5l7jns":{"lh_krq1kz_title":"Gold Edition","lh_krq1kz_desc_html":"Our most <b><i>stylish<\/i><\/b> High Fidelity Earplugs.<!--lh-live-editor-->","lh_79ehzq_btn":"SHOP NOW","lh_krq1l0_title":"High Fidelity Earplugs","lh_krq1l0_desc_html":"<b>Trusted by Over 250,000 Customers &amp; Counting.<\/b><!--lh-live-editor-->","lh_no9uxh_btn":"SHOP NOW","lh_krq1l1_title":"Custom Earplugs","lh_krq1l1_desc_html":"True to You - <b>Because They're Made For You.<\/b><!--lh-live-editor-->","lh_uxyu3w_btn":"SHOP NOW","lh_krq1l2_title":"Aquaplugs","lh_krq1l2_desc_html":"Sound In - <b>Water Out. <\/b><!--lh-live-editor-->","lh_ej3h65_btn":"SHOP NOW","lh_krq1l3_title":"Slide Earplugs","lh_krq1l3_desc_html":"You're in <b>Control<\/b>. <!--lh-live-editor-->","lh_1vrvrm_btn":"SHOP NOW","lh_krq1l4_title":"In-Ear Headphones","lh_krq1l4_desc_html":"Design Your <b>In-Ears from A-Z<\/b>. <!--lh-live-editor-->","lh_ian8pd_btn":"SHOP NOW"},"kmxi3fcdiz":{"lh_krq1kz_title":"Gold Edition","lh_krq1kz_desc_html":"Our most <b>stylish<\/b> earplugs.<!--lh-live-editor-->","lh_79ehzq_btn":"SHOP NOW","lh_krq1l0_title":"High Fidelity Earplugs","lh_krq1l0_desc_html":"<b>Trusted by Over 250,000 Customers & Counting.<\/b><!--lh-live-editor-->","lh_no9uxh_btn":"SHOP NOW","lh_krq1l1_title":"Aquaplugs","lh_krq1l1_desc_html":"Sound In - <b>Water Out.&nbsp;<\/b><!--lh-live-editor-->","lh_uxyu3w_btn":"SHOP NOW","lh_krq1l2_title":"Slide Earplugs","lh_krq1l2_desc_html":"You're in <b>Control<\/b>.&nbsp;<!--lh-live-editor-->","lh_ej3h65_btn":"SHOP NOW","lh_krq1l3_title":"Custom Earplugs","lh_krq1l3_desc_html":"True to You - <b>Because They're Made For You.<\/b><!--lh-live-editor-->","lh_1vrvrm_btn":"SHOP NOW","lh_krq1l4_title":"In-Ear Headphones","lh_krq1l4_desc_html":"Design Your <b>In-Ears from A-Z<\/b>.&nbsp;<!--lh-live-editor-->","lh_ian8pd_btn":"SHOP NOW"},"j4xv0eio1k":{"lh_up5omg_view":"Quick View","lh_5hd_heading":"Best Sellers","lh_5hd_des_html":"Free Shipping on All US Orders Over $100<!--lh-live-editor-->"},"mc16n3fcb9":{"lh_f5dibt_top":"PROTECT YOUR HEARING IN STYLE","lh_a168_title":"Why Choose Eargasm High Fidelity Earplugs?"},"iah008pbfu":{"lh_hifzh_title":"Shop Now"},"Kv4OnPWr3Z":{"lh_xt3zpj_title":"BEST SELLERS","lh_xt3zpk_title":"CUSTOM PRODUCTS","lh_kj0d8o_title":"BROWSE ALL","lh_78wqrt_title":"GIFTING","lh_78wqru_title":"BUNDLES"},"xwodkdvkrpr":{"title":"Why Choose Eargasm High Fidelity Earplugs?"},"7o46jbq9qyq":{"lh_hifzh_title":"Shop Now"},"0rnvzedtckm":{"heading_html":"<a href=\"https:\/\/eargasm.com\/collections\/eargasm-product-line\">SHOP NOW<\/a><br><p style=\"font-size:15px\">Browse Our Extensive Earplug Line<\/p>","lh_ku5mxb_title":"BROWSE ALL","lh_ku5mxa_title":"BEST SELLERS","lh_ku5mx9_title":"BUNDLES","lh_ku5mx8_title":"GIFTING","lh_ku5mx7_title":"CUSTOM PRODUCTS"},"7rt1ezc30z8":{"lh_a168_title":"Experience Eargasm Earplugs","lh_hpo2th_title":"Foam or High Fidelity?","lh_hpo2th_des_html":"Decide what works best for you- hear the differences in real-time.<!--lh-live-editor-->","lh_hpo2ti_title":"Different Environments","lh_hpo2ti_des_html":"Choose between different scenarios and environments.<!--lh-live-editor-->","lh_hpo2tj_title":"No Protection VS Eargasm Earplugs","lh_hpo2tj_des_html":"Listen to the difference live between no hearing protection and Eargasm Earplugs.<!--lh-live-editor-->","lh_hpo2tk_title":"We're Here to Help! Chat with us","lh_hpo2tk_des_html":"Remember, we're always here to answer any questions you may have!<!--lh-live-editor-->","lh_8huk_link":"Try Now"},"zjsce1d0c4c":{"lh_a168_title":"Experience Eargasm Earplugs","lh_8huk_link":"Try Now","lh_hpo2th_title":"Foam or High Fidelity?","lh_hpo2th_des_html":"Decide what works best for you- hear the differences in real-time.<!--lh-live-editor-->","lh_hpo2ti_title":"Different Environments","lh_hpo2ti_des_html":"Choose between different scenarios and environments.<!--lh-live-editor-->","lh_hpo2tj_title":"No Protection VS Eargasm Earplugs","lh_hpo2tj_des_html":"Listen to the difference live between no hearing protection and Eargasm Earplugs.<!--lh-live-editor-->","lh_hpo2tk_title":"We're Here to Help! Chat with us","lh_hpo2tk_des_html":"Remember, we're always here to answer any questions you may have!<!--lh-live-editor-->"}},"layouthub-604c2258973431771b42fa92":{"G1XnYxk6re":{"title_html":"<b>Experience Eargasm Earplugs<\/b>"},"te94mlj37n8":{"title_html":"<b>Experience Eargasm Earplugs<\/b>"},"b3trr9pxwqj":{"lh_rivarn_text":"Sold out","lh_k4izmq_text":"Sale","lh_rv7qtl_text":"New","title_html":"<b>Related Products<\/b>"}},"layouthub-6058fcb4d0f4387a997c38d2":{"PXdyZTKrRw":{"lh_90w0d4_title":"Eargasm Earplugs"},"7mrcncb62t":{"lh_90w0d4_title":"Eargasm Custom Headphones and Earplugs"},"ue3i3wmd6s":{"lh_90w0d4_title_html":"Discounts &amp; Free Gifts"}},"layouthub-605bf585a967be4bba3d98f2":{"2710ypil2m7":{"lh_a168_title":"How to Scan","lh_a168_content":"Have 5 minutes to spare?","lh_a168_desc_html":"That's all the time you'll need to complete your ear scans with the Eargasm Ear Scanner App.<!--lh-live-editor-->"},"ad9mmcwpzw8":{"lh_a168_title":"Eargasm Custom In-Ear Headphone Instructions","lh_a168_content":"How to Scan","lh_a168_desc_html":"Have 5 minutes to spare? That's all the time you'll need to complete your ear scans with the Eargasm Ear Scanner App.<!--lh-live-editor-->"},"5u5tatjaeni":{"lh_5bw_9j7xan":"Further Scanning Instructions","btn":"BUY NOW"},"hm0h91w3hjn":{"lh_5bw_9j7xan":"Further Scanning Instructions","btn":"BUY NOW"},"iki5p7zabyk":{"lh_5bw_9j7xan":"Photo Instructions","description_html":"<b>1. <\/b>When taking your ear pictures, please ensure your outer ear and ear canal are fully visible. Kindly see the images for further clarification.<div><b style=\"font-size: calc(var(--lh-font-size) * 1.2) ;\"><br><\/b><\/div><div><span style=\"font-size: calc(var(--lh-font-size) * 1.2) ;\"><b>2. <\/b>Hold your phone about 10 - 12 inches away from your ear and take a picture of your ear canal straight-on.<\/span><\/div><div><b style=\"font-size: calc(var(--lh-font-size) * 1.2) ;\"><br><\/b><\/div><div><span style=\"font-size: calc(var(--lh-font-size) * 1.2) ;\"><b>3.<\/b> If you'd like to restart the process, feel free to just close the app and then re-open.&nbsp;&nbsp;<\/span><\/div><div><\/div>","btn":"BUY NOW"},"escptnnozqq":{"lh_5bw_9j7xan":"How to Get the Perfect Scan","btn":"BUY NOW"},"3268a1tvk1p":{"lh_5bw_9j7xan_html":"Tips for the&nbsp;<div>Perfect Scan<\/div>","description_html":"<b>1. <\/b>Make sure to fully review your scan <b>before<\/b> the blue bar at the top loads entirely<b>; <\/b>if your mesh loads before you get the chance to review your scan,<b> please click the rescan button. <\/b>You'll see that the mesh has loaded as it will fill in all the gaps that were previously missing.<div><b><br><\/b><\/div><div><b>2. <\/b>Ensure that you're scanning your ears in<b> natural or neutral lighting; <\/b>do not scan your ears in direct sunlight or in a dark environment as both will cause incomplete scans.<br><div><br><\/div><div><b>3. <\/b>No need to focus on the rest of your face; the main area of importance is your <b>inner ear (ie: your concha, tragus, antitragus, and external auditory canal).&nbsp;<\/b><\/div><div><b><br><\/b><\/div><div><b>4. <\/b>Move your hand <b>as slowly as you can <\/b>when scanning; if you move too fast, either the app will stop the scan, or you will end up with a lot of areas of incompleteness.&nbsp;<\/div><\/div>","btn":"BUY NOW"},"qj5d7mtl4a":{"lh_a168_title":"FAQ","lh_ezc4q5_name":"I submitted my scans - now what?","lh_ezc4q5_content_html":"<b>You're done! <\/b>Just make sure to check your emails (the one that you used to place your order); <b>our team will be in touch and you will receive email notifications as your order moves through the process.<\/b>","lh_ezhhnw_name":"What device can I use to scan my ears?","lh_ezhhnw_content_html":"The Eargasm Ear Scanner App is compatible with any IOS device with Face ID.<!--lh-live-editor-->","lh_ezmuln_name":"I ordered a custom product but I don't have a compatible device to submit my scans","lh_ezmuln_content_html":"No worries! There are a few ways to get your scans done without owning a compatible iPhone: <br><br>\n\n• Borrow an iPhone or iPad with Face ID on it from someone you know.<br><br>\n\n• Rent out an iPhone from websites such as ERentals or ComputerRentals. They do have a fee for the rental, but it is significantly lower than, say, going to an audiologist and getting a mold (and much more comfortable!).<br><br>\n\n• Go to your local Apple store and use one of their devices with Face ID(No need to worry about your data as it will not be saved on the phone itself and is completely secure). <br><br>\n\nAny of these solutions is much cheaper and quicker than the alternative of going to an audiologist for an ear impression!<!--lh-live-editor-->","lh_ezs7je_name":"The app is crashing\/freezing when I'm trying to scan","lh_ezs7je_content_html":"The Eargasm Face Scanner app is only compatible with iPhones with Face ID technology; this feature is on the iPhone X and newer models.<!--lh-live-editor-->","lh_ezxkh5_name":"How come the scan stops shortly after starting?","lh_ezxkh5_content_html":"Please make sure your ear is in frame of your phone's camera. If you go out of the frame, the scan will immediately stop because it cannot detect your ear.<!--lh-live-editor-->","lh_f02xew_name":"I see white sections in my scan, can I still submit these?","lh_f02xew_content_html":"In order to avoid having to rescan multiple times to get that perfect fit, we recommend thoroughly reviewing your scans and make sure there aren't any distorted sections or areas of incompleteness (white spots) before submitting them. <!--lh-live-editor-->","lh_f08acn_name":"I have scans from an audiologist, can I use those?","lh_f08acn_content_html":"Yes we do! After completing your order, feel free to send over your scans to <a href=\"mailto:info@eargasm.com\" style=\"color: rgb(98, 155, 215); font-weight: bold; text-decoration-line: underline;\">info@eargasm.com<\/a>; kindly make sure you include your name and order number. Please note that we only accept digital scans and not physical molds.<!--lh-live-editor-->","lh_f0dnae_name":"My question isn't listed here","lh_f0dnae_content_html":"No worries! Feel free to email us at <a href=\"mailto:info@eargasm.com\" style=\"font-weight: bold; text-decoration-line: underline; background-color: rgb(255, 255, 255); color: rgb(98, 155, 215);\">info@eargasm.com<\/a>, chat with us live, or use our contact form below. We're here to help 😊&nbsp;<!--lh-live-editor-->"},"7a0zor25963":{"lh_lstl57_success":"Thank you for contacting us! A member of the team will get back to you soon.","lh_4w3_title":"Contact Us","lh_4w3_desc_html":"If you have feedback, questions, concerns, or anything else you’d like to share please feel free to use the contact form below. <b>If inquiring about a product purchased from us, please include your order number in your email and we will respond within 1 business day.&nbsp;<\/b><div><b><br><\/b><\/div><div><font size=\"2\" style=\"\">💬 Chat with Us Live! Just Click The Icon to the Bottom Right<\/font><\/div><div><font size=\"2\" style=\"\">☎️  Call Us | <span style=\"color: rgb(98, 156, 215); text-decoration-line: underline;\"><a href=\"tel:8885029581\">(888) 502-9581&nbsp;<\/a><\/span><\/font><br><\/div><!--lh-live-editor-->","lh_t453on_label":"Send Message","lh_4w3_email_html":"Available Monday-Friday, 9:00 AM - 5:30 PM PST | Excluding Holidays<br>","lh_4w3_address":"20929 Ventura Blvd, #47-482 , Los Angeles, CA, 91364"}},"layouthub-60680e104232bf635a719d63":{"md5BO4vLHi":{"lh_lstl57_success":"Thank you for contacting us! A member of the team will get back to you soon.","lh_4w3_title":"Contact Us","lh_4w3_desc_html":"If you have feedback, questions, concerns, or anything else you’d like to share please feel free to use the contact form below. <b>If inquiring about a product purchased from us, please include your order number in your email and we will respond within 1 business day. <\/b><div><b><br><\/b><\/div><div><span style=\"font-size: small;\">💬 Chat with Us Live! Just Click The Icon to the Bottom Right<\/span><\/div><div><span style=\"font-size: small;\">☎️  Call Us |<a href=\"tel:8182083278\" style=\"\"> <span style=\"color: rgb(98, 156, 215); text-decoration-line: underline;\">(818) 208-3278<\/span><\/a> <\/span><br><\/div><!--lh-live-editor-->","lh_t453on_label":"Send Message","lh_4w3_email":"Available Monday-Friday, 9:00 AM - 5:30 PM PST | Excluding Holidays","lh_4w3_address":"20929 Ventura Blvd, #47-482 , Los Angeles, CA, 91364"}},"layouthub-6082462e11e4c5757834c8f2":{"XtMGRu7oTy":{"home":"Home","title":"What Size is Best for You?"},"rfwmxi5wlje":{"lh_hifzh_title":"Compare Our Top Products"},"kt9dzrblt6l":{"lh_a168_title":"High Fidelity or Smaller Ears Earplugs?","lh_a168_content":"Watch this video for some tips on how to determine whether our High Fidelity Earplugs or Smaller Ears Earplugs will be the best fit for you."},"pj0ospsfibs":{"lh_a168_title":"The Custom Solution","lh_a168_content":"Interested in getting a custom-fit earplug or headphone? Then check this video out on how to use the Eargasm Ear Scanner App."}},"layouthub-611b03e568512c433b263c82":{"w145o9m2do":{"lh_hifzh_title":"Reviews"},"kkq1o7gz2l":{"lh_a168_link":"@ourstore.ins"},"s03kpwrxm1h":{"lh_uzghxl_text_html":"I go to a lot of concerts and hit the age where it was time to worry about my ears. I purchased these and right away went to two concerts one indoor and one outdoors. My ears felt fine after the concerts and the next day for the first time in a long time. The best part is the sound and vocals came in surprisingly clear still. Very happy with this product and will continue to use for a long time.<!--lh-live-editor-->","lh_mj38lr_name":"Chase D.","lh_mj38lr_job":"Concert-Goer","lh_kv46d2_text_html":"I work in a bar that has live music and these were suggested to me. I hate the cheap foam earplugs because you can't hear anything, and I need to hear my customers orders. These dampen the sound just enough to not cause ear damage yet still allow me to hear people speaking to me.\n<!--lh-live-editor-->","lh_mj38ls_name":"Jen","lh_mj38ls_job":"Bartender","lh_1oksol_text_html":"Between the similarly spec'd Westone and Etymotics, these immediately stand out as passing the least colored sound. One of my ear canals is slightly larger than the other; these fit perfectly in both.\n\nOverall, a tight and realistic sound at concert volumes, great fit, easy to get in and out. Great ear protection for the money!<!--lh-live-editor-->","lh_mj38lt_name":"Amazon Customer","lh_mj38lt_job":"Concert Sound Engineer","lh_hhykzw_text_html":"They worked out amazing! Could hear everything at the show but also knew my ears were being protected.<!--lh-live-editor-->","lh_mj38lu_name":"Jack B.","lh_mj38lu_job":"Concert-Goer","lh_ycm3ar_text_html":"These things were AMAZING!!! I took my oldest son to his first concert which happened to be Metallica and we were on the floor close to the stage and I figured they may muffle the sound from the show. Man was I wrong! We could hear really clear that to the point we did have to move back somewhat for my son. I love the fact that the founder actually reached out to me in an email to see how the product worked. That's VERY rare that people do that these days and it's something I truly appreciated.<!--lh-live-editor-->","lh_mj38lv_name":"Chad","lh_mj38lv_job":"Concert-Goer","lh_f62pma_text_html":"Just picked up drumming again. Ears have been ringing for hours after band practices. Regular ear plugs just muffled too much of the sound. I used these for the first time this week. Perfect! Exactly what I needed. Could hear my other bandmates well, and no ringing even after a 2.5 hour practice.<!--lh-live-editor-->","lh_mj38lw_name":"Nathan D.","lh_mj38lw_job":"Drummer","lh_40go27_text_html":"Amazing. When I was diagnosed with tinnitus (ringing in the ears) keep in mind my right ear is always ringing life has been very difficult. I tried basic earplugs you'd find at Walmart etc. and I didn't like the look to them and how much of a pain it was to insert in my ear. I just received a pair of the Eargasm's today and it was Eargasmic!!! Haha. No hissing noise when I play my instruments. And looks basically unnoticeable. Very easy to put in and take out. The case that it comes with is very handy and durable as well.<!--lh-live-editor-->","lh_mj38lx_name":"Frankie G.","lh_n701qo_text_html":"Since I got these I've had the chance to use them at loud job sites with construction and alarm testing. They do the job very nicely and are comfortable to use.  Also they come with a special container to store them securely. You can see that you are getting a fine quality product the moment it is in your hands.<!--lh-live-editor-->","lh_mj38ly_name":"Amazon Customer","lh_snkmjz_text_html":"These are definitely great ear plugs for the motorcycle - and in fact I may need to get a second pair for my road bike (for the long downhills with lots of wind noise). They cancel wind noise nicely while still allowing me to hear the important sounds of traffic, etc. Easy to insert. Firm material that does not flex - which is great. <!--lh-live-editor-->","lh_mj38lz_name":"Daniel C.","lh_mj38lz_job":"Motorcycle-Rider","lh_9h18vi_text_html":"I've used these ear plugs at 3 concerts now and they fit well, are comfortable, stay in place, and block enough volume to protect your ears while still allowing you to hear pretty well. So much better than the cheap foam earplugs as far as ease of wear. Easy to remove too. Definitely recommend these.<!--lh-live-editor-->","lh_mj38m0_name":"Lisa E.","lh_mj38m0_job":"Concert-Goer","lh_9shf3a_text_html":"Best plugs I've bought yet. Use them for riding the motorcycle and also use them for sport shooting at the range. They are excellent and fit the best in the many plugs I've bought over the years. I am buying a few extra sets because I know I will loose these if I don't keep them attached to something. I will buy again.<!--lh-live-editor-->","lh_17l1cw_name":"Terry","lh_17l1cw_job":"Motorcycle-Rider"}},"layouthub-614bc06efada9126b0281672":{"5megwkgiol":{"lh_krq1kz_title":"Eargasm High Fidelity Earplugs","lh_krq1kz_desc":"Trusted by Over 250,000 Customers (& Counting)","lh_krq1kz_button":"SHOP NOW","lh_krq1l0_title":"Eargasm AquaPlugs","lh_krq1l0_desc":"The High Fidelity Earplug that Lets the Sound in & keeps the water out!","lh_krq1l0_button":"shop now","lh_krq1l1_title":"Eargasm Custom Earplugs","lh_krq1l1_desc":"True to You","lh_krq1l1_button":"SHOP NOW","lh_krq1l2_title":"Eargasm Custom In-Ear Headphones","lh_krq1l2_desc":"Design Your In-Ears From A-Z","lh_krq1l2_button":"DESIGN NOW","lh_krq1l3_title":"Eargasm Slide Earplugs","lh_krq1l3_desc":"You're in Control","lh_krq1l3_button":"SHOP NOW","lh_krq1l4_title":"Eargasm Ear Scanner","lh_krq1l4_desc":"Available on the App Store Now","lh_krq1l4_button":"DOWNLOAD NOW"},"9l2h0cu1jqi":{"lh_krq1kz_title":"Eargasm High Fidelity Earplugs","lh_krq1kz_desc":"Trusted by Over 250,000 Customers (& Counting)","lh_krq1kz_button":"SHOP NOW","lh_krq1l0_title":"Eargasm AquaPlugs","lh_krq1l0_desc":"The High Fidelity Earplug that Lets the Sound in & keeps the water out!","lh_krq1l0_button":"shop now","lh_krq1l1_title":"Eargasm Custom Earplugs","lh_krq1l1_desc":"True to You","lh_krq1l1_button":"SHOP NOW","lh_krq1l2_title":"Eargasm Custom In-Ear Headphones","lh_krq1l2_desc":"Design Your In-Ears From A-Z","lh_krq1l2_button":"DESIGN NOW","lh_krq1l3_title":"Eargasm Slide Earplugs","lh_krq1l3_desc":"You're in Control","lh_krq1l3_button":"SHOP NOW","lh_krq1l4_title":"Eargasm Ear Scanner","lh_krq1l4_desc":"Available on the App Store Now","lh_krq1l4_button":"DOWNLOAD NOW"},"j4xv0eio1k":{"lh_up5omg_view":"Quick View","lh_5hd_heading_html":"<b>🔥 Our Hottest Items 🔥 <\/b>","lh_5hd_des_html":"Free Shipping on All Orders Over $100<!--lh-live-editor-->"},"mc16n3fcb9":{"lh_f5dibt_top":"PROTECT YOUR HEARING IN STYLE","lh_a168_title":"Why Choose Eargasm High Fidelity Earplugs?"},"Kv4OnPWr3Z":{"heading_html":"<h3><a href=\"https:\/\/eargasmearplugs.com\/collections\/eargasm-earplugs-product-line\">SHOP NOW<\/a><\/h3>","des_html":"<h3>Browse Our Extensive Line!&nbsp;&nbsp;<\/h3>","lh_xt3zpj_title":"ACCESSORIES","lh_xt3zpk_title":"DOWNLOAD THE APP","lh_kj0d8o_title":"BROWSE ALL","lh_78wqrt_title":"FAQ","lh_78wqru_title":"BLOG"},"xwodkdvkrpr":{"title_html":"<center>Why Choose Eargasm High Fidelity Earplugs?"},"0rnvzedtckm":{"heading_html":"<a href=\"https:\/\/eargasm.com\/collections\/eargasm-product-line\">SHOP NOW<\/a><br><p style=\"font-size:15px\">Browse Our Extensive Earplug Line<\/p>","lh_ku5mxb_title":"Blog","lh_ku5mxa_title":"FAQ","lh_ku5mx9_title":"Browse All","lh_ku5mx8_title":"Download the Ear Scanner App","lh_ku5mx7_title":"Accessories"},"uawkpq66648":{"lh_f5dibt_top":"REVOLUTIONARY TECHNOLOGY IN THE PALM OF YOUR HAND","lh_a168_title":"Why Eargasm Custom Earplugs?","lh_ffim4z_title":"The Ear Scanner App"},"7rt1ezc30z8":{"lh_a168_title":"Experience Eargasm Earplugs","lh_hpo2th_title":"Foam or High Fidelity?","lh_hpo2th_des_html":"Decide what works best for you- hear the differences in real-time.<!--lh-live-editor-->","lh_hpo2ti_title":"Different Environments","lh_hpo2ti_des_html":"Choose between different scenarios and environments.<!--lh-live-editor-->","lh_hpo2tj_title":"No Protection VS Eargasm Earplugs","lh_hpo2tj_des_html":"Listen to the difference live between no hearing protection and Eargasm Earplugs.<!--lh-live-editor-->","lh_hpo2tk_title":"We're Here to Help! Chat with us","lh_hpo2tk_des_html":"Remember, we're always here to answer any questions you may have!<!--lh-live-editor-->","lh_8huk_link":"Try Now"},"zjsce1d0c4c":{"lh_a168_title":"Experience Eargasm Earplugs","lh_8huk_link":"Try Now","lh_hpo2th_title":"Foam or High Fidelity?","lh_hpo2th_des_html":"Decide what works best for you- hear the differences in real-time.<!--lh-live-editor-->","lh_hpo2ti_title":"Different Environments","lh_hpo2ti_des_html":"Choose between different scenarios and environments.<!--lh-live-editor-->","lh_hpo2tj_title":"No Protection VS Eargasm Earplugs","lh_hpo2tj_des_html":"Listen to the difference live between no hearing protection and Eargasm Earplugs.<!--lh-live-editor-->","lh_hpo2tk_title":"We're Here to Help! Chat with us","lh_hpo2tk_des_html":"Remember, we're always here to answer any questions you may have!<!--lh-live-editor-->"}},"layouthub-61673bbc67b2fc20462bd722":{"ghthklg0g1p":{"lh_krq1kz_title":"Gold Edition","lh_krq1kz_desc_html":"<b>Our most stylish High Fidelity Earplugs yet.<\/b><!--lh-live-editor-->","lh_79ehzq_btn":"SHOP NOW","lh_krq1l0_title":"High Fidelity Earplugs","lh_krq1l0_desc_html":"<b>Trusted by Over 250,000 Customers &amp; Counting.<\/b><!--lh-live-editor-->","lh_no9uxh_btn":"SHOP NOW","lh_krq1l1_title":"Custom Earplugs","lh_krq1l1_desc_html":"True to You - <b>Because They're Made For You.<\/b><!--lh-live-editor-->","lh_uxyu3w_btn":"SHOP NOW","lh_krq1l2_title":"Aquaplugs","lh_krq1l2_desc_html":"Sound In - <b>Water Out.&nbsp;<\/b><!--lh-live-editor-->","lh_ej3h65_btn":"SHOP NOW","lh_krq1l3_title":"Slide Earplugs","lh_krq1l3_desc_html":"You're in <b>Control<\/b>.&nbsp;<!--lh-live-editor-->","lh_1vrvrm_btn":"SHOP NOW","lh_krq1l4_title":"In-Ear Headphones","lh_krq1l4_desc_html":"Design Your <b>In-Ears from A-Z<\/b>.&nbsp;<!--lh-live-editor-->","lh_ian8pd_btn":"SHOP NOW"},"xmpw8kk98tr":{"lh_ku5mxb_title":"Free Shipping","lh_ku5mxb_des":"For US Orders Over $100","lh_ku5mxa_title":"Free Gifts","lh_ku5mxa_des":"For All Orders Over $65","lh_ku5mx9_title":"Prompt Support","lh_ku5mx9_des_html":"Live Chat. Email, &amp; Phone!"},"85wn4mxi6qp":{"lh_up5omg_view":"Quick View","lh_5hd_heading":"Best Sellers","lh_5hd_des_html":"Free Shipping on All Orders Over $100<!--lh-live-editor-->"},"efpvktix3d":{"lh_hifzh_title":"Earplugs For","lh_5r8yyn_title_html":"<b>MUSIC<\/b>","lh_ku5mxb_desc_html":"<div class=\"container\">\n  <span contenteditable=\"false\" class=\"lh-texteditor-image\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1124\/3298\/t\/50\/assets\/music_yY1h.jpg\" style=\"width:100%\" class=\"lh-texteditor-img\"><\/span><b>\n<a href=\"https:\/\/eargasm.com\/collections\/eargasm-product-line\/musicians\">  <button class=\"btn\">Shop Now<\/button><\/a>\n<\/b><\/div>\n<p><b><br><\/b><\/p><p><b><font size=\"4\">\n\nAre you a concert-goer or musician? We've got you! Protect your hearing from the dangerous noise levels at live events without compromising on sound quality. Our wide range of earplug models, sizes, and colors mean that Eargasm can be your 1-stop shop for all your hearing protection needs!<\/font><!--lh-live-editor--><\/b><\/p>","lh_anmdz4_title_html":"<b>NOISE-SENSITIVITIES<\/b>","lh_ku5mxa_desc_html":"<div class=\"container\">\n  <span contenteditable=\"false\" class=\"lh-texteditor-image\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1124\/3298\/t\/50\/assets\/noise-sensitive-revised_2g01.jpg?v=1643833278\" style=\"width:100%\" class=\"lh-texteditor-img\"><\/span><b>\n<a href=\"https:\/\/eargasm.com\/collections\/eargasm-product-line\/noise-sensitivities\">  <button class=\"btn\">Shop Now<\/button><\/a>\n<\/b><\/div>\n\n\n\n<\/p><p><br><\/p><p><b><font size=\"4\">Do loud environments overwhelm you? Do certain noises really grind your gears? Eargasm can act as your very own volume knob on life. Our earplugs are perfect for mitigating noise sensitivity and help you get back to living your life!&nbsp;&nbsp;<\/font><\/b><\/p><!--lh-live-editor-->","lh_r2hqwv_title_html":"<b>ON-THE-ROAD USE<\/b>","lh_ku5mx9_desc_html":"<div class=\"container\">\n  <span contenteditable=\"false\" class=\"lh-texteditor-image\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1124\/3298\/t\/50\/assets\/on-the-road_dWlw.jpg?v=1643833280\" style=\"width:100%\" class=\"lh-texteditor-img\"><\/span><b>\n<a href=\"https:\/\/eargasm.com\/collections\/eargasm-product-line\/motorcyclists\">  <button class=\"btn\">Shop Now<\/button><\/a>\n<\/b><\/div>\n\n\n\n<p><b><font size=\"4\"><br><\/font><\/b><\/p><p><b><font size=\"4\">Wind noise can be incredibly damaging to your hearing- but you still need to be aware of your surrounding. So, what do you do? Give Eargasm a try! Hear surrounding traffic while mitigating road noise for the ultimate riding experience.&nbsp;&nbsp;<\/font><\/b><\/p><!--lh-live-editor-->","lh_rjqy4i_title_html":"<b>SLEEP<\/b><br>","lh_ku5mx8_desc_html":"<div class=\"container\">\n  <span contenteditable=\"false\" class=\"lh-texteditor-image\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1124\/3298\/t\/50\/assets\/sleep_QQ4Q.jpg?v=1643833279\" style=\"width:100%\" class=\"lh-texteditor-img\"><\/span><b>\n<a href=\"https:\/\/eargasm.com\/collections\/eargasm-product-line\/sleeping\">  <button class=\"btn\">Shop Now<\/button><\/a>\n<\/b><\/div>\n\n\n\n\n<p><br><\/p><p><b><font size=\"4\">Good sleep can lead to better overall health and in order to <i>get<\/i> good sleep, you need quiet. Our Squishies and Foam Earplugs offer the best of both worlds- comfort, and heavy sound reduction.&nbsp;&nbsp;<\/font><\/b><\/p><!--lh-live-editor-->","lh_b4vl6r_title_html":"<b>TRAVELING<\/b><br>","lh_ku5mx7_desc_html":"<div class=\"container\">\n  <span contenteditable=\"false\" class=\"lh-texteditor-image\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1124\/3298\/t\/50\/assets\/travel_t6VT.jpg?v=1643833280\" style=\"width:100%\" class=\"lh-texteditor-img\"><\/span><b>\n<a href=\"https:\/\/eargasm.com\/collections\/eargasm-product-line\/sleeping\">  <button class=\"btn\">Shop Now<\/button><\/a>\n<\/b><\/div>\n\n\n\n\n<br><p><b style=\"font-size: calc(var(--lh-font-size) * 1);\"><font size=\"4\">Traveling can be so exciting- until it comes to noisy airplanes, and uncomfortable cabin pressure. Well, fret not- our Aviation Earplugs have an innovative membrane embedded inside them that slow the process of pressure change inside the ear canal. Neat, right?<\/font><\/b><\/p><!--lh-live-editor-->"},"587i7x3h5wc":{"lh_9xy8_title":"Not Sure Which To Choose?","title":"Take the Quiz","desc_html":"<b>Take the quiz and get matched to your perfect pair-<br>or experience Eargasm live on our website.&nbsp;<br><\/b>","lh_gbw8q_1":"Quiz","lh_gbw8q_2":"Experience"},"EuHYJZTwV1":{"lh_fw847x_title_html":"<div class=\"textshadow2\"> Eargasm Product Line <\/div>","lh_nyd31e_title_html":"<b>Check Out All That Eargasm Has to Offer&nbsp;<\/b>","lh_3kbofg_label":"SHOP NOW","lh_fw847y_title_html":"<div class=\"textshadow\"> Bundles <\/div>","lh_nozfz5_title":"Get More for Less","lh_4mrd5f_label":"SHOP NOW","lh_fw847z_title_html":"<div class=\"textshadow3\"> Best Sellers <\/div>","lh_nflsww_title_html":"Chosen by Over 250,000 &amp; Counting","lh_ctueqa_label":"SHOP NOW","lh_fw8480_title":"Custom Products","lh_n685un_title":"Custom-Made For Your Ears Only","lh_l0xgb5_label":"SHOP NOW"},"tjsfayjfcw":{"text1":"Testimonials","lh_92gzf4_content_html":"\"Love having them on my keychain for work. Easy to keep and easy to use. They help immensely during live shows and construction.\"\n<!--lh-live-editor-->","lh_okt5z2_name":"Jake B.","lh_sksjvf_name":"CUSTOMER","lh_92gzf5_content_html":"\"I’ve been searching for over 20 years for earplugs that are comfortable, fit, and work. These are the only ones that do it all.\"\n<!--lh-live-editor-->","lh_85xt1b_name":"Jerome G.","lh_sbewt6_name":"CUSTOMER","lh_92gzf6_content_html":"\"I bought these for my son who asked for them for Christmas. He loves to go to concerts and clubs in Orlando and they have protected his hearing but not hindered the experience at all. Wonderful purchase. Thank you.\"<!--lh-live-editor-->","lh_88xjwg_name":"Liane C.","lh_s219qx_name":"CUSTOMER","lh_92gzf7_content_html":"\"I struggle with tinnitus and my ears are sensitive to loud noises especially sustained. These earplugs have dramatically improved my ability to participate at church (where worship can get loud) as well as at NHL games without discomfort!\"<!--lh-live-editor-->","lh_onswu7_name":"James B.","lh_rsnmoo_name":"CUSTOMER","lh_92gzf8_content_html":"\"I bought a set each for myself and my boyfriend prior to attending a Metallica concert. My first metal show and one in a long line for him. Wanted to preserve my hearing and conserve his! We were both extremely satisfied and afterwards he marveled at how everything sounded great and his ears weren’t ringing when we left the show like they usually do. Two thumbs up from both of us, and we can’t wait to use them again.\"<!--lh-live-editor-->","lh_tyfs76_name":"Julia F.","lh_rj9zmf_name":"CUSTOMER","lh_92gzf9_content_html":"\"Heard about how awesome these were from many ppl who go to EDM shows. Finally picked up myself a pair with the additional DB canceling piece(s) and man I wish I had sooner! Took these to an Illenium show and just WOW!! I could hear ppl talk without ever canceling out the music. The music was still amazing through these! Pick up a pair, you'll wonder why you didn't sooner!!\"<!--lh-live-editor-->","lh_djkf9f_name":"Bryan S.","lh_r9wck6_name":"CUSTOMER"},"vzpth87f7h":{"title":"Testimonials","lh_uzghxl_text":"\"Love having them on my keychain for work. Easy to keep and easy to use. They help immensely during live shows and construction.\"","lh_mj38lr_name":"Jake B.","lh_mj38lr_job":"Customer","lh_kv46d2_text":"\"I’ve been searching for over 20 years for earplugs that are comfortable, fit, and work. These are the only ones that do it all.\"","lh_mj38ls_name":"Jerome G.","lh_mj38ls_job":"Customer","lh_1oksol_text":"\"I bought these for my son who asked for them for Christmas. He loves to go to concerts and clubs in Orlando and they have protected his hearing but not hindered the experience at all. Wonderful purchase. Thank you.\"","lh_mj38lt_name":"Liane C.","lh_mj38lt_job":"Customer","lh_hhykzw_text":"\"I struggle with tinnitus and my ears are sensitive to loud noises especially sustained. These earplugs have dramatically improved my ability to participate at church (where worship can get loud) as well as at NHL games without discomfort!\"","lh_mj38lu_name":"James B.","lh_mj38lu_job":"Customer","lh_ycm3ar_text":"\"I bought a set each for myself and my boyfriend prior to attending a Metallica concert. My first metal show and one in a long line for him. Wanted to preserve my hearing and conserve his! We were both extremely satisfied and afterwards he marveled at how everything sounded great and his ears weren’t ringing when we left the show like they usually do. Two thumbs up from both of us, and we can’t wait to use them again.\"","lh_mj38lv_name":"Julia F.","lh_mj38lv_job":"Customer","lh_f62pma_text_html":"\"Heard about how awesome these were from many ppl who go to EDM shows. Finally picked up myself a pair with the additional DB canceling piece(s) and man I wish I had sooner! Took these to an Illenium show and just WOW!! I could hear ppl talk without ever canceling out the music. The music was still amazing through these! Pick up a pair, you'll wonder why you didn't sooner!!\"<!--lh-live-editor-->","lh_mj38lw_name":"Bryan S.","lh_mj38lw_job":"Customer"},"pryjh4z7qae":{"lh_f1jjom_success_html":"Thanks for Subscribing! Use Code <b>EMAIL10<\/b> for 10% Off.","lh_32_signup":"Sign Up","heading":"Sign Up to Our Newsletter","des_html":"<i>Join Our Mailing List to Get 10% Off on Your Next Purchase.<\/i>"}},"layouthub-61eef6cb8048e012cf05a4e2":{"3XtP0oA5gW":{"lh_pnhrjt_type":"Product type","lh_pnhrjt_vendor":"Product vendor","lh_up5omg_categories":"CATEGORIES:","lh_up5omg_sku":"SKU:","countdown":"2025-12-08T16:47:00+0000","lh_up5omg_wl":"Add to Wishlist","lh_up5omg_outstock":"Out of stock","lh_up5omg_new":"New","lh_up5omg_sale":"Sale","lh_k4hsr9_out":"Sold out","lh_rv7xkc_order":"PRE-ORDER","lh_k1su5s_cart":"ADD TO CART","lh_up5omg_quantity":"Quantity","lh_up5omg_external":"FROM AMAZON","lh_up5omg_buynow":"BUY NOW","lh_unv29k_size":"How Do I Know what Size I Need?","lh_brmh73_title":"DESCRIPTION","lh_brmh74_title":"REVIEWS","lh_brmh75_title":"SHIPPING & DELIVERY","lh_6etoga_infor_html":"Free standard domestic shipping. <br> Free 2-Day domestic shipping on orders over $200. <br> Free return shipping within the US. Find out more.<!--lh-live-editor-->","lh_vz1co2_content_html":"<h3 style=\"text-align: center;margin-bottom: 0;\">SIZE GUIDE<\/h3><p style=\"text-align: center;\"> This is an approximate conversion table to help you find your size. <\/p><table class=\"tt-table-modal-info\" style=\"text-align: center;\"><thead><tr><th>VN<\/th><th>JP<\/th><th>UK<\/th><th>US<\/th><th>KOR<\/th><\/tr><\/thead><tbody><tr><td>34<\/td><td>30<\/td><td>28<\/td><td>4<\/td><td>00<\/td><\/tr><tr><td>36<\/td><td>32<\/td><td>30<\/td><td>6<\/td><td>0<\/td><\/tr><tr><td>38<\/td><td>34<\/td><td>32<\/td><td>8<\/td><td>2<\/td><\/tr><tr><td>40<\/td><td>36<\/td><td>34<\/td><td>10<\/td><td>4<\/td><\/tr><tr><td>42<\/td><td>38<\/td><td>36<\/td><td>12<\/td><td>6<\/td><\/tr><tr><td>44<\/td><td>40<\/td><td>38<\/td><td>14<\/td><td>8<\/td><\/tr><tr><td>46<\/td><td>42<\/td><td>40<\/td><td>16<\/td><td>10<\/td><\/tr><tr><td>48<\/td><td>44<\/td><td>42<\/td><td>18<\/td><td>12<\/td><\/tr><tr><td>50<\/td><td>46<\/td><td>44<\/td><td>20<\/td><td>14<\/td><\/tr><tr><td>52<\/td><td>48<\/td><td>46<\/td><td>22<\/td><td>16<\/td><\/tr><\/tbody><\/table><!--lh-live-editor-->"},"p0zzqrkw91g":{"lh_up5omg_outstock":"Out of stock","lh_rv7xkc_order":"Pre-Order","lh_k1su5s_cart":"Add to Cart","lh_pnhrjt_type":"Product type","lh_pnhrjt_vendor":"Product vendor","lh_sjlit0_progress":"{left} items left","lh_up5omg_instock":"In Stock","countdown":"2025-12-08T16:47:00+0000","lh_up5omg_new":"New","lh_up5omg_sale":"Sale","lh_k4hsr9_out":"Sold out","lh_k4n5os_image":"Roll over image to zoom in","lh_up5omg_sku":"Sku:","lh_up5omg_status":"Stock","lh_sjlit0_countdown":"Sale will end after","lh_up5omg_quantity":"Quantity","lh_up5omg_external":"From Amazon","lh_up5omg_buynow":"Buy Now","lh_brmh73_title":"Description","lh_brmh74_title":"Shipping & Returns","lh_5hto7f_infor_html":"<style type=\"text\/css\">p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px \"Helvetica Neue\"; color: #554d56}<\/style><ul><li data-lh-list>Delivery is free for all orders over $80. Otherwise, delivery is $8-$25 depending on the items you plan to purchase.<\/li><li data-lh-list>Once your product has shipped, it usually takes 2 to 3 business days in USA, 3 to 8 in Europe. 5 to 15 for the rest of the world<\/li><li data-lh-list>You can return your product up to 14 days after receiving your order.Please make sure that the products are not used.<\/li><\/ul><!--lh-live-editor-->","lh_brmh75_title":"Payment & Security"}},"layouthub-620ec0e43eabcf267226cce2":{"md5BO4vLHi":{"lh_lstl57_success":"Thank you for contacting us! A member of the team will get back to you soon.","lh_4w3_title":"GET 10% OFF BY SIGNING UP","lh_4w3_desc_html":"Please fill out the form below if you would like to receive text updates regarding our sales and products. You will receive a text with your coupon code after signing up.<!--lh-live-editor-->"},"cvm9g1s7cbm":{"lh_4mruur_title":"Click below to continue shopping with Eargasm!","lh_4mruur_content_html":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec quam vel odio mollis ultricies. Suspendisse facilisis condimentum ex, at ultricies lacus sagittis ac. Etiam in nibh laoreet felis sagittis tempor a in ante. Nam elit sapien, luctus ut orci vitae, mattis euismod ipsum. In vitae pulvinar leo, a maximus.<\/p><!--lh-live-editor-->"}},"layouthub-6216b6560d45c50f4f362842":{"MnVAFIXHZc":{"text1_html":"Welcome to the<div>Ear-Frens Project<\/div>","text2_html":"Join the Ear-Frens Family Today! <b> <br>Click below to get your Ear-Fren NFT today. <\/b><!--lh-live-editor-->","lh_8huk_link":"GET YOURS"},"k76tffhupp":{"text1":"Welcome to the Ear-Frens Project","text2_html":"Join the Ear-Frens Family Today! <b>Click below to get your Ear-Fren NFT today.<\/b><!--lh-live-editor-->","lh_8huk_link":"Get Yours"},"zlu0rwxe8t":{"lh_hifzh_title":"The Ear-Frens are HERE"},"imoilfx33gj":{"lh_8kwg_button":"Get Yours"},"zkjosn37b3n":{"heading":"Ear-Frens NFT"},"wyjl7ajrji":{"lh_hifzh_title":"What is This?"},"etsmd3xdvdw":{"lh_ku5mxb_title":"The Ear Frens","lh_ku5mxb_des_html":"These little frens were thought up and brought into this world by the Eargasm team. Their only purpose on this planet is to keep YOUR ears safe. 90 special people will have the chance to join the Ear-Frens family; <b>will it be you? <\/b><!--lh-live-editor-->","lh_ku5mxa_title":"Ultra rare","lh_ku5mxa_des_html":"There will be<b> 80 rare NFTs provided, with only 10 ultra rare NFTs<\/b>. Know that you'll be holding something that is not only rare in its edition size- but also rare in the hearing protection world.&nbsp;<!--lh-live-editor-->","lh_ku5mx9_title":"Utility","lh_ku5mx9_des_html":"Each NFT can be <b>redeemed for a physical copy of the design<\/b>, plus a box set of our ever-so-popular High Fidelity\/Smaller Ears Earplugs, 4 25% coupons provided over the span of 4 quarters, and last, but not least, a FREE set of our newest product sent to you at our next launch.<!--lh-live-editor-->"},"3z5ga7twzc8":{"lh_hifzh_title":"I Want One!"},"8g16ed6p3zk":{"lh_ku5mxb_title":"Get Yours","lh_ku5mxb_des_html":"<a href=\"https:\/\/objkt.com\/explore\/tokens?fa2=KT1928tVz5pzWMsCPt1MbctfXU6xsUN6sRWs&sortBy=idDesc\"><b>You can get your Ear-Fren HERE. <\/a><\/b>Remember- you'll need a <b>Tezos compatible <a href=\"https:\/\/tezblock.io\/ecosystem\/wallets\">wallet<\/a><\/b>, some Tez, and an <b>account on <a href=\"https:\/\/objkt.com\/\">OBJKT<\/a><\/b>.<!--lh-live-editor-->","lh_ku5mxa_title":"Discord","lh_ku5mxa_des_html":"Join us in our <b><a href=\"https:\/\/discord.gg\/Cw2sYbXxq4\">Discord<\/a> channel<\/b> for future announcements, chat with fellow Ear-Frens, and to connect with our team!<!--lh-live-editor-->","lh_ku5mx9_title":"Twitter","lh_ku5mx9_des_html":"Follow us on<b> <a href=\"https:\/\/twitter.com\/eargasmearplugs\">Twitter<\/a> <\/b>for exclusive AMAs, spaces, and ask us questions in-person (well, virtually).<!--lh-live-editor-->"},"27k1g499nrw":{"lh_a168_title":"The Ear-Frens"},"a3aim5tkdas":{"lh_8kwg_button":"Get Yours"},"bl0kkrtq3kb":{"heading_html":"<b>Roadmap<\/b>","description":"In addition to the 2.0.3 install, you should be aware that some bugs have already been found, and that a plugin will need to be installed to repair those bugs. If you modify any of the files","lh_ozg0bv_title":"March 2nd 2022","lh_bdge4c_f":"Discord Launch","lh_bdge4b_f":"Twitter Space AMA","lh_ozg0bw_title":"March 9th 2022","lh_onk0l7_f":"NFT Sneak Peek","lh_ozg0bx_title":"March 16th","lh_x3gex2_f":"Twitter Space AMA","lh_x3gex3_f":"Live Reveal of NFT #1","lh_x3gex4_f":"Mint Date Announcement","lh_ozg0by_title":"March 23rd","lh_jtcsg7_f":"Launch","btn":"Button"},"U5tCkdQ8NL":{"text1":"Frequently Asked Questions","lh_5r8yyn_title":"What is the Ear-Frens Project?","lh_ku5mxb_desc_html":"The Ear-Frens Project is a collection released by a leader in the earplug industry- Eargasm Earplugs. As a company, our mission statement has always surrounded innovation. As such, we are joining our fellow NFT connoisseurs in becoming part of the revolution.&nbsp;<!--lh-live-editor-->","lh_anmdz4_title":"Who's behind the Ear-Frens Project?","lh_ku5mxa_desc_html":"The Eargasm team! To learn more about us, see here: <a href=\"https:\/\/eargasm.com\/pages\/about-us \">https:\/\/eargasm.com\/pages\/about-us <\/a><!--lh-live-editor-->","lh_r2hqwv_title":"How many Ear-Frens NFTs are there?","lh_ku5mx9_desc_html":"<span style=\"font-weight: normal;\"> There are four rare NFTs, with an edition of 20 in each, and one ultra-rare NFT with 10 editions. \n<!--lh-live-editor--><\/span>","lh_rjqy4i_title":"What's the difference between the rare edition and the others?","lh_ku5mx8_desc_html":"<span style=\"font-weight: normal;\">The edition count; the reason we are labeling these as rare and ultra-rare is due to the fact that there are no common types. These will be a one-time-only drop on the Tezos blockchain so grab 'em while you can.<\/span><!--lh-live-editor-->","lh_b4vl6r_title":"What exactly am I buying — a computer file?","lh_ku5mx7_desc_html":"<span style=\"font-weight: normal;\">The NFT you purchase can be considered a ticket of sorts; you will receive the physical version of your carrying case (along with your choice of our High Fidelity Earplugs or Smaller Ears Earplugs), four 25% off coupons that can be used over the span of 4 quarters, along with a FREE set of our newest product sent to you at our next launch. <!--lh-live-editor--><\/span>","lh_59zrr0_title":"Is there physical merchandise?","lh_ku5mx6_desc_html":"<span style=\"font-weight: normal;\">Yes! Each NFT is connected to a corresponding IRL carrying case and box set of your choice (High Fidelity Earplugs or Smaller Ears Earplugs). <!--lh-live-editor--><\/span>","lh_lov4or_title":"How do I redeem my merchandise?","lh_ku5mx5_desc_html":"<span style=\"font-weight: normal;\">Once purchased, you will need to contact us at info@eargasm.com with your wallet address. We will airdrop you a burn token, which you will need to send to earfrens.tez; after we've verified your wallet, we'll contact you for your shipping information.<!--lh-live-editor--><\/span>","lh_wxdkcm_title":"How do I get my NFT?","lh_ku5mx4_desc_html":"<span style=\"font-weight: normal;\">You can get your Ear-Fren NFT <\/span><b><a href=\"https:\/\/objkt.com\/explore\/tokens?fa2=KT1928tVz5pzWMsCPt1MbctfXU6xsUN6sRWs&sortBy=idDesc\">here.<\/a><\/b><span style=\"font-weight: normal;\">Please note, you will need the following: a Tezos compatible wallet, some Tez, and an account on OBJKT. To sign up on OBJKT, you will first need a wallet; for a list of wallets, please see here: <a href=\"https:\/\/tezblock.io\/ecosystem\/wallets\">https:\/\/tezblock.io\/ecosystem\/wallets \n<\/a><\/span><!--lh-live-editor-->","lh_gii7ev_title_html":"Where are you minting?<br>","lh_ku5mx3_desc_html":"<span style=\"font-weight: normal;\">We are minting on Tezos. Tezos requires less energy and cost to operate than proof-of-work algorithms, making it an ideal platform for more sustainable use! It's also highly secure; Tezos is designed to provide the safety and code correctness required for high-value use.\n<!--lh-live-editor--><\/span>","lh_3muh4_title":"What marketplace are you guys using?","lh_ku5mx2_desc_html":"<span style=\"font-weight: normal;\">We will be releasing our work on <a href=\"OBJKT.com\">OBJKT.com<\/a>: one of the largest NFT marketplaces on the Tezos blockchain.<!--lh-live-editor--><\/span>"},"z8pwuqj24c8":{"lh_lstl57_success":"Thank you for contacting us! A member of the team will get back to you soon.","lh_4w3_title":"Contact Us","lh_4w3_desc_html":"If you have feedback, questions, concerns, or anything else you’d like to share please&nbsp;<div>feel free to use the contact form below.<\/div><!--lh-live-editor-->","lh_t4agme_label":"Send Message","lh_4w3_email_html":"Available Monday-Friday, 9:00 AM - 5:30 PM PST | Excluding Holidays<br>","lh_4w3_address":"20929 Ventura Blvd, #47-482 , Los Angeles, CA, 91364"}},"layouthub-6216dde1fbaa7c382b429ef2":{"wyjl7ajrji":{"lh_hifzh_title":"Why Join Us?"},"U5tCkdQ8NL":{"text1":"Frequently Asked Questions","lh_5r8yyn_title":"I applied- now what?","lh_ku5mxb_desc_html":"<b>Woo! Thank you for applying. Please wait 1-3 business days while our Head of Partnerships looks over your application- you will receive an email as to whether or not you were accepted.<\/b><!--lh-live-editor-->","lh_anmdz4_title":"Do I have to pay for my earplugs?","lh_ku5mxa_desc_html":"No! If you're chosen to be part of our partnership program, we'll send them your way, free of charge (no shipping or handling fees either). You'll also get the chance to choose your favorite set.<!--lh-live-editor-->","lh_r2hqwv_title":"What do I have to do?","lh_ku5mx9_desc_html":"We try to make our partnerships as unique as possible and curated to the person we're partnering with. You'll receive a list of terms, and get a chance to review and edit them before you accept.<!--lh-live-editor-->","lh_rjqy4i_title":"What other perks do I get?","lh_ku5mx8_desc_html":"In addition to all of the awesome perks we mentioned above, you'll also get notified of any giveaways we're running, exclusive contests catered only to you, free swag, and more.&nbsp;<!--lh-live-editor-->","lh_b4vl6r_title":"I have another question!","lh_ku5mx7_desc_html":"No worries! Just email us at <a href=\"mailto:partnerships@eargasm.com\">partnerships@eargasm.com<\/a> or chat with us live using the chat icon to the right-hand-side corner of this page.<!--lh-live-editor-->"},"7e1ganaj80l":{"lh_hifzh_title":"Earfluencer Spotlight"},"9arx2uhqb9w":{"lh_a168_title":"Earfluencer Spotlight","lh_a168_desc_html":"Hear What Our Earfluencers Have to Say!<!--lh-live-editor-->","lh_okt5z2_name":"Kenzie Striker","lh_sksjvf_name":"@littlebassbrat","lh_92gzf4_content_html":"\"I have the transparent edition, so it’s ensured to match every single color crazed outfit i come up with. It’s perfect for our work environment since we have 8+ hour shifts at a super noisy live music bar!\"<!--lh-live-editor-->","lh_85xt1b_name":"Jesse Fulco","lh_sbewt6_name":"@jessefulco","lh_92gzf5_content_html":"\"As a musician and concert go-er, these earplugs have saved my hearing. I was born with severe hearing problems, but after some surgeries I was able to hear well again. I use Eargasm Earplugs at any loud concert to preserve my hearing.\"<!--lh-live-editor-->","lh_88xjwg_name":"Mia","lh_s219qx_name":"@sunrise_wanderer","lh_92gzf6_content_html":"\"Music is a big part of my life and if I wasn't able to hear it would be devastating! Eargasm Earplugs are the perfect way to enjoy EDM festivals and protect your hearing.\"<!--lh-live-editor-->","lh_onswu7_name":"Ivan Copelli","lh_rsnmoo_name":"@ivancopelli","lh_92gzf7_content_html":"\"They protect my hearing, but still preserving the sound quality, which is crucial for me as a musician. I can continue playing drums or even having a normal conversation in a packed venue without hurting my hearing.\"<!--lh-live-editor-->","lh_tyfs76_name":"Mars","lh_rj9zmf_name":"@mangoflows","lh_92gzf8_content_html":"\"Hearing damage is non reversible but it can be prevented. It’s never too early and If you’re always at shows and events I HIGHLY advise you to start now. Catch me always wearing my new earplugs, they’re honestly way more comfortable than you can imagine so now you have no excuse!\"<!--lh-live-editor-->","lh_djkf9f_name":"Chris","lh_r9wck6_name":"@wav_formation","lh_92gzf9_content_html":"\"If you do audio for a living you know how important it is to retain your hearing. I go to a lot of concerts and festival and without these my hearing would be absolute garbage at this point.\"<!--lh-live-editor-->","lh_2vaxoc_name":"Yajaira","lh_r0iphx_name":"@_glitzz_","lh_92gzfa_content_html":"\"Finally, No more ringing ears after raves!! Now I can dance all night knowing that my ears and hearing are protected!\"<!--lh-live-editor-->","lh_ja6am3_name":"Eggplant","lh_qr52fo_name":"@eggplantsworldd","lh_92gzfb_content_html":"\"I got tired of damaging my hearing so I got Eargasm Earplugs. They provide the best hearing protection, extra tips and a carrying case. They did not fall out AND they protected my ears. 10\/10. \"<!--lh-live-editor-->","lh_zc2efa_name":"Shell","lh_qhrfdf_name":"@ shellstoned","lh_92gzfc_content_html":"\"They saved my ears at NCMF. I've never used earplugs before because I hated they way they felt and fit but these feel amazing and won't fall out!\"<!--lh-live-editor-->"}},"layouthub-628e86d2c08b277bf05693e2":{"XtMGRu7oTy":{"home":"Home","title":"About Us"},"2awmQkRKcD":{"title":"Our Journey","des_html":"The revolution is here.<!--lh-live-editor-->","lh_f330hg_text":"Eargasm Users","lh_f32xf7_text":"Reviews","lh_f32ucy_text":"Countries We Ship To","lh_f32rap_text":"Years of Eargasm"},"xa7tut9w41j":{"title":"The Team"},"y6dryy1za2b":{"lh_iy69ny_name":"Ryan Parry","lh_iy69ny_job":"Founder","lh_iy69ny_content_html":"Ryan founded Eargasm in 2015. He enjoys being hands on in all aspects of the company and is closely involved in its day to day operations.  When not busy serving Eargasm's customers he enjoys playing with his dog Joey and going to the beach.&nbsp; &nbsp;","lh_iy66lp_name":"Pan Shahbazian","lh_iy66lp_job":"Director of Operations","lh_iy66lp_content_html":"Pan enjoys working closely with the Eargasm team and its user base and finding new opportunities to make processes efficient and better. In her down-time, Pan likes listening to Dean Martin and eating good Italian food.&nbsp;","lh_iy63jg_name":"Miguel Rivera","lh_iy63jg_job":"Warehouse Operations Manager","lh_iy63jg_content":"Miguel was born and raised in the valley. He operates the day-to-day shipping operations at our local warehouse in southern California. He's also \"all about that plant life\".","lh_iy60h7_name":"Michael Roloff","lh_iy60h7_job_html":"Client Relations&nbsp;","lh_iy60h7_content":"Michael works with Eargasm's user base to ensure they're matched up with a product they'll love. In his off time, Michael enjoys surfing, cooking, and playing with his dogs.","lh_iy5xey_name":"Johana Coles","lh_iy5xey_job":"Head of Partnerships","lh_iy5xey_content":"Johana loves meeting new people and works closely with Eargasm's influencer base. On her off time, she operates her own small business and enjoys spending time with her family. Not to mention, she's also the BIGGEST Big Hero 6 fan! Balalalala!","lh_iy5ucp_name":"Lila Noori","lh_iy5ucp_job":"Brand Coordinator","lh_iy5ucp_content":"Lila works day to day maintaining Eargasm's thriving social media accounts. She loves going to live music events and festivals. She's always looking for the hotspot restaurants in town. She also enjoys trying out new recipes, and spending quality time with her family and friends.","lh_iy5rag_name":"Danny Gonzalez","lh_iy5rag_job":"Lead Graphic Designer","lh_iy5rag_content_html":"Danny is the lead graphic designer at Eargasm, and is driven by all things creative! When he's not working, he is most likely playing guitar, skating, or playing with his Mini Aussie, Scraps.&nbsp;","lh_iy5o87_name":"Alexey Barqawi","lh_iy5o87_job":"Lead Graphic Designer","lh_iy5o87_content_html":"Alexey works on making the Eargasm website the absolute best it can be, from user experience to functionality and design. In his free time, he likes to hike and do wood carving.&nbsp;"},"j0eril31u7a":{"lh_hifzh_title":"Events"},"mh57rlz49o":{"lh_hifzh_title_html":"Charities &amp; Organizations"},"mdtn4wm1gh":{"lh_hifzh_title":"Partnerships"},"ml6o4n06x6m":{"lh_hifzh_title":"In Media"},"mnfoi9acm":{"lh_lstl57_success":"Thank you for contacting us! A member of the team will get back to you soon.","lh_4w3_title":"Contact Us","lh_4w3_desc_html":"If you have feedback, questions, concerns, or anything else you’d like to share please feel free to use the contact form below. <b>If inquiring about a product purchased from us, please include your order number in your email and we will respond within 1 business day. <\/b><div><b><br><\/b><\/div><div><font size=\"2\" style=\"\">💬 Chat with Us Live! Just Click The Icon to the Bottom Right<\/font><\/div><div><font size=\"2\" style=\"\">☎️  Call Us | <span style=\"color: rgb(98, 156, 215); text-decoration-line: underline;\"><a href=\"tel:8182083278\">(818) 208-3278 <\/a><\/span><\/font><br><\/div><!--lh-live-editor-->","lh_t453on_label":"Send Message","lh_4w3_email_html":"Available Monday-Friday, 9:00 AM - 5:30 PM PST | Excluding Holidays<br>","lh_4w3_address":"20929 Ventura Blvd, #47-482 , Los Angeles, CA, 91364"}},"layouthub-628e8707a39b0908f4188c62":{"XtMGRu7oTy":{"home":"Home","title":"About Us"},"2awmQkRKcD":{"title":"Our Journey","des_html":"The revolution is here.<!--lh-live-editor-->","lh_f330hg_text":"Eargasm Users","lh_f32xf7_text":"Reviews","lh_f32ucy_text":"Countries We Ship To","lh_f32rap_text":"Years of Eargasm"},"xa7tut9w41j":{"title":"The Team"},"y6dryy1za2b":{"lh_iy69ny_name":"Ryan Parry","lh_iy69ny_job":"Founder","lh_iy69ny_content_html":"Ryan founded Eargasm in 2015. He enjoys being hands on in all aspects of the company and is closely involved in its day to day operations.  When not busy serving Eargasm's customers he enjoys playing with his dog Joey and going to the beach.&nbsp; &nbsp;","lh_iy66lp_name":"Pan Shahbazian","lh_iy66lp_job":"Director of Operations","lh_iy66lp_content_html":"Pan enjoys working closely with the Eargasm team and its user base and finding new opportunities to make processes efficient and better. In her down-time, Pan likes listening to Dean Martin and eating good Italian food.&nbsp;","lh_iy63jg_name":"Miguel Rivera","lh_iy63jg_job":"Warehouse Operations Manager","lh_iy63jg_content":"Miguel was born and raised in the valley. He operates the day-to-day shipping operations at our local warehouse in southern California. He's also \"all about that plant life\".","lh_iy60h7_name":"Michael Roloff","lh_iy60h7_job_html":"Client Relations&nbsp;","lh_iy60h7_content":"Michael works with Eargasm's user base to ensure they're matched up with a product they'll love. In his off time, Michael enjoys surfing, cooking, and playing with his dogs.","lh_iy5xey_name":"Johana Coles","lh_iy5xey_job":"Head of Partnerships","lh_iy5xey_content":"Johana loves meeting new people and works closely with Eargasm's influencer base. On her off time, she operates her own small business and enjoys spending time with her family. Not to mention, she's also the BIGGEST Big Hero 6 fan! Balalalala!","lh_iy5ucp_name":"Lila Noori","lh_iy5ucp_job":"Social Media Manager","lh_iy5ucp_content":"Lila works day to day maintaining Eargasm's thriving social media accounts. She loves going to live music events and festivals. She's always looking for the hotspot restaurants in town. She also enjoys trying out new recipes, and spending quality time with her family and friends.","lh_iy5rag_name":"Danny Gonzalez","lh_iy5rag_job":"Lead Graphic Designer","lh_iy5rag_content_html":"Danny is the lead graphic designer at Eargasm, and is driven by all things creative! When he's not working, he is most likely playing guitar, skating, or playing with his Mini Aussie, Scraps.&nbsp;"},"j0eril31u7a":{"lh_hifzh_title":"Events"},"mh57rlz49o":{"lh_hifzh_title_html":"Charities &amp; Organizations"},"mdtn4wm1gh":{"lh_hifzh_title":"Partnerships"},"ml6o4n06x6m":{"lh_hifzh_title":"In Media"},"mnfoi9acm":{"lh_lstl57_success":"Thank you for contacting us! A member of the team will get back to you soon.","lh_4w3_title":"Contact Us","lh_4w3_desc_html":"If you have feedback, questions, concerns, or anything else you’d like to share please feel free to use the contact form below. <b>If inquiring about a product purchased from us, please include your order number in your email and we will respond within 1 business day. <\/b><div><b><br><\/b><\/div><div><font size=\"2\" style=\"\">💬 Chat with Us Live! Just Click The Icon to the Bottom Right<\/font><\/div><div><font size=\"2\" style=\"\">☎️  Call Us | <span style=\"color: rgb(98, 156, 215); text-decoration-line: underline;\"><a href=\"tel:8182083278\">(818) 208-3278 <\/a><\/span><\/font><br><\/div><!--lh-live-editor-->","lh_t453on_label":"Send Message","lh_4w3_email_html":"Available Monday-Friday, 9:00 AM - 5:30 PM PST | Excluding Holidays<br>","lh_4w3_address":"20929 Ventura Blvd, #47-482 , Los Angeles, CA, 91364"}},"layouthub-62993bcde8e6e702bf480d92":{"XtMGRu7oTy":{"home":"Home","title":"About Us"},"2awmQkRKcD":{"title":"Our Journey","des_html":"The revolution is here.<!--lh-live-editor-->","lh_f330hg_text":"Eargasm Users","lh_f32xf7_text":"Reviews","lh_f32ucy_text":"Countries We Ship To","lh_f32rap_text":"Years of Eargasm"},"xa7tut9w41j":{"title":"The Team"},"y6dryy1za2b":{"lh_iy69ny_name":"Ryan Parry","lh_iy69ny_job":"Founder","lh_iy69ny_content_html":"Ryan founded Eargasm in 2015. He enjoys being hands on in all aspects of the company and is closely involved in its day to day operations.  When not busy serving Eargasm's customers he enjoys playing with his dog Joey and going to the beach.&nbsp; &nbsp;","lh_iy66lp_name":"Pan Shahbazian","lh_iy66lp_job":"Director of Operations","lh_iy66lp_content_html":"Pan enjoys working closely with the Eargasm team and its user base and finding new opportunities to make processes efficient and better. In her down-time, Pan likes listening to Dean Martin and eating good Italian food.&nbsp;","lh_iy63jg_name":"Miguel Rivera","lh_iy63jg_job":"Warehouse Operations Manager","lh_iy63jg_content":"Miguel was born and raised in the valley. He operates the day-to-day shipping operations at our local warehouse in southern California. He's also \"all about that plant life\".","lh_iy60h7_name":"Michael Roloff","lh_iy60h7_job_html":"Client Relations&nbsp;","lh_iy60h7_content":"Michael works with Eargasm's user base to ensure they're matched up with a product they'll love. In his off time, Michael enjoys surfing, cooking, and playing with his dogs.","lh_iy5xey_name":"Johana Coles","lh_iy5xey_job":"Head of Partnerships","lh_iy5xey_content":"Johana loves meeting new people and works closely with Eargasm's influencer base. On her off time, she operates her own small business and enjoys spending time with her family. Not to mention, she's also the BIGGEST Big Hero 6 fan! Balalalala!","lh_iy5ucp_name":"Lila Noori","lh_iy5ucp_job":"Brand Coordinator","lh_iy5ucp_content":"Lila works day to day maintaining Eargasm's thriving social media accounts. She loves going to live music events and festivals. She's always looking for the hotspot restaurants in town. She also enjoys trying out new recipes, and spending quality time with her family and friends.","lh_iy5rag_name":"Danny Gonzalez","lh_iy5rag_job":"Lead Graphic Designer","lh_iy5rag_content_html":"Danny is the lead graphic designer at Eargasm, and is driven by all things creative! When he's not working, he is most likely playing guitar, skating, or playing with his Mini Aussie, Scraps.&nbsp;","lh_iy5o87_name":"Alexey Barqawi","lh_iy5o87_job":"Lead Graphic Designer","lh_iy5o87_content_html":"Alexey works on making the Eargasm website the absolute best it can be, from user experience to functionality and design. In his free time, he likes to hike and do wood carving.&nbsp;"},"j0eril31u7a":{"lh_hifzh_title":"Events"},"mh57rlz49o":{"lh_hifzh_title_html":"Charities &amp; Organizations"},"mdtn4wm1gh":{"lh_hifzh_title":"Partnerships"},"ml6o4n06x6m":{"lh_hifzh_title":"In Media"},"mnfoi9acm":{"lh_lstl57_success":"Thank you for contacting us! A member of the team will get back to you soon.","lh_4w3_title":"Contact Us","lh_4w3_desc_html":"If you have feedback, questions, concerns, or anything else you’d like to share please feel free to use the contact form below. <b>If inquiring about a product purchased from us, please include your order number in your email and we will respond within 1 business day. <\/b><div><b><br><\/b><\/div><div><font size=\"2\" style=\"\">💬 Chat with Us Live! Just Click The Icon to the Bottom Right<\/font><\/div><div><font size=\"2\" style=\"\">☎️  Call Us | <span style=\"color: rgb(98, 156, 215); text-decoration-line: underline;\"><a href=\"tel:8182083278\">(818) 208-3278 <\/a><\/span><\/font><br><\/div><!--lh-live-editor-->","lh_t453on_label":"Send Message","lh_4w3_email_html":"Available Monday-Friday, 9:00 AM - 5:30 PM PST | Excluding Holidays<br>","lh_4w3_address":"20929 Ventura Blvd, #47-482 , Los Angeles, CA, 91364"}},"layouthub-62b37ee0ef6fd162362d20e2":{"tbmsnik6j9j":{"lh_a168_title":"Wholesale\/Custom Products","lh_a168_desc_html":"Is your store looking to carry Eargasm Earplugs? Or perhaps your company is looking for a custom branded earplug gift? Feel free to sign up by clicking the button below. <br>\nIf you have any questions, please use the contact form below.<!--lh-live-editor-->","lh_8huk_link":"Sign Up"},"oahwsi8c39":{"lh_hifzh_title":"Wholesale Products"},"lobstnc69fm":{"lh_hifzh_title":"Custom Product Samples"},"9vpb58j81e5":{"lh_lstl57_success":"Thank you for contacting us! A member of the team will get back to you soon.","lh_4w3_title":"Contact Us","lh_4w3_desc_html":"If you have feedback, questions, concerns, or anything else you’d like to share please feel free to use the contact form below. <b>If inquiring about a product purchased from us, please include your order number in your email and we will respond within 1 business day. <\/b><div><b><br><\/b><\/div><div><font size=\"2\" style=\"\">💬 Chat with Us Live! Just Click The Icon to the Bottom Right<\/font><\/div><div><font size=\"2\" style=\"\">☎️  Call Us | <span style=\"color: rgb(98, 156, 215); text-decoration-line: underline;\"><a href=\"tel:8182083278\">(818) 208-3278 <\/a><\/span><\/font><br><\/div><!--lh-live-editor-->","lh_t453on_label":"Send Message","lh_4w3_email_html":"Available Monday-Friday, 9:00 AM - 5:30 PM PST | Excluding Holidays<br>","lh_4w3_address":"20929 Ventura Blvd, #47-482 , Los Angeles, CA, 91364"}},"pxs-newsletter":{"form":{"placeholder":"Email address","submit":"Subscribe","success":"Thanks for subscribing!"}}}}
+{
+  "store_availability": {
+    "general": {
+      "in_stock": "In stock",
+      "out_of_stock": "Out of stock",
+      "view_store_info": "View store information",
+      "check_other_stores": "Check availability at other stores",
+      "available_for_pick_up_at_html": "Pickup available at <b>{{ location_name }}<\/b>",
+      "unavailable_for_pick_up_at_html": "Pickup currently unavailable at <b>{{ location_name }}<\/b>",
+      "available_for_pick_up_at_time_html": "Pickup available, {{ pick_up_time }}",
+      "unavailable_for_pick_up_at_time_html": "Pickup currently unavailable",
+      "kilometers": "km",
+      "miles": "mi"
+    }
+  },
+  "structured_data": {
+    "breadcrumbs": {
+      "cart": "Cart",
+      "collections": "Collections",
+      "page": "Page {{ page }}",
+      "products": "Products",
+      "search": "Search",
+      "tags_html": "Tagged \"{{ tags }}\""
+    }
+  },
+  "general": {
+    "404": {
+      "title": "Page not found",
+      "home_link": "homepage",
+      "subtext_html": "We're sorry, but the page you're looking for could not be found.",
+      "subtext_collection_html": "We're sorry, but the page you're looking for could not be found. Go back to our {{ link }}, or check out some of our favourite items below:"
+    },
+    "accessibility": {
+      "nav_product_thumbnail": "thumbnail",
+      "close": "Close"
+    },
+    "account": "Account",
+    "name": "Name",
+    "name_placeholder": "Your name",
+    "email": "Email",
+    "email_placeholder": "your@email.com",
+    "message": "Message",
+    "password": "Password",
+    "price": "Price",
+    "product": "Product",
+    "quantity": "Quantity",
+    "sign_up": "Sign up",
+    "submit": "Submit",
+    "subtotal": "Subtotal",
+    "tax": "Tax",
+    "total": "Total",
+    "share": {
+      "sharethis": "Share this"
+    },
+    "livesearch": {
+      "form_open": "Open search",
+      "form_search": "Search",
+      "form_close": "Close search",
+      "button_label": "Search",
+      "input_placeholder": "What are you looking for?",
+      "products_title": "Products",
+      "products_empty": "No products found for \"{{ term }}\"",
+      "products_viewall": "View all products",
+      "posts_title": "Posts",
+      "pages_title": "Pages",
+      "postspages_title": "Posts & Pages",
+      "postspages_empty": "No results.",
+      "viewall": "View all results"
+    },
+    "password_page": {
+      "opening_soon": "Opening Soon",
+      "spread_the_word": "Spread the word:",
+      "login_form_heading": "Enter store using password",
+      "login_form_password_label": "Your password:",
+      "login_form_submit": "Enter",
+      "signup_form_email_label": "Email",
+      "signup_form_email_placeholder": "Your email",
+      "signup_form_submit": "Submit",
+      "signup_form_success": "We will send you an email right before we open!",
+      "admin_link_question": "Are you the store owner?",
+      "admin_link_direction": "Log in here",
+      "password_link": "Enter using password",
+      "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
+    },
+    "breadcrumbs": {
+      "404": "404",
+      "home": "Home",
+      "collections": "Collections",
+      "products": "Products",
+      "tagged": "Tagged",
+      "cart": "Cart"
+    },
+    "search": {
+      "header": "Search",
+      "results_header": "Search Results",
+      "results_text": "{{ results_count }} {{ results }} for '{{ search_terms }}'",
+      "results": {
+        "one": "result",
+        "other": "results"
+      },
+      "input_placeholder": "What are you looking for?",
+      "form_search": "Search"
+    },
+    "pagination": {
+      "summary": "Page {{ current_page }} of {{ pages }}",
+      "previous": "Previous",
+      "next": "Next",
+      "seo_title": "Page"
+    }
+  },
+  "layout": {
+    "mini_cart": {
+      "heading": "Your cart",
+      "checkout": "Checkout",
+      "view_cart": "View cart",
+      "remove_item": "Remove",
+      "quantity_item": "Qty: {{ qty }}",
+      "subtotal": "Subtotal",
+      "empty": "You have no items in your cart"
+    },
+    "header": {
+      "checkout": "Checkout",
+      "no_items": "Your cart is currently empty!",
+      "view_cart": "View cart",
+      "more": "More...",
+      "item_count": {
+        "one": "item",
+        "other": "items"
+      },
+      "login": "Login"
+    },
+    "footer": {
+      "contact_title": "Get in touch",
+      "social_title": "Follow us out there",
+      "newsletter_title": "Newsletter",
+      "email": "Email address",
+      "success": "Thanks for subscribing!",
+      "copyright_text_html": "&copy; {{ year }}. All rights reserved."
+    }
+  },
+  "blogs": {
+    "article_item": {
+      "written_by": "Written by",
+      "filed_under": "Filed under",
+      "discussion": "Discussion",
+      "continue_reading": "Continue reading",
+      "post_author": "Post author",
+      "comments_html": "Comments on this post {{ comment_count }}",
+      "comment_count": {
+        "one": "comment",
+        "other": "comments"
+      },
+      "leave_comment": "Leave a comment",
+      "error_message": "Error! Something went wrong.",
+      "success_message": "Your comment has been submitted."
+    },
+    "blog_sidebar": {
+      "recent_posts": "Recent posts",
+      "tags": "Tags"
+    }
+  },
+  "cart": {
+    "header": "Cart",
+    "empty": "You don't have any items in your cart yet.",
+    "continue": "Continue shopping.",
+    "note": "Special instructions",
+    "tax_and_shipping": "Shipping and taxes calculated at checkout",
+    "submit": "Check out",
+    "update": "Update",
+    "remove": "Remove",
+    "stock_limit": "You can only add {{ quantity }} {{ title }} to your cart.",
+    "shipping_calculator": {
+      "error": "Error: zip \/ postal code --error_message--",
+      "submit": "Calculate Shipping",
+      "working": "Calculating...",
+      "rates_html": "There are --number_of_rates-- shipping rates available for --address--, starting at --rate--.",
+      "rate": "There is one shipping rate available for --address--.",
+      "no_rates": "We do not ship to this destination.",
+      "rate_values_html": "--rate_title-- at --rate--"
+    }
+  },
+  "collections": {
+    "listing": {
+      "header": "Collections",
+      "taglist": "Tags",
+      "filter-by": "Filter by:",
+      "sort-by": "Sort by:",
+      "current": "Current Tag"
+    },
+    "collection": {
+      "browse": "Browse",
+      "all_items": "All",
+      "quick_shop": "Quick shop",
+      "no_products": "No products in this collection",
+      "shop_collection": "Shop collection",
+      "less": "Less",
+      "more": "More"
+    }
+  },
+  "contact": {
+    "success": "Thanks for getting in touch! We'll respond to your message shortly.",
+    "error": "Error! Something went wrong."
+  },
+  "customer": {
+    "general": {
+      "logout": "Sign out",
+      "password_confirmation": "Repeat password",
+      "back_to_account": "Back to account",
+      "or": "or",
+      "cancel": "cancel"
+    },
+    "account": {
+      "view_addresses": "View Addresses"
+    },
+    "orders": {
+      "header": "Order history",
+      "order": "Order",
+      "payment_status": "Payment",
+      "fulfillment_status": "Fulfillment",
+      "none": "You haven't placed any orders yet."
+    },
+    "activate_account": {
+      "header": "Activate your account",
+      "subtext": "To activate your account, choose a password and enter it below.",
+      "decline": "decline activation"
+    },
+    "addresses": {
+      "header": "Addresses",
+      "add_new": "Add new address",
+      "default_address": "default address",
+      "edit": "Edit",
+      "delete": "Delete",
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "company": "Company",
+      "address1": "Address line 1",
+      "address2": "Address line 2",
+      "city": "City",
+      "country": "Country",
+      "phone": "Phone",
+      "province": "State \/ Province",
+      "zip": "ZIP \/ Postal code",
+      "set_as_default": "Set as Default Address?"
+    },
+    "login": {
+      "header": "Customer Login",
+      "forgot_password": "Forgot your password?",
+      "error": "Sorry! Please try that again.",
+      "new_customer": "New customer?",
+      "sign_up": "Sign up for an account"
+    },
+    "reset_password": {
+      "header": "Reset Account Password",
+      "submit": "Reset password",
+      "subtext": "We’ll send you an email to reset your password."
+    },
+    "guest_login": {
+      "no_login": "No login required.",
+      "submit": "Continue checkout as a guest."
+    },
+    "order": {
+      "header": "Order",
+      "header_details": "Order details",
+      "discount": "Discount",
+      "billing_address": "Billing address",
+      "shipping_address": "Shipping address",
+      "shipping": "Shipping",
+      "fulfillment_status": "Fulfillment Status"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Here's your {{ value }} gift card for {{ shop }}!",
+      "subtext": "Here's your gift card!",
+      "disabled": "Disabled",
+      "expired": "Expired on {{ expiry }}",
+      "active": "Expires on {{ expiry }}",
+      "redeem": "Use this code at checkout to redeem your gift card",
+      "shop_link": "Start shopping",
+      "print": "Print",
+      "balance": "{{ balance }} left",
+      "apple_wallet": "Add To Apple Wallet"
+    }
+  },
+  "home_page": {
+    "video_button_text": "Watch the video",
+    "featured_collections": {
+      "title": "Featured collections"
+    },
+    "featured_collection": {
+      "title": "Featured collection"
+    },
+    "featured_blog": {
+      "title": "From the blog"
+    },
+    "menu_list": {
+      "title": "Menu list",
+      "link": "Link"
+    }
+  },
+  "articles": {
+    "article": {
+      "share_email_subject": "{{ article }}",
+      "share_email_body": "Check out the article {{ article }} at {{ article_url }}!"
+    }
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Add to cart",
+      "email_us": "Email us about this product",
+      "share_email_subject": "{{ product }}",
+      "share_email_body": "Check out {{ product }} at {{ product_url }}!",
+      "fitting_guide": "Fitting guide",
+      "on_sale": "On sale",
+      "new": "New",
+      "please_wait": "Please wait",
+      "pre_order": "Pre-order",
+      "sku": "SKU",
+      "sold_out": "Sold out",
+      "unavailable": "Unavailable",
+      "view_fullsize_image": "View fullsize image",
+      "visit_page": "Visit product page",
+      "error_message_stock": "Unfortunately, we only have --stock-- in stock.",
+      "error_message_general": "We were unable to add this product to your cart. Please try again later. Contact us if you continue to have issues.",
+      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}",
+      "tax_line_html": ""
+    },
+    "product_item": {
+      "quickshop": "Quickshop",
+      "add_to_cart": "Add to cart",
+      "sold_out": "Sold out",
+      "unavailable": "Unavailable"
+    },
+    "media": {
+      "view_in_your_space": "View in your space"
+    }
+  },
+  "onboarding": {
+    "welcome_title": "Rich text",
+    "welcome_text_html": "Use this section to welcome customers to your store, say a bit about your brand, or share news and seasonal promotions.",
+    "blog_section_title": "Blog posts",
+    "blog_title": "Blog Post",
+    "blog_excerpt": "Your store hasn’t published any blog posts yet. A blog can be used to talk about new product launches, tips, or other news you want to share with your customers. You can check out Shopify’s ecommerce blog for inspiration and advice for your own store and blog.",
+    "collection_title": "Collection list",
+    "product_vendor": "Vendor",
+    "product_name": "Product title",
+    "product_price": "$0.00",
+    "product_cost": "0",
+    "product_compare_price": "0",
+    "image_block_title": "Image with text",
+    "image_block_caption": "Say a bit about your brand, a specific product, or promotion.",
+    "twitter_posted": "Posted on",
+    "twitter_tweet": "Connect your Twitter account to engage customers on and off your site!",
+    "twitter_username": "@youraccount",
+    "menu_list": {
+      "item": "Link"
+    }
+  },
+  "date_formats": {
+    "short_month": "%b %d, %Y",
+    "full_month": "%B %d, %Y",
+    "gift_card_expiry": "%d\/%m\/%y"
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "Regular price",
+        "sold_out": "Sold out",
+        "unavailable": "Unavailable",
+        "on_sale": "Sale",
+        "quantity": "Quantity",
+        "add_to_cart": "Add to cart",
+        "back_to_collection": "Back to {{ title }}",
+        "view_details": "View details"
+      }
+    },
+    "article": {
+      "tags": "Tags:",
+      "all_topics": "All topics",
+      "by_author": "by {{ author }}",
+      "posted_in": "Posted in",
+      "read_more": "Read more",
+      "back_to_blog": "Back to {{ title }}"
+    },
+    "comments": {
+      "title": "Leave a comment",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "post": "Post comment",
+      "moderated": "Please note, comments must be approved before they are published",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+      "success": "Your comment was posted successfully! Thank you!",
+      "comments_with_count": {
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
+      }
+    },
+    "password_page": {
+      "login_form_message": "Enter store using password:",
+      "login_form_password_label": "Password",
+      "login_form_password_placeholder": "Your password",
+      "login_form_submit": "Enter",
+      "signup_form_email_label": "Email",
+      "signup_form_success": "We will send you an email right before we open!",
+      "password_link": "Enter using password"
+    }
+  },
+  "sections": {
+    "layouthub-5e73baa3fcf09d7878159963": {
+      "0yq90ds6bsb": {
+        "lh_h7oza_more": "Read more",
+        "title": "Newest Blogs"
+      },
+      "ln3pw7nvlj": {
+        "lh_hifzh_title": "Eargasm Blogs"
+      },
+      "o0p7hbnm6hd": {
+        "lh_h7oza_more": "Read more",
+        "title": "Our blog"
+      }
+    },
+    "layouthub-60481121f04f246b16633bd2": {
+      "fua6e5l7jns": {
+        "lh_krq1kz_title": "Gold Edition",
+        "lh_krq1kz_desc_html": "Our most <b><i>stylish<\/i><\/b> High Fidelity Earplugs.<!--lh-live-editor-->",
+        "lh_79ehzq_btn": "SHOP NOW",
+        "lh_krq1l0_title": "High Fidelity Earplugs",
+        "lh_krq1l0_desc_html": "<b>Trusted by Over 250,000 Customers &amp; Counting.<\/b><!--lh-live-editor-->",
+        "lh_no9uxh_btn": "SHOP NOW",
+        "lh_krq1l1_title": "Custom Earplugs",
+        "lh_krq1l1_desc_html": "True to You - <b>Because They're Made For You.<\/b><!--lh-live-editor-->",
+        "lh_uxyu3w_btn": "SHOP NOW",
+        "lh_krq1l2_title": "Aquaplugs",
+        "lh_krq1l2_desc_html": "Sound In - <b>Water Out. <\/b><!--lh-live-editor-->",
+        "lh_ej3h65_btn": "SHOP NOW",
+        "lh_krq1l3_title": "Slide Earplugs",
+        "lh_krq1l3_desc_html": "You're in <b>Control<\/b>. <!--lh-live-editor-->",
+        "lh_1vrvrm_btn": "SHOP NOW",
+        "lh_krq1l4_title": "In-Ear Headphones",
+        "lh_krq1l4_desc_html": "Design Your <b>In-Ears from A-Z<\/b>. <!--lh-live-editor-->",
+        "lh_ian8pd_btn": "SHOP NOW"
+      },
+      "kmxi3fcdiz": {
+        "lh_krq1kz_title": "Gold Edition",
+        "lh_krq1kz_desc_html": "Our most <b>stylish<\/b> earplugs.<!--lh-live-editor-->",
+        "lh_79ehzq_btn": "SHOP NOW",
+        "lh_krq1l0_title": "High Fidelity Earplugs",
+        "lh_krq1l0_desc_html": "<b>Trusted by Over 250,000 Customers & Counting.<\/b><!--lh-live-editor-->",
+        "lh_no9uxh_btn": "SHOP NOW",
+        "lh_krq1l1_title": "Aquaplugs",
+        "lh_krq1l1_desc_html": "Sound In - <b>Water Out.&nbsp;<\/b><!--lh-live-editor-->",
+        "lh_uxyu3w_btn": "SHOP NOW",
+        "lh_krq1l2_title": "Slide Earplugs",
+        "lh_krq1l2_desc_html": "You're in <b>Control<\/b>.&nbsp;<!--lh-live-editor-->",
+        "lh_ej3h65_btn": "SHOP NOW",
+        "lh_krq1l3_title": "Custom Earplugs",
+        "lh_krq1l3_desc_html": "True to You - <b>Because They're Made For You.<\/b><!--lh-live-editor-->",
+        "lh_1vrvrm_btn": "SHOP NOW",
+        "lh_krq1l4_title": "In-Ear Headphones",
+        "lh_krq1l4_desc_html": "Design Your <b>In-Ears from A-Z<\/b>.&nbsp;<!--lh-live-editor-->",
+        "lh_ian8pd_btn": "SHOP NOW"
+      },
+      "j4xv0eio1k": {
+        "lh_up5omg_view": "Quick View",
+        "lh_5hd_heading": "Best Sellers",
+        "lh_5hd_des_html": "Free Shipping on All US Orders Over $100<!--lh-live-editor-->"
+      },
+      "mc16n3fcb9": {
+        "lh_f5dibt_top": "PROTECT YOUR HEARING IN STYLE",
+        "lh_a168_title": "Why Choose Eargasm High Fidelity Earplugs?"
+      },
+      "iah008pbfu": {
+        "lh_hifzh_title": "Shop Now"
+      },
+      "Kv4OnPWr3Z": {
+        "lh_xt3zpj_title": "BEST SELLERS",
+        "lh_xt3zpk_title": "CUSTOM PRODUCTS",
+        "lh_kj0d8o_title": "BROWSE ALL",
+        "lh_78wqrt_title": "GIFTING",
+        "lh_78wqru_title": "BUNDLES"
+      },
+      "xwodkdvkrpr": {
+        "title": "Why Choose Eargasm High Fidelity Earplugs?"
+      },
+      "7o46jbq9qyq": {
+        "lh_hifzh_title": "Shop Now"
+      },
+      "0rnvzedtckm": {
+        "heading_html": "<a href=\"https:\/\/eargasm.com\/collections\/eargasm-product-line\">SHOP NOW<\/a><br><p style=\"font-size:15px\">Browse Our Extensive Earplug Line<\/p>",
+        "lh_ku5mxb_title": "BROWSE ALL",
+        "lh_ku5mxa_title": "BEST SELLERS",
+        "lh_ku5mx9_title": "BUNDLES",
+        "lh_ku5mx8_title": "GIFTING",
+        "lh_ku5mx7_title": "CUSTOM PRODUCTS"
+      },
+      "7rt1ezc30z8": {
+        "lh_a168_title": "Experience Eargasm Earplugs",
+        "lh_hpo2th_title": "Foam or High Fidelity?",
+        "lh_hpo2th_des_html": "Decide what works best for you- hear the differences in real-time.<!--lh-live-editor-->",
+        "lh_hpo2ti_title": "Different Environments",
+        "lh_hpo2ti_des_html": "Choose between different scenarios and environments.<!--lh-live-editor-->",
+        "lh_hpo2tj_title": "No Protection VS Eargasm Earplugs",
+        "lh_hpo2tj_des_html": "Listen to the difference live between no hearing protection and Eargasm Earplugs.<!--lh-live-editor-->",
+        "lh_hpo2tk_title": "We're Here to Help! Chat with us",
+        "lh_hpo2tk_des_html": "Remember, we're always here to answer any questions you may have!<!--lh-live-editor-->",
+        "lh_8huk_link": "Try Now"
+      },
+      "zjsce1d0c4c": {
+        "lh_a168_title": "Experience Eargasm Earplugs",
+        "lh_8huk_link": "Try Now",
+        "lh_hpo2th_title": "Foam or High Fidelity?",
+        "lh_hpo2th_des_html": "Decide what works best for you- hear the differences in real-time.<!--lh-live-editor-->",
+        "lh_hpo2ti_title": "Different Environments",
+        "lh_hpo2ti_des_html": "Choose between different scenarios and environments.<!--lh-live-editor-->",
+        "lh_hpo2tj_title": "No Protection VS Eargasm Earplugs",
+        "lh_hpo2tj_des_html": "Listen to the difference live between no hearing protection and Eargasm Earplugs.<!--lh-live-editor-->",
+        "lh_hpo2tk_title": "We're Here to Help! Chat with us",
+        "lh_hpo2tk_des_html": "Remember, we're always here to answer any questions you may have!<!--lh-live-editor-->"
+      }
+    },
+    "layouthub-604c2258973431771b42fa92": {
+      "G1XnYxk6re": {
+        "title_html": "<b>Experience Eargasm Earplugs<\/b>"
+      },
+      "te94mlj37n8": {
+        "title_html": "<b>Experience Eargasm Earplugs<\/b>"
+      },
+      "b3trr9pxwqj": {
+        "lh_rivarn_text": "Sold out",
+        "lh_k4izmq_text": "Sale",
+        "lh_rv7qtl_text": "New",
+        "title_html": "<b>Related Products<\/b>"
+      }
+    },
+    "layouthub-6058fcb4d0f4387a997c38d2": {
+      "PXdyZTKrRw": {
+        "lh_90w0d4_title": "Eargasm Earplugs"
+      },
+      "7mrcncb62t": {
+        "lh_90w0d4_title": "Eargasm Custom Headphones and Earplugs"
+      },
+      "ue3i3wmd6s": {
+        "lh_90w0d4_title_html": "Discounts &amp; Free Gifts"
+      }
+    },
+    "layouthub-605bf585a967be4bba3d98f2": {
+      "2710ypil2m7": {
+        "lh_a168_title": "How to Scan",
+        "lh_a168_content": "Have 5 minutes to spare?",
+        "lh_a168_desc_html": "That's all the time you'll need to complete your ear scans with the Eargasm Ear Scanner App.<!--lh-live-editor-->"
+      },
+      "ad9mmcwpzw8": {
+        "lh_a168_title": "Eargasm Custom In-Ear Headphone Instructions",
+        "lh_a168_content": "How to Scan",
+        "lh_a168_desc_html": "Have 5 minutes to spare? That's all the time you'll need to complete your ear scans with the Eargasm Ear Scanner App.<!--lh-live-editor-->"
+      },
+      "5u5tatjaeni": {
+        "lh_5bw_9j7xan": "Further Scanning Instructions",
+        "btn": "BUY NOW"
+      },
+      "hm0h91w3hjn": {
+        "lh_5bw_9j7xan": "Further Scanning Instructions",
+        "btn": "BUY NOW"
+      },
+      "iki5p7zabyk": {
+        "lh_5bw_9j7xan": "Photo Instructions",
+        "description_html": "<b>1. <\/b>When taking your ear pictures, please ensure your outer ear and ear canal are fully visible. Kindly see the images for further clarification.<div><b style=\"font-size: calc(var(--lh-font-size) * 1.2) ;\"><br><\/b><\/div><div><span style=\"font-size: calc(var(--lh-font-size) * 1.2) ;\"><b>2. <\/b>Hold your phone about 10 - 12 inches away from your ear and take a picture of your ear canal straight-on.<\/span><\/div><div><b style=\"font-size: calc(var(--lh-font-size) * 1.2) ;\"><br><\/b><\/div><div><span style=\"font-size: calc(var(--lh-font-size) * 1.2) ;\"><b>3.<\/b> If you'd like to restart the process, feel free to just close the app and then re-open.&nbsp;&nbsp;<\/span><\/div><div><\/div>",
+        "btn": "BUY NOW"
+      },
+      "escptnnozqq": {
+        "lh_5bw_9j7xan": "How to Get the Perfect Scan",
+        "btn": "BUY NOW"
+      },
+      "3268a1tvk1p": {
+        "lh_5bw_9j7xan_html": "Tips for the&nbsp;<div>Perfect Scan<\/div>",
+        "description_html": "<b>1. <\/b>Make sure to fully review your scan <b>before<\/b> the blue bar at the top loads entirely<b>; <\/b>if your mesh loads before you get the chance to review your scan,<b> please click the rescan button. <\/b>You'll see that the mesh has loaded as it will fill in all the gaps that were previously missing.<div><b><br><\/b><\/div><div><b>2. <\/b>Ensure that you're scanning your ears in<b> natural or neutral lighting; <\/b>do not scan your ears in direct sunlight or in a dark environment as both will cause incomplete scans.<br><div><br><\/div><div><b>3. <\/b>No need to focus on the rest of your face; the main area of importance is your <b>inner ear (ie: your concha, tragus, antitragus, and external auditory canal).&nbsp;<\/b><\/div><div><b><br><\/b><\/div><div><b>4. <\/b>Move your hand <b>as slowly as you can <\/b>when scanning; if you move too fast, either the app will stop the scan, or you will end up with a lot of areas of incompleteness.&nbsp;<\/div><\/div>",
+        "btn": "BUY NOW"
+      },
+      "qj5d7mtl4a": {
+        "lh_a168_title": "FAQ",
+        "lh_ezc4q5_name": "I submitted my scans - now what?",
+        "lh_ezc4q5_content_html": "<b>You're done! <\/b>Just make sure to check your emails (the one that you used to place your order); <b>our team will be in touch and you will receive email notifications as your order moves through the process.<\/b>",
+        "lh_ezhhnw_name": "What device can I use to scan my ears?",
+        "lh_ezhhnw_content_html": "The Eargasm Ear Scanner App is compatible with any IOS device with Face ID.<!--lh-live-editor-->",
+        "lh_ezmuln_name": "I ordered a custom product but I don't have a compatible device to submit my scans",
+        "lh_ezmuln_content_html": "No worries! There are a few ways to get your scans done without owning a compatible iPhone: <br><br>\n\n• Borrow an iPhone or iPad with Face ID on it from someone you know.<br><br>\n\n• Rent out an iPhone from websites such as ERentals or ComputerRentals. They do have a fee for the rental, but it is significantly lower than, say, going to an audiologist and getting a mold (and much more comfortable!).<br><br>\n\n• Go to your local Apple store and use one of their devices with Face ID(No need to worry about your data as it will not be saved on the phone itself and is completely secure). <br><br>\n\nAny of these solutions is much cheaper and quicker than the alternative of going to an audiologist for an ear impression!<!--lh-live-editor-->",
+        "lh_ezs7je_name": "The app is crashing\/freezing when I'm trying to scan",
+        "lh_ezs7je_content_html": "The Eargasm Face Scanner app is only compatible with iPhones with Face ID technology; this feature is on the iPhone X and newer models.<!--lh-live-editor-->",
+        "lh_ezxkh5_name": "How come the scan stops shortly after starting?",
+        "lh_ezxkh5_content_html": "Please make sure your ear is in frame of your phone's camera. If you go out of the frame, the scan will immediately stop because it cannot detect your ear.<!--lh-live-editor-->",
+        "lh_f02xew_name": "I see white sections in my scan, can I still submit these?",
+        "lh_f02xew_content_html": "In order to avoid having to rescan multiple times to get that perfect fit, we recommend thoroughly reviewing your scans and make sure there aren't any distorted sections or areas of incompleteness (white spots) before submitting them. <!--lh-live-editor-->",
+        "lh_f08acn_name": "I have scans from an audiologist, can I use those?",
+        "lh_f08acn_content_html": "Yes we do! After completing your order, feel free to send over your scans to <a href=\"mailto:info@eargasm.com\" style=\"color: rgb(98, 155, 215); font-weight: bold; text-decoration-line: underline;\">info@eargasm.com<\/a>; kindly make sure you include your name and order number. Please note that we only accept digital scans and not physical molds.<!--lh-live-editor-->",
+        "lh_f0dnae_name": "My question isn't listed here",
+        "lh_f0dnae_content_html": "No worries! Feel free to email us at <a href=\"mailto:info@eargasm.com\" style=\"font-weight: bold; text-decoration-line: underline; background-color: rgb(255, 255, 255); color: rgb(98, 155, 215);\">info@eargasm.com<\/a>, chat with us live, or use our contact form below. We're here to help 😊&nbsp;<!--lh-live-editor-->"
+      },
+      "7a0zor25963": {
+        "lh_lstl57_success": "Thank you for contacting us! A member of the team will get back to you soon.",
+        "lh_4w3_title": "Contact Us",
+        "lh_4w3_desc_html": "If you have feedback, questions, concerns, or anything else you’d like to share please feel free to use the contact form below. <b>If inquiring about a product purchased from us, please include your order number in your email and we will respond within 1 business day.&nbsp;<\/b><div><b><br><\/b><\/div><div><font size=\"2\" style=\"\">💬 Chat with Us Live! Just Click The Icon to the Bottom Right<\/font><\/div><div><font size=\"2\" style=\"\">☎️  Call Us | <span style=\"color: rgb(98, 156, 215); text-decoration-line: underline;\"><a href=\"tel:8885029581\">(888) 502-9581&nbsp;<\/a><\/span><\/font><br><\/div><!--lh-live-editor-->",
+        "lh_t453on_label": "Send Message",
+        "lh_4w3_email_html": "Available Monday-Friday, 9:00 AM - 5:30 PM PST | Excluding Holidays<br>",
+        "lh_4w3_address": "20929 Ventura Blvd, #47-482 , Los Angeles, CA, 91364"
+      }
+    },
+    "layouthub-60680e104232bf635a719d63": {
+      "md5BO4vLHi": {
+        "lh_lstl57_success": "Thank you for contacting us! A member of the team will get back to you soon.",
+        "lh_4w3_title": "Contact Us",
+        "lh_4w3_desc_html": "If you have feedback, questions, concerns, or anything else you’d like to share please feel free to use the contact form below. <b>If inquiring about a product purchased from us, please include your order number in your email and we will respond within 1 business day. <\/b><div><b><br><\/b><\/div><div><span style=\"font-size: small;\">💬 Chat with Us Live! Just Click The Icon to the Bottom Right<\/span><\/div><div><span style=\"font-size: small;\">☎️  Call Us |<a href=\"tel:8182083278\" style=\"\"> <span style=\"color: rgb(98, 156, 215); text-decoration-line: underline;\">(818) 208-3278<\/span><\/a> <\/span><br><\/div><!--lh-live-editor-->",
+        "lh_t453on_label": "Send Message",
+        "lh_4w3_email": "Available Monday-Friday, 9:00 AM - 5:30 PM PST | Excluding Holidays",
+        "lh_4w3_address": "20929 Ventura Blvd, #47-482 , Los Angeles, CA, 91364"
+      }
+    },
+    "layouthub-611b03e568512c433b263c82": {
+      "w145o9m2do": {
+        "lh_hifzh_title": "Reviews"
+      },
+      "kkq1o7gz2l": {
+        "lh_a168_link": "@ourstore.ins"
+      },
+      "s03kpwrxm1h": {
+        "lh_uzghxl_text_html": "I go to a lot of concerts and hit the age where it was time to worry about my ears. I purchased these and right away went to two concerts one indoor and one outdoors. My ears felt fine after the concerts and the next day for the first time in a long time. The best part is the sound and vocals came in surprisingly clear still. Very happy with this product and will continue to use for a long time.<!--lh-live-editor-->",
+        "lh_mj38lr_name": "Chase D.",
+        "lh_mj38lr_job": "Concert-Goer",
+        "lh_kv46d2_text_html": "I work in a bar that has live music and these were suggested to me. I hate the cheap foam earplugs because you can't hear anything, and I need to hear my customers orders. These dampen the sound just enough to not cause ear damage yet still allow me to hear people speaking to me.\n<!--lh-live-editor-->",
+        "lh_mj38ls_name": "Jen",
+        "lh_mj38ls_job": "Bartender",
+        "lh_1oksol_text_html": "Between the similarly spec'd Westone and Etymotics, these immediately stand out as passing the least colored sound. One of my ear canals is slightly larger than the other; these fit perfectly in both.\n\nOverall, a tight and realistic sound at concert volumes, great fit, easy to get in and out. Great ear protection for the money!<!--lh-live-editor-->",
+        "lh_mj38lt_name": "Amazon Customer",
+        "lh_mj38lt_job": "Concert Sound Engineer",
+        "lh_hhykzw_text_html": "They worked out amazing! Could hear everything at the show but also knew my ears were being protected.<!--lh-live-editor-->",
+        "lh_mj38lu_name": "Jack B.",
+        "lh_mj38lu_job": "Concert-Goer",
+        "lh_ycm3ar_text_html": "These things were AMAZING!!! I took my oldest son to his first concert which happened to be Metallica and we were on the floor close to the stage and I figured they may muffle the sound from the show. Man was I wrong! We could hear really clear that to the point we did have to move back somewhat for my son. I love the fact that the founder actually reached out to me in an email to see how the product worked. That's VERY rare that people do that these days and it's something I truly appreciated.<!--lh-live-editor-->",
+        "lh_mj38lv_name": "Chad",
+        "lh_mj38lv_job": "Concert-Goer",
+        "lh_f62pma_text_html": "Just picked up drumming again. Ears have been ringing for hours after band practices. Regular ear plugs just muffled too much of the sound. I used these for the first time this week. Perfect! Exactly what I needed. Could hear my other bandmates well, and no ringing even after a 2.5 hour practice.<!--lh-live-editor-->",
+        "lh_mj38lw_name": "Nathan D.",
+        "lh_mj38lw_job": "Drummer",
+        "lh_40go27_text_html": "Amazing. When I was diagnosed with tinnitus (ringing in the ears) keep in mind my right ear is always ringing life has been very difficult. I tried basic earplugs you'd find at Walmart etc. and I didn't like the look to them and how much of a pain it was to insert in my ear. I just received a pair of the Eargasm's today and it was Eargasmic!!! Haha. No hissing noise when I play my instruments. And looks basically unnoticeable. Very easy to put in and take out. The case that it comes with is very handy and durable as well.<!--lh-live-editor-->",
+        "lh_mj38lx_name": "Frankie G.",
+        "lh_n701qo_text_html": "Since I got these I've had the chance to use them at loud job sites with construction and alarm testing. They do the job very nicely and are comfortable to use.  Also they come with a special container to store them securely. You can see that you are getting a fine quality product the moment it is in your hands.<!--lh-live-editor-->",
+        "lh_mj38ly_name": "Amazon Customer",
+        "lh_snkmjz_text_html": "These are definitely great ear plugs for the motorcycle - and in fact I may need to get a second pair for my road bike (for the long downhills with lots of wind noise). They cancel wind noise nicely while still allowing me to hear the important sounds of traffic, etc. Easy to insert. Firm material that does not flex - which is great. <!--lh-live-editor-->",
+        "lh_mj38lz_name": "Daniel C.",
+        "lh_mj38lz_job": "Motorcycle-Rider",
+        "lh_9h18vi_text_html": "I've used these ear plugs at 3 concerts now and they fit well, are comfortable, stay in place, and block enough volume to protect your ears while still allowing you to hear pretty well. So much better than the cheap foam earplugs as far as ease of wear. Easy to remove too. Definitely recommend these.<!--lh-live-editor-->",
+        "lh_mj38m0_name": "Lisa E.",
+        "lh_mj38m0_job": "Concert-Goer",
+        "lh_9shf3a_text_html": "Best plugs I've bought yet. Use them for riding the motorcycle and also use them for sport shooting at the range. They are excellent and fit the best in the many plugs I've bought over the years. I am buying a few extra sets because I know I will loose these if I don't keep them attached to something. I will buy again.<!--lh-live-editor-->",
+        "lh_17l1cw_name": "Terry",
+        "lh_17l1cw_job": "Motorcycle-Rider"
+      }
+    },
+    "layouthub-614bc06efada9126b0281672": {
+      "5megwkgiol": {
+        "lh_krq1kz_title": "Eargasm High Fidelity Earplugs",
+        "lh_krq1kz_desc": "Trusted by Over 250,000 Customers (& Counting)",
+        "lh_krq1kz_button": "SHOP NOW",
+        "lh_krq1l0_title": "Eargasm AquaPlugs",
+        "lh_krq1l0_desc": "The High Fidelity Earplug that Lets the Sound in & keeps the water out!",
+        "lh_krq1l0_button": "shop now",
+        "lh_krq1l1_title": "Eargasm Custom Earplugs",
+        "lh_krq1l1_desc": "True to You",
+        "lh_krq1l1_button": "SHOP NOW",
+        "lh_krq1l2_title": "Eargasm Custom In-Ear Headphones",
+        "lh_krq1l2_desc": "Design Your In-Ears From A-Z",
+        "lh_krq1l2_button": "DESIGN NOW",
+        "lh_krq1l3_title": "Eargasm Slide Earplugs",
+        "lh_krq1l3_desc": "You're in Control",
+        "lh_krq1l3_button": "SHOP NOW",
+        "lh_krq1l4_title": "Eargasm Ear Scanner",
+        "lh_krq1l4_desc": "Available on the App Store Now",
+        "lh_krq1l4_button": "DOWNLOAD NOW"
+      },
+      "9l2h0cu1jqi": {
+        "lh_krq1kz_title": "Eargasm High Fidelity Earplugs",
+        "lh_krq1kz_desc": "Trusted by Over 250,000 Customers (& Counting)",
+        "lh_krq1kz_button": "SHOP NOW",
+        "lh_krq1l0_title": "Eargasm AquaPlugs",
+        "lh_krq1l0_desc": "The High Fidelity Earplug that Lets the Sound in & keeps the water out!",
+        "lh_krq1l0_button": "shop now",
+        "lh_krq1l1_title": "Eargasm Custom Earplugs",
+        "lh_krq1l1_desc": "True to You",
+        "lh_krq1l1_button": "SHOP NOW",
+        "lh_krq1l2_title": "Eargasm Custom In-Ear Headphones",
+        "lh_krq1l2_desc": "Design Your In-Ears From A-Z",
+        "lh_krq1l2_button": "DESIGN NOW",
+        "lh_krq1l3_title": "Eargasm Slide Earplugs",
+        "lh_krq1l3_desc": "You're in Control",
+        "lh_krq1l3_button": "SHOP NOW",
+        "lh_krq1l4_title": "Eargasm Ear Scanner",
+        "lh_krq1l4_desc": "Available on the App Store Now",
+        "lh_krq1l4_button": "DOWNLOAD NOW"
+      },
+      "j4xv0eio1k": {
+        "lh_up5omg_view": "Quick View",
+        "lh_5hd_heading_html": "<b>🔥 Our Hottest Items 🔥 <\/b>",
+        "lh_5hd_des_html": "Free Shipping on All Orders Over $100<!--lh-live-editor-->"
+      },
+      "mc16n3fcb9": {
+        "lh_f5dibt_top": "PROTECT YOUR HEARING IN STYLE",
+        "lh_a168_title": "Why Choose Eargasm High Fidelity Earplugs?"
+      },
+      "Kv4OnPWr3Z": {
+        "heading_html": "<h3><a href=\"https:\/\/eargasmearplugs.com\/collections\/eargasm-earplugs-product-line\">SHOP NOW<\/a><\/h3>",
+        "des_html": "<h3>Browse Our Extensive Line!&nbsp;&nbsp;<\/h3>",
+        "lh_xt3zpj_title": "ACCESSORIES",
+        "lh_xt3zpk_title": "DOWNLOAD THE APP",
+        "lh_kj0d8o_title": "BROWSE ALL",
+        "lh_78wqrt_title": "FAQ",
+        "lh_78wqru_title": "BLOG"
+      },
+      "xwodkdvkrpr": {
+        "title_html": "<center>Why Choose Eargasm High Fidelity Earplugs?"
+      },
+      "0rnvzedtckm": {
+        "heading_html": "<a href=\"https:\/\/eargasm.com\/collections\/eargasm-product-line\">SHOP NOW<\/a><br><p style=\"font-size:15px\">Browse Our Extensive Earplug Line<\/p>",
+        "lh_ku5mxb_title": "Blog",
+        "lh_ku5mxa_title": "FAQ",
+        "lh_ku5mx9_title": "Browse All",
+        "lh_ku5mx8_title": "Download the Ear Scanner App",
+        "lh_ku5mx7_title": "Accessories"
+      },
+      "uawkpq66648": {
+        "lh_f5dibt_top": "REVOLUTIONARY TECHNOLOGY IN THE PALM OF YOUR HAND",
+        "lh_a168_title": "Why Eargasm Custom Earplugs?",
+        "lh_ffim4z_title": "The Ear Scanner App"
+      },
+      "7rt1ezc30z8": {
+        "lh_a168_title": "Experience Eargasm Earplugs",
+        "lh_hpo2th_title": "Foam or High Fidelity?",
+        "lh_hpo2th_des_html": "Decide what works best for you- hear the differences in real-time.<!--lh-live-editor-->",
+        "lh_hpo2ti_title": "Different Environments",
+        "lh_hpo2ti_des_html": "Choose between different scenarios and environments.<!--lh-live-editor-->",
+        "lh_hpo2tj_title": "No Protection VS Eargasm Earplugs",
+        "lh_hpo2tj_des_html": "Listen to the difference live between no hearing protection and Eargasm Earplugs.<!--lh-live-editor-->",
+        "lh_hpo2tk_title": "We're Here to Help! Chat with us",
+        "lh_hpo2tk_des_html": "Remember, we're always here to answer any questions you may have!<!--lh-live-editor-->",
+        "lh_8huk_link": "Try Now"
+      },
+      "zjsce1d0c4c": {
+        "lh_a168_title": "Experience Eargasm Earplugs",
+        "lh_8huk_link": "Try Now",
+        "lh_hpo2th_title": "Foam or High Fidelity?",
+        "lh_hpo2th_des_html": "Decide what works best for you- hear the differences in real-time.<!--lh-live-editor-->",
+        "lh_hpo2ti_title": "Different Environments",
+        "lh_hpo2ti_des_html": "Choose between different scenarios and environments.<!--lh-live-editor-->",
+        "lh_hpo2tj_title": "No Protection VS Eargasm Earplugs",
+        "lh_hpo2tj_des_html": "Listen to the difference live between no hearing protection and Eargasm Earplugs.<!--lh-live-editor-->",
+        "lh_hpo2tk_title": "We're Here to Help! Chat with us",
+        "lh_hpo2tk_des_html": "Remember, we're always here to answer any questions you may have!<!--lh-live-editor-->"
+      }
+    },
+    "layouthub-61673bbc67b2fc20462bd722": {
+      "ghthklg0g1p": {
+        "lh_krq1kz_title": "Gold Edition",
+        "lh_krq1kz_desc_html": "<b>Our most stylish High Fidelity Earplugs yet.<\/b><!--lh-live-editor-->",
+        "lh_79ehzq_btn": "SHOP NOW",
+        "lh_krq1l0_title": "High Fidelity Earplugs",
+        "lh_krq1l0_desc_html": "<b>Trusted by Over 250,000 Customers &amp; Counting.<\/b><!--lh-live-editor-->",
+        "lh_no9uxh_btn": "SHOP NOW",
+        "lh_krq1l1_title": "Custom Earplugs",
+        "lh_krq1l1_desc_html": "True to You - <b>Because They're Made For You.<\/b><!--lh-live-editor-->",
+        "lh_uxyu3w_btn": "SHOP NOW",
+        "lh_krq1l2_title": "Aquaplugs",
+        "lh_krq1l2_desc_html": "Sound In - <b>Water Out.&nbsp;<\/b><!--lh-live-editor-->",
+        "lh_ej3h65_btn": "SHOP NOW",
+        "lh_krq1l3_title": "Slide Earplugs",
+        "lh_krq1l3_desc_html": "You're in <b>Control<\/b>.&nbsp;<!--lh-live-editor-->",
+        "lh_1vrvrm_btn": "SHOP NOW",
+        "lh_krq1l4_title": "In-Ear Headphones",
+        "lh_krq1l4_desc_html": "Design Your <b>In-Ears from A-Z<\/b>.&nbsp;<!--lh-live-editor-->",
+        "lh_ian8pd_btn": "SHOP NOW"
+      },
+      "xmpw8kk98tr": {
+        "lh_ku5mxb_title": "Free Shipping",
+        "lh_ku5mxb_des": "For US Orders Over $100",
+        "lh_ku5mxa_title": "Free Gifts",
+        "lh_ku5mxa_des": "For All Orders Over $65",
+        "lh_ku5mx9_title": "Prompt Support",
+        "lh_ku5mx9_des_html": "Live Chat. Email, &amp; Phone!"
+      },
+      "85wn4mxi6qp": {
+        "lh_up5omg_view": "Quick View",
+        "lh_5hd_heading": "Best Sellers",
+        "lh_5hd_des_html": "Free Shipping on All Orders Over $100<!--lh-live-editor-->"
+      },
+      "efpvktix3d": {
+        "lh_hifzh_title": "Earplugs For",
+        "lh_5r8yyn_title_html": "<b>MUSIC<\/b>",
+        "lh_ku5mxb_desc_html": "<div class=\"container\">\n  <span contenteditable=\"false\" class=\"lh-texteditor-image\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1124\/3298\/t\/50\/assets\/music_yY1h.jpg\" style=\"width:100%\" class=\"lh-texteditor-img\"><\/span><b>\n<a href=\"https:\/\/eargasm.com\/collections\/eargasm-product-line\/musicians\">  <button class=\"btn\">Shop Now<\/button><\/a>\n<\/b><\/div>\n<p><b><br><\/b><\/p><p><b><font size=\"4\">\n\nAre you a concert-goer or musician? We've got you! Protect your hearing from the dangerous noise levels at live events without compromising on sound quality. Our wide range of earplug models, sizes, and colors mean that Eargasm can be your 1-stop shop for all your hearing protection needs!<\/font><!--lh-live-editor--><\/b><\/p>",
+        "lh_anmdz4_title_html": "<b>NOISE-SENSITIVITIES<\/b>",
+        "lh_ku5mxa_desc_html": "<div class=\"container\">\n  <span contenteditable=\"false\" class=\"lh-texteditor-image\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1124\/3298\/t\/50\/assets\/noise-sensitive-revised_2g01.jpg?v=1643833278\" style=\"width:100%\" class=\"lh-texteditor-img\"><\/span><b>\n<a href=\"https:\/\/eargasm.com\/collections\/eargasm-product-line\/noise-sensitivities\">  <button class=\"btn\">Shop Now<\/button><\/a>\n<\/b><\/div>\n\n\n\n<\/p><p><br><\/p><p><b><font size=\"4\">Do loud environments overwhelm you? Do certain noises really grind your gears? Eargasm can act as your very own volume knob on life. Our earplugs are perfect for mitigating noise sensitivity and help you get back to living your life!&nbsp;&nbsp;<\/font><\/b><\/p><!--lh-live-editor-->",
+        "lh_r2hqwv_title_html": "<b>ON-THE-ROAD USE<\/b>",
+        "lh_ku5mx9_desc_html": "<div class=\"container\">\n  <span contenteditable=\"false\" class=\"lh-texteditor-image\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1124\/3298\/t\/50\/assets\/on-the-road_dWlw.jpg?v=1643833280\" style=\"width:100%\" class=\"lh-texteditor-img\"><\/span><b>\n<a href=\"https:\/\/eargasm.com\/collections\/eargasm-product-line\/motorcyclists\">  <button class=\"btn\">Shop Now<\/button><\/a>\n<\/b><\/div>\n\n\n\n<p><b><font size=\"4\"><br><\/font><\/b><\/p><p><b><font size=\"4\">Wind noise can be incredibly damaging to your hearing- but you still need to be aware of your surrounding. So, what do you do? Give Eargasm a try! Hear surrounding traffic while mitigating road noise for the ultimate riding experience.&nbsp;&nbsp;<\/font><\/b><\/p><!--lh-live-editor-->",
+        "lh_rjqy4i_title_html": "<b>SLEEP<\/b><br>",
+        "lh_ku5mx8_desc_html": "<div class=\"container\">\n  <span contenteditable=\"false\" class=\"lh-texteditor-image\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1124\/3298\/t\/50\/assets\/sleep_QQ4Q.jpg?v=1643833279\" style=\"width:100%\" class=\"lh-texteditor-img\"><\/span><b>\n<a href=\"https:\/\/eargasm.com\/collections\/eargasm-product-line\/sleeping\">  <button class=\"btn\">Shop Now<\/button><\/a>\n<\/b><\/div>\n\n\n\n\n<p><br><\/p><p><b><font size=\"4\">Good sleep can lead to better overall health and in order to <i>get<\/i> good sleep, you need quiet. Our Squishies and Foam Earplugs offer the best of both worlds- comfort, and heavy sound reduction.&nbsp;&nbsp;<\/font><\/b><\/p><!--lh-live-editor-->",
+        "lh_b4vl6r_title_html": "<b>TRAVELING<\/b><br>",
+        "lh_ku5mx7_desc_html": "<div class=\"container\">\n  <span contenteditable=\"false\" class=\"lh-texteditor-image\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1124\/3298\/t\/50\/assets\/travel_t6VT.jpg?v=1643833280\" style=\"width:100%\" class=\"lh-texteditor-img\"><\/span><b>\n<a href=\"https:\/\/eargasm.com\/collections\/eargasm-product-line\/sleeping\">  <button class=\"btn\">Shop Now<\/button><\/a>\n<\/b><\/div>\n\n\n\n\n<br><p><b style=\"font-size: calc(var(--lh-font-size) * 1);\"><font size=\"4\">Traveling can be so exciting- until it comes to noisy airplanes, and uncomfortable cabin pressure. Well, fret not- our Aviation Earplugs have an innovative membrane embedded inside them that slow the process of pressure change inside the ear canal. Neat, right?<\/font><\/b><\/p><!--lh-live-editor-->"
+      },
+      "587i7x3h5wc": {
+        "lh_9xy8_title": "Not Sure Which To Choose?",
+        "title": "Take the Quiz",
+        "desc_html": "<b>Take the quiz and get matched to your perfect pair-<br>or experience Eargasm live on our website.&nbsp;<br><\/b>",
+        "lh_gbw8q_1": "Quiz",
+        "lh_gbw8q_2": "Experience"
+      },
+      "EuHYJZTwV1": {
+        "lh_fw847x_title_html": "<div class=\"textshadow2\"> Eargasm Product Line <\/div>",
+        "lh_nyd31e_title_html": "<b>Check Out All That Eargasm Has to Offer&nbsp;<\/b>",
+        "lh_3kbofg_label": "SHOP NOW",
+        "lh_fw847y_title_html": "<div class=\"textshadow\"> Bundles <\/div>",
+        "lh_nozfz5_title": "Get More for Less",
+        "lh_4mrd5f_label": "SHOP NOW",
+        "lh_fw847z_title_html": "<div class=\"textshadow3\"> Best Sellers <\/div>",
+        "lh_nflsww_title_html": "Chosen by Over 250,000 &amp; Counting",
+        "lh_ctueqa_label": "SHOP NOW",
+        "lh_fw8480_title": "Custom Products",
+        "lh_n685un_title": "Custom-Made For Your Ears Only",
+        "lh_l0xgb5_label": "SHOP NOW"
+      },
+      "tjsfayjfcw": {
+        "text1": "Testimonials",
+        "lh_92gzf4_content_html": "\"Love having them on my keychain for work. Easy to keep and easy to use. They help immensely during live shows and construction.\"\n<!--lh-live-editor-->",
+        "lh_okt5z2_name": "Jake B.",
+        "lh_sksjvf_name": "CUSTOMER",
+        "lh_92gzf5_content_html": "\"I’ve been searching for over 20 years for earplugs that are comfortable, fit, and work. These are the only ones that do it all.\"\n<!--lh-live-editor-->",
+        "lh_85xt1b_name": "Jerome G.",
+        "lh_sbewt6_name": "CUSTOMER",
+        "lh_92gzf6_content_html": "\"I bought these for my son who asked for them for Christmas. He loves to go to concerts and clubs in Orlando and they have protected his hearing but not hindered the experience at all. Wonderful purchase. Thank you.\"<!--lh-live-editor-->",
+        "lh_88xjwg_name": "Liane C.",
+        "lh_s219qx_name": "CUSTOMER",
+        "lh_92gzf7_content_html": "\"I struggle with tinnitus and my ears are sensitive to loud noises especially sustained. These earplugs have dramatically improved my ability to participate at church (where worship can get loud) as well as at NHL games without discomfort!\"<!--lh-live-editor-->",
+        "lh_onswu7_name": "James B.",
+        "lh_rsnmoo_name": "CUSTOMER",
+        "lh_92gzf8_content_html": "\"I bought a set each for myself and my boyfriend prior to attending a Metallica concert. My first metal show and one in a long line for him. Wanted to preserve my hearing and conserve his! We were both extremely satisfied and afterwards he marveled at how everything sounded great and his ears weren’t ringing when we left the show like they usually do. Two thumbs up from both of us, and we can’t wait to use them again.\"<!--lh-live-editor-->",
+        "lh_tyfs76_name": "Julia F.",
+        "lh_rj9zmf_name": "CUSTOMER",
+        "lh_92gzf9_content_html": "\"Heard about how awesome these were from many ppl who go to EDM shows. Finally picked up myself a pair with the additional DB canceling piece(s) and man I wish I had sooner! Took these to an Illenium show and just WOW!! I could hear ppl talk without ever canceling out the music. The music was still amazing through these! Pick up a pair, you'll wonder why you didn't sooner!!\"<!--lh-live-editor-->",
+        "lh_djkf9f_name": "Bryan S.",
+        "lh_r9wck6_name": "CUSTOMER"
+      },
+      "vzpth87f7h": {
+        "title": "Testimonials",
+        "lh_uzghxl_text": "\"Love having them on my keychain for work. Easy to keep and easy to use. They help immensely during live shows and construction.\"",
+        "lh_mj38lr_name": "Jake B.",
+        "lh_mj38lr_job": "Customer",
+        "lh_kv46d2_text": "\"I’ve been searching for over 20 years for earplugs that are comfortable, fit, and work. These are the only ones that do it all.\"",
+        "lh_mj38ls_name": "Jerome G.",
+        "lh_mj38ls_job": "Customer",
+        "lh_1oksol_text": "\"I bought these for my son who asked for them for Christmas. He loves to go to concerts and clubs in Orlando and they have protected his hearing but not hindered the experience at all. Wonderful purchase. Thank you.\"",
+        "lh_mj38lt_name": "Liane C.",
+        "lh_mj38lt_job": "Customer",
+        "lh_hhykzw_text": "\"I struggle with tinnitus and my ears are sensitive to loud noises especially sustained. These earplugs have dramatically improved my ability to participate at church (where worship can get loud) as well as at NHL games without discomfort!\"",
+        "lh_mj38lu_name": "James B.",
+        "lh_mj38lu_job": "Customer",
+        "lh_ycm3ar_text": "\"I bought a set each for myself and my boyfriend prior to attending a Metallica concert. My first metal show and one in a long line for him. Wanted to preserve my hearing and conserve his! We were both extremely satisfied and afterwards he marveled at how everything sounded great and his ears weren’t ringing when we left the show like they usually do. Two thumbs up from both of us, and we can’t wait to use them again.\"",
+        "lh_mj38lv_name": "Julia F.",
+        "lh_mj38lv_job": "Customer",
+        "lh_f62pma_text_html": "\"Heard about how awesome these were from many ppl who go to EDM shows. Finally picked up myself a pair with the additional DB canceling piece(s) and man I wish I had sooner! Took these to an Illenium show and just WOW!! I could hear ppl talk without ever canceling out the music. The music was still amazing through these! Pick up a pair, you'll wonder why you didn't sooner!!\"<!--lh-live-editor-->",
+        "lh_mj38lw_name": "Bryan S.",
+        "lh_mj38lw_job": "Customer"
+      },
+      "pryjh4z7qae": {
+        "lh_f1jjom_success_html": "Thanks for Subscribing! Use Code <b>EMAIL10<\/b> for 10% Off.",
+        "lh_32_signup": "Sign Up",
+        "heading": "Sign Up to Our Newsletter",
+        "des_html": "<i>Join Our Mailing List to Get 10% Off on Your Next Purchase.<\/i>"
+      }
+    },
+    "layouthub-61eef6cb8048e012cf05a4e2": {
+      "3XtP0oA5gW": {
+        "lh_pnhrjt_type": "Product type",
+        "lh_pnhrjt_vendor": "Product vendor",
+        "lh_up5omg_categories": "CATEGORIES:",
+        "lh_up5omg_sku": "SKU:",
+        "countdown": "2025-12-08T16:47:00+0000",
+        "lh_up5omg_wl": "Add to Wishlist",
+        "lh_up5omg_outstock": "Out of stock",
+        "lh_up5omg_new": "New",
+        "lh_up5omg_sale": "Sale",
+        "lh_k4hsr9_out": "Sold out",
+        "lh_rv7xkc_order": "PRE-ORDER",
+        "lh_k1su5s_cart": "ADD TO CART",
+        "lh_up5omg_quantity": "Quantity",
+        "lh_up5omg_external": "FROM AMAZON",
+        "lh_up5omg_buynow": "BUY NOW",
+        "lh_unv29k_size": "How Do I Know what Size I Need?",
+        "lh_brmh73_title": "DESCRIPTION",
+        "lh_brmh74_title": "REVIEWS",
+        "lh_brmh75_title": "SHIPPING & DELIVERY",
+        "lh_6etoga_infor_html": "Free standard domestic shipping. <br> Free 2-Day domestic shipping on orders over $200. <br> Free return shipping within the US. Find out more.<!--lh-live-editor-->",
+        "lh_vz1co2_content_html": "<h3 style=\"text-align: center;margin-bottom: 0;\">SIZE GUIDE<\/h3><p style=\"text-align: center;\"> This is an approximate conversion table to help you find your size. <\/p><table class=\"tt-table-modal-info\" style=\"text-align: center;\"><thead><tr><th>VN<\/th><th>JP<\/th><th>UK<\/th><th>US<\/th><th>KOR<\/th><\/tr><\/thead><tbody><tr><td>34<\/td><td>30<\/td><td>28<\/td><td>4<\/td><td>00<\/td><\/tr><tr><td>36<\/td><td>32<\/td><td>30<\/td><td>6<\/td><td>0<\/td><\/tr><tr><td>38<\/td><td>34<\/td><td>32<\/td><td>8<\/td><td>2<\/td><\/tr><tr><td>40<\/td><td>36<\/td><td>34<\/td><td>10<\/td><td>4<\/td><\/tr><tr><td>42<\/td><td>38<\/td><td>36<\/td><td>12<\/td><td>6<\/td><\/tr><tr><td>44<\/td><td>40<\/td><td>38<\/td><td>14<\/td><td>8<\/td><\/tr><tr><td>46<\/td><td>42<\/td><td>40<\/td><td>16<\/td><td>10<\/td><\/tr><tr><td>48<\/td><td>44<\/td><td>42<\/td><td>18<\/td><td>12<\/td><\/tr><tr><td>50<\/td><td>46<\/td><td>44<\/td><td>20<\/td><td>14<\/td><\/tr><tr><td>52<\/td><td>48<\/td><td>46<\/td><td>22<\/td><td>16<\/td><\/tr><\/tbody><\/table><!--lh-live-editor-->"
+      },
+      "p0zzqrkw91g": {
+        "lh_up5omg_outstock": "Out of stock",
+        "lh_rv7xkc_order": "Pre-Order",
+        "lh_k1su5s_cart": "Add to Cart",
+        "lh_pnhrjt_type": "Product type",
+        "lh_pnhrjt_vendor": "Product vendor",
+        "lh_sjlit0_progress": "{left} items left",
+        "lh_up5omg_instock": "In Stock",
+        "countdown": "2025-12-08T16:47:00+0000",
+        "lh_up5omg_new": "New",
+        "lh_up5omg_sale": "Sale",
+        "lh_k4hsr9_out": "Sold out",
+        "lh_k4n5os_image": "Roll over image to zoom in",
+        "lh_up5omg_sku": "Sku:",
+        "lh_up5omg_status": "Stock",
+        "lh_sjlit0_countdown": "Sale will end after",
+        "lh_up5omg_quantity": "Quantity",
+        "lh_up5omg_external": "From Amazon",
+        "lh_up5omg_buynow": "Buy Now",
+        "lh_brmh73_title": "Description",
+        "lh_brmh74_title": "Shipping & Returns",
+        "lh_5hto7f_infor_html": "<style type=\"text\/css\">p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px \"Helvetica Neue\"; color: #554d56}<\/style><ul><li data-lh-list>Delivery is free for all orders over $80. Otherwise, delivery is $8-$25 depending on the items you plan to purchase.<\/li><li data-lh-list>Once your product has shipped, it usually takes 2 to 3 business days in USA, 3 to 8 in Europe. 5 to 15 for the rest of the world<\/li><li data-lh-list>You can return your product up to 14 days after receiving your order.Please make sure that the products are not used.<\/li><\/ul><!--lh-live-editor-->",
+        "lh_brmh75_title": "Payment & Security"
+      }
+    },
+    "layouthub-620ec0e43eabcf267226cce2": {
+      "md5BO4vLHi": {
+        "lh_lstl57_success": "Thank you for contacting us! A member of the team will get back to you soon.",
+        "lh_4w3_title": "GET 10% OFF BY SIGNING UP",
+        "lh_4w3_desc_html": "Please fill out the form below if you would like to receive text updates regarding our sales and products. You will receive a text with your coupon code after signing up.<!--lh-live-editor-->"
+      },
+      "cvm9g1s7cbm": {
+        "lh_4mruur_title": "Click below to continue shopping with Eargasm!",
+        "lh_4mruur_content_html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec quam vel odio mollis ultricies. Suspendisse facilisis condimentum ex, at ultricies lacus sagittis ac. Etiam in nibh laoreet felis sagittis tempor a in ante. Nam elit sapien, luctus ut orci vitae, mattis euismod ipsum. In vitae pulvinar leo, a maximus.<\/p><!--lh-live-editor-->"
+      }
+    },
+    "layouthub-6216b6560d45c50f4f362842": {
+      "MnVAFIXHZc": {
+        "text1_html": "Welcome to the<div>Ear-Frens Project<\/div>",
+        "text2_html": "Join the Ear-Frens Family Today! <b> <br>Click below to get your Ear-Fren NFT today. <\/b><!--lh-live-editor-->",
+        "lh_8huk_link": "GET YOURS"
+      },
+      "k76tffhupp": {
+        "text1": "Welcome to the Ear-Frens Project",
+        "text2_html": "Join the Ear-Frens Family Today! <b>Click below to get your Ear-Fren NFT today.<\/b><!--lh-live-editor-->",
+        "lh_8huk_link": "Get Yours"
+      },
+      "zlu0rwxe8t": {
+        "lh_hifzh_title": "The Ear-Frens are HERE"
+      },
+      "imoilfx33gj": {
+        "lh_8kwg_button": "Get Yours"
+      },
+      "zkjosn37b3n": {
+        "heading": "Ear-Frens NFT"
+      },
+      "wyjl7ajrji": {
+        "lh_hifzh_title": "What is This?"
+      },
+      "etsmd3xdvdw": {
+        "lh_ku5mxb_title": "The Ear Frens",
+        "lh_ku5mxb_des_html": "These little frens were thought up and brought into this world by the Eargasm team. Their only purpose on this planet is to keep YOUR ears safe. 90 special people will have the chance to join the Ear-Frens family; <b>will it be you? <\/b><!--lh-live-editor-->",
+        "lh_ku5mxa_title": "Ultra rare",
+        "lh_ku5mxa_des_html": "There will be<b> 80 rare NFTs provided, with only 10 ultra rare NFTs<\/b>. Know that you'll be holding something that is not only rare in its edition size- but also rare in the hearing protection world.&nbsp;<!--lh-live-editor-->",
+        "lh_ku5mx9_title": "Utility",
+        "lh_ku5mx9_des_html": "Each NFT can be <b>redeemed for a physical copy of the design<\/b>, plus a box set of our ever-so-popular High Fidelity\/Smaller Ears Earplugs, 4 25% coupons provided over the span of 4 quarters, and last, but not least, a FREE set of our newest product sent to you at our next launch.<!--lh-live-editor-->"
+      },
+      "3z5ga7twzc8": {
+        "lh_hifzh_title": "I Want One!"
+      },
+      "8g16ed6p3zk": {
+        "lh_ku5mxb_title": "Get Yours",
+        "lh_ku5mxb_des_html": "<a href=\"https:\/\/objkt.com\/explore\/tokens?fa2=KT1928tVz5pzWMsCPt1MbctfXU6xsUN6sRWs&sortBy=idDesc\"><b>You can get your Ear-Fren HERE. <\/a><\/b>Remember- you'll need a <b>Tezos compatible <a href=\"https:\/\/tezblock.io\/ecosystem\/wallets\">wallet<\/a><\/b>, some Tez, and an <b>account on <a href=\"https:\/\/objkt.com\/\">OBJKT<\/a><\/b>.<!--lh-live-editor-->",
+        "lh_ku5mxa_title": "Discord",
+        "lh_ku5mxa_des_html": "Join us in our <b><a href=\"https:\/\/discord.gg\/Cw2sYbXxq4\">Discord<\/a> channel<\/b> for future announcements, chat with fellow Ear-Frens, and to connect with our team!<!--lh-live-editor-->",
+        "lh_ku5mx9_title": "Twitter",
+        "lh_ku5mx9_des_html": "Follow us on<b> <a href=\"https:\/\/twitter.com\/eargasmearplugs\">Twitter<\/a> <\/b>for exclusive AMAs, spaces, and ask us questions in-person (well, virtually).<!--lh-live-editor-->"
+      },
+      "27k1g499nrw": {
+        "lh_a168_title": "The Ear-Frens"
+      },
+      "a3aim5tkdas": {
+        "lh_8kwg_button": "Get Yours"
+      },
+      "bl0kkrtq3kb": {
+        "heading_html": "<b>Roadmap<\/b>",
+        "description": "In addition to the 2.0.3 install, you should be aware that some bugs have already been found, and that a plugin will need to be installed to repair those bugs. If you modify any of the files",
+        "lh_ozg0bv_title": "March 2nd 2022",
+        "lh_bdge4c_f": "Discord Launch",
+        "lh_bdge4b_f": "Twitter Space AMA",
+        "lh_ozg0bw_title": "March 9th 2022",
+        "lh_onk0l7_f": "NFT Sneak Peek",
+        "lh_ozg0bx_title": "March 16th",
+        "lh_x3gex2_f": "Twitter Space AMA",
+        "lh_x3gex3_f": "Live Reveal of NFT #1",
+        "lh_x3gex4_f": "Mint Date Announcement",
+        "lh_ozg0by_title": "March 23rd",
+        "lh_jtcsg7_f": "Launch",
+        "btn": "Button"
+      },
+      "U5tCkdQ8NL": {
+        "text1": "Frequently Asked Questions",
+        "lh_5r8yyn_title": "What is the Ear-Frens Project?",
+        "lh_ku5mxb_desc_html": "The Ear-Frens Project is a collection released by a leader in the earplug industry- Eargasm Earplugs. As a company, our mission statement has always surrounded innovation. As such, we are joining our fellow NFT connoisseurs in becoming part of the revolution.&nbsp;<!--lh-live-editor-->",
+        "lh_anmdz4_title": "Who's behind the Ear-Frens Project?",
+        "lh_ku5mxa_desc_html": "The Eargasm team! To learn more about us, see here: <a href=\"https:\/\/eargasm.com\/pages\/about-us \">https:\/\/eargasm.com\/pages\/about-us <\/a><!--lh-live-editor-->",
+        "lh_r2hqwv_title": "How many Ear-Frens NFTs are there?",
+        "lh_ku5mx9_desc_html": "<span style=\"font-weight: normal;\"> There are four rare NFTs, with an edition of 20 in each, and one ultra-rare NFT with 10 editions. \n<!--lh-live-editor--><\/span>",
+        "lh_rjqy4i_title": "What's the difference between the rare edition and the others?",
+        "lh_ku5mx8_desc_html": "<span style=\"font-weight: normal;\">The edition count; the reason we are labeling these as rare and ultra-rare is due to the fact that there are no common types. These will be a one-time-only drop on the Tezos blockchain so grab 'em while you can.<\/span><!--lh-live-editor-->",
+        "lh_b4vl6r_title": "What exactly am I buying — a computer file?",
+        "lh_ku5mx7_desc_html": "<span style=\"font-weight: normal;\">The NFT you purchase can be considered a ticket of sorts; you will receive the physical version of your carrying case (along with your choice of our High Fidelity Earplugs or Smaller Ears Earplugs), four 25% off coupons that can be used over the span of 4 quarters, along with a FREE set of our newest product sent to you at our next launch. <!--lh-live-editor--><\/span>",
+        "lh_59zrr0_title": "Is there physical merchandise?",
+        "lh_ku5mx6_desc_html": "<span style=\"font-weight: normal;\">Yes! Each NFT is connected to a corresponding IRL carrying case and box set of your choice (High Fidelity Earplugs or Smaller Ears Earplugs). <!--lh-live-editor--><\/span>",
+        "lh_lov4or_title": "How do I redeem my merchandise?",
+        "lh_ku5mx5_desc_html": "<span style=\"font-weight: normal;\">Once purchased, you will need to contact us at info@eargasm.com with your wallet address. We will airdrop you a burn token, which you will need to send to earfrens.tez; after we've verified your wallet, we'll contact you for your shipping information.<!--lh-live-editor--><\/span>",
+        "lh_wxdkcm_title": "How do I get my NFT?",
+        "lh_ku5mx4_desc_html": "<span style=\"font-weight: normal;\">You can get your Ear-Fren NFT <\/span><b><a href=\"https:\/\/objkt.com\/explore\/tokens?fa2=KT1928tVz5pzWMsCPt1MbctfXU6xsUN6sRWs&sortBy=idDesc\">here.<\/a><\/b><span style=\"font-weight: normal;\">Please note, you will need the following: a Tezos compatible wallet, some Tez, and an account on OBJKT. To sign up on OBJKT, you will first need a wallet; for a list of wallets, please see here: <a href=\"https:\/\/tezblock.io\/ecosystem\/wallets\">https:\/\/tezblock.io\/ecosystem\/wallets \n<\/a><\/span><!--lh-live-editor-->",
+        "lh_gii7ev_title_html": "Where are you minting?<br>",
+        "lh_ku5mx3_desc_html": "<span style=\"font-weight: normal;\">We are minting on Tezos. Tezos requires less energy and cost to operate than proof-of-work algorithms, making it an ideal platform for more sustainable use! It's also highly secure; Tezos is designed to provide the safety and code correctness required for high-value use.\n<!--lh-live-editor--><\/span>",
+        "lh_3muh4_title": "What marketplace are you guys using?",
+        "lh_ku5mx2_desc_html": "<span style=\"font-weight: normal;\">We will be releasing our work on <a href=\"OBJKT.com\">OBJKT.com<\/a>: one of the largest NFT marketplaces on the Tezos blockchain.<!--lh-live-editor--><\/span>"
+      },
+      "z8pwuqj24c8": {
+        "lh_lstl57_success": "Thank you for contacting us! A member of the team will get back to you soon.",
+        "lh_4w3_title": "Contact Us",
+        "lh_4w3_desc_html": "If you have feedback, questions, concerns, or anything else you’d like to share please&nbsp;<div>feel free to use the contact form below.<\/div><!--lh-live-editor-->",
+        "lh_t4agme_label": "Send Message",
+        "lh_4w3_email_html": "Available Monday-Friday, 9:00 AM - 5:30 PM PST | Excluding Holidays<br>",
+        "lh_4w3_address": "20929 Ventura Blvd, #47-482 , Los Angeles, CA, 91364"
+      }
+    },
+    "layouthub-6216dde1fbaa7c382b429ef2": {
+      "wyjl7ajrji": {
+        "lh_hifzh_title": "Why Join Us?"
+      },
+      "U5tCkdQ8NL": {
+        "text1": "Frequently Asked Questions",
+        "lh_5r8yyn_title": "I applied- now what?",
+        "lh_ku5mxb_desc_html": "<b>Woo! Thank you for applying. Please wait 1-3 business days while our Head of Partnerships looks over your application- you will receive an email as to whether or not you were accepted.<\/b><!--lh-live-editor-->",
+        "lh_anmdz4_title": "Do I have to pay for my earplugs?",
+        "lh_ku5mxa_desc_html": "No! If you're chosen to be part of our partnership program, we'll send them your way, free of charge (no shipping or handling fees either). You'll also get the chance to choose your favorite set.<!--lh-live-editor-->",
+        "lh_r2hqwv_title": "What do I have to do?",
+        "lh_ku5mx9_desc_html": "We try to make our partnerships as unique as possible and curated to the person we're partnering with. You'll receive a list of terms, and get a chance to review and edit them before you accept.<!--lh-live-editor-->",
+        "lh_rjqy4i_title": "What other perks do I get?",
+        "lh_ku5mx8_desc_html": "In addition to all of the awesome perks we mentioned above, you'll also get notified of any giveaways we're running, exclusive contests catered only to you, free swag, and more.&nbsp;<!--lh-live-editor-->",
+        "lh_b4vl6r_title": "I have another question!",
+        "lh_ku5mx7_desc_html": "No worries! Just email us at <a href=\"mailto:partnerships@eargasm.com\">partnerships@eargasm.com<\/a> or chat with us live using the chat icon to the right-hand-side corner of this page.<!--lh-live-editor-->"
+      },
+      "7e1ganaj80l": {
+        "lh_hifzh_title": "Earfluencer Spotlight"
+      },
+      "9arx2uhqb9w": {
+        "lh_a168_title": "Earfluencer Spotlight",
+        "lh_a168_desc_html": "Hear What Our Earfluencers Have to Say!<!--lh-live-editor-->",
+        "lh_okt5z2_name": "Kenzie Striker",
+        "lh_sksjvf_name": "@littlebassbrat",
+        "lh_92gzf4_content_html": "\"I have the transparent edition, so it’s ensured to match every single color crazed outfit i come up with. It’s perfect for our work environment since we have 8+ hour shifts at a super noisy live music bar!\"<!--lh-live-editor-->",
+        "lh_85xt1b_name": "Jesse Fulco",
+        "lh_sbewt6_name": "@jessefulco",
+        "lh_92gzf5_content_html": "\"As a musician and concert go-er, these earplugs have saved my hearing. I was born with severe hearing problems, but after some surgeries I was able to hear well again. I use Eargasm Earplugs at any loud concert to preserve my hearing.\"<!--lh-live-editor-->",
+        "lh_88xjwg_name": "Mia",
+        "lh_s219qx_name": "@sunrise_wanderer",
+        "lh_92gzf6_content_html": "\"Music is a big part of my life and if I wasn't able to hear it would be devastating! Eargasm Earplugs are the perfect way to enjoy EDM festivals and protect your hearing.\"<!--lh-live-editor-->",
+        "lh_onswu7_name": "Ivan Copelli",
+        "lh_rsnmoo_name": "@ivancopelli",
+        "lh_92gzf7_content_html": "\"They protect my hearing, but still preserving the sound quality, which is crucial for me as a musician. I can continue playing drums or even having a normal conversation in a packed venue without hurting my hearing.\"<!--lh-live-editor-->",
+        "lh_tyfs76_name": "Mars",
+        "lh_rj9zmf_name": "@mangoflows",
+        "lh_92gzf8_content_html": "\"Hearing damage is non reversible but it can be prevented. It’s never too early and If you’re always at shows and events I HIGHLY advise you to start now. Catch me always wearing my new earplugs, they’re honestly way more comfortable than you can imagine so now you have no excuse!\"<!--lh-live-editor-->",
+        "lh_djkf9f_name": "Chris",
+        "lh_r9wck6_name": "@wav_formation",
+        "lh_92gzf9_content_html": "\"If you do audio for a living you know how important it is to retain your hearing. I go to a lot of concerts and festival and without these my hearing would be absolute garbage at this point.\"<!--lh-live-editor-->",
+        "lh_2vaxoc_name": "Yajaira",
+        "lh_r0iphx_name": "@_glitzz_",
+        "lh_92gzfa_content_html": "\"Finally, No more ringing ears after raves!! Now I can dance all night knowing that my ears and hearing are protected!\"<!--lh-live-editor-->",
+        "lh_ja6am3_name": "Eggplant",
+        "lh_qr52fo_name": "@eggplantsworldd",
+        "lh_92gzfb_content_html": "\"I got tired of damaging my hearing so I got Eargasm Earplugs. They provide the best hearing protection, extra tips and a carrying case. They did not fall out AND they protected my ears. 10\/10. \"<!--lh-live-editor-->",
+        "lh_zc2efa_name": "Shell",
+        "lh_qhrfdf_name": "@ shellstoned",
+        "lh_92gzfc_content_html": "\"They saved my ears at NCMF. I've never used earplugs before because I hated they way they felt and fit but these feel amazing and won't fall out!\"<!--lh-live-editor-->"
+      }
+    },
+    "layouthub-628e86d2c08b277bf05693e2": {
+      "XtMGRu7oTy": {
+        "home": "Home",
+        "title": "About Us"
+      },
+      "2awmQkRKcD": {
+        "title": "Our Journey",
+        "des_html": "The revolution is here.<!--lh-live-editor-->",
+        "lh_f330hg_text": "Eargasm Users",
+        "lh_f32xf7_text": "Reviews",
+        "lh_f32ucy_text": "Countries We Ship To",
+        "lh_f32rap_text": "Years of Eargasm"
+      },
+      "xa7tut9w41j": {
+        "title": "The Team"
+      },
+      "y6dryy1za2b": {
+        "lh_iy69ny_name": "Ryan Parry",
+        "lh_iy69ny_job": "Founder",
+        "lh_iy69ny_content_html": "Ryan founded Eargasm in 2015. He enjoys being hands on in all aspects of the company and is closely involved in its day to day operations.  When not busy serving Eargasm's customers he enjoys playing with his dog Joey and going to the beach.&nbsp; &nbsp;",
+        "lh_iy66lp_name": "Pan Shahbazian",
+        "lh_iy66lp_job": "Director of Operations",
+        "lh_iy66lp_content_html": "Pan enjoys working closely with the Eargasm team and its user base and finding new opportunities to make processes efficient and better. In her down-time, Pan likes listening to Dean Martin and eating good Italian food.&nbsp;",
+        "lh_iy63jg_name": "Miguel Rivera",
+        "lh_iy63jg_job": "Warehouse Operations Manager",
+        "lh_iy63jg_content": "Miguel was born and raised in the valley. He operates the day-to-day shipping operations at our local warehouse in southern California. He's also \"all about that plant life\".",
+        "lh_iy60h7_name": "Michael Roloff",
+        "lh_iy60h7_job_html": "Client Relations&nbsp;",
+        "lh_iy60h7_content": "Michael works with Eargasm's user base to ensure they're matched up with a product they'll love. In his off time, Michael enjoys surfing, cooking, and playing with his dogs.",
+        "lh_iy5xey_name": "Johana Coles",
+        "lh_iy5xey_job": "Head of Partnerships",
+        "lh_iy5xey_content": "Johana loves meeting new people and works closely with Eargasm's influencer base. On her off time, she operates her own small business and enjoys spending time with her family. Not to mention, she's also the BIGGEST Big Hero 6 fan! Balalalala!",
+        "lh_iy5ucp_name": "Lila Noori",
+        "lh_iy5ucp_job": "Brand Coordinator",
+        "lh_iy5ucp_content": "Lila works day to day maintaining Eargasm's thriving social media accounts. She loves going to live music events and festivals. She's always looking for the hotspot restaurants in town. She also enjoys trying out new recipes, and spending quality time with her family and friends.",
+        "lh_iy5rag_name": "Danny Gonzalez",
+        "lh_iy5rag_job": "Lead Graphic Designer",
+        "lh_iy5rag_content_html": "Danny is the lead graphic designer at Eargasm, and is driven by all things creative! When he's not working, he is most likely playing guitar, skating, or playing with his Mini Aussie, Scraps.&nbsp;",
+        "lh_iy5o87_name": "Alexey Barqawi",
+        "lh_iy5o87_job": "Lead Graphic Designer",
+        "lh_iy5o87_content_html": "Alexey works on making the Eargasm website the absolute best it can be, from user experience to functionality and design. In his free time, he likes to hike and do wood carving.&nbsp;"
+      },
+      "j0eril31u7a": {
+        "lh_hifzh_title": "Events"
+      },
+      "mh57rlz49o": {
+        "lh_hifzh_title_html": "Charities &amp; Organizations"
+      },
+      "mdtn4wm1gh": {
+        "lh_hifzh_title": "Partnerships"
+      },
+      "ml6o4n06x6m": {
+        "lh_hifzh_title": "In Media"
+      },
+      "mnfoi9acm": {
+        "lh_lstl57_success": "Thank you for contacting us! A member of the team will get back to you soon.",
+        "lh_4w3_title": "Contact Us",
+        "lh_4w3_desc_html": "If you have feedback, questions, concerns, or anything else you’d like to share please feel free to use the contact form below. <b>If inquiring about a product purchased from us, please include your order number in your email and we will respond within 1 business day. <\/b><div><b><br><\/b><\/div><div><font size=\"2\" style=\"\">💬 Chat with Us Live! Just Click The Icon to the Bottom Right<\/font><\/div><div><font size=\"2\" style=\"\">☎️  Call Us | <span style=\"color: rgb(98, 156, 215); text-decoration-line: underline;\"><a href=\"tel:8182083278\">(818) 208-3278 <\/a><\/span><\/font><br><\/div><!--lh-live-editor-->",
+        "lh_t453on_label": "Send Message",
+        "lh_4w3_email_html": "Available Monday-Friday, 9:00 AM - 5:30 PM PST | Excluding Holidays<br>",
+        "lh_4w3_address": "20929 Ventura Blvd, #47-482 , Los Angeles, CA, 91364"
+      }
+    },
+    "layouthub-628e8707a39b0908f4188c62": {
+      "XtMGRu7oTy": {
+        "home": "Home",
+        "title": "About Us"
+      },
+      "2awmQkRKcD": {
+        "title": "Our Journey",
+        "des_html": "The revolution is here.<!--lh-live-editor-->",
+        "lh_f330hg_text": "Eargasm Users",
+        "lh_f32xf7_text": "Reviews",
+        "lh_f32ucy_text": "Countries We Ship To",
+        "lh_f32rap_text": "Years of Eargasm"
+      },
+      "xa7tut9w41j": {
+        "title": "The Team"
+      },
+      "y6dryy1za2b": {
+        "lh_iy69ny_name": "Ryan Parry",
+        "lh_iy69ny_job": "Founder",
+        "lh_iy69ny_content_html": "Ryan founded Eargasm in 2015. He enjoys being hands on in all aspects of the company and is closely involved in its day to day operations.  When not busy serving Eargasm's customers he enjoys playing with his dog Joey and going to the beach.&nbsp; &nbsp;",
+        "lh_iy66lp_name": "Pan Shahbazian",
+        "lh_iy66lp_job": "Director of Operations",
+        "lh_iy66lp_content_html": "Pan enjoys working closely with the Eargasm team and its user base and finding new opportunities to make processes efficient and better. In her down-time, Pan likes listening to Dean Martin and eating good Italian food.&nbsp;",
+        "lh_iy63jg_name": "Miguel Rivera",
+        "lh_iy63jg_job": "Warehouse Operations Manager",
+        "lh_iy63jg_content": "Miguel was born and raised in the valley. He operates the day-to-day shipping operations at our local warehouse in southern California. He's also \"all about that plant life\".",
+        "lh_iy60h7_name": "Michael Roloff",
+        "lh_iy60h7_job_html": "Client Relations&nbsp;",
+        "lh_iy60h7_content": "Michael works with Eargasm's user base to ensure they're matched up with a product they'll love. In his off time, Michael enjoys surfing, cooking, and playing with his dogs.",
+        "lh_iy5xey_name": "Johana Coles",
+        "lh_iy5xey_job": "Head of Partnerships",
+        "lh_iy5xey_content": "Johana loves meeting new people and works closely with Eargasm's influencer base. On her off time, she operates her own small business and enjoys spending time with her family. Not to mention, she's also the BIGGEST Big Hero 6 fan! Balalalala!",
+        "lh_iy5ucp_name": "Lila Noori",
+        "lh_iy5ucp_job": "Social Media Manager",
+        "lh_iy5ucp_content": "Lila works day to day maintaining Eargasm's thriving social media accounts. She loves going to live music events and festivals. She's always looking for the hotspot restaurants in town. She also enjoys trying out new recipes, and spending quality time with her family and friends.",
+        "lh_iy5rag_name": "Danny Gonzalez",
+        "lh_iy5rag_job": "Lead Graphic Designer",
+        "lh_iy5rag_content_html": "Danny is the lead graphic designer at Eargasm, and is driven by all things creative! When he's not working, he is most likely playing guitar, skating, or playing with his Mini Aussie, Scraps.&nbsp;"
+      },
+      "j0eril31u7a": {
+        "lh_hifzh_title": "Events"
+      },
+      "mh57rlz49o": {
+        "lh_hifzh_title_html": "Charities &amp; Organizations"
+      },
+      "mdtn4wm1gh": {
+        "lh_hifzh_title": "Partnerships"
+      },
+      "ml6o4n06x6m": {
+        "lh_hifzh_title": "In Media"
+      },
+      "mnfoi9acm": {
+        "lh_lstl57_success": "Thank you for contacting us! A member of the team will get back to you soon.",
+        "lh_4w3_title": "Contact Us",
+        "lh_4w3_desc_html": "If you have feedback, questions, concerns, or anything else you’d like to share please feel free to use the contact form below. <b>If inquiring about a product purchased from us, please include your order number in your email and we will respond within 1 business day. <\/b><div><b><br><\/b><\/div><div><font size=\"2\" style=\"\">💬 Chat with Us Live! Just Click The Icon to the Bottom Right<\/font><\/div><div><font size=\"2\" style=\"\">☎️  Call Us | <span style=\"color: rgb(98, 156, 215); text-decoration-line: underline;\"><a href=\"tel:8182083278\">(818) 208-3278 <\/a><\/span><\/font><br><\/div><!--lh-live-editor-->",
+        "lh_t453on_label": "Send Message",
+        "lh_4w3_email_html": "Available Monday-Friday, 9:00 AM - 5:30 PM PST | Excluding Holidays<br>",
+        "lh_4w3_address": "20929 Ventura Blvd, #47-482 , Los Angeles, CA, 91364"
+      }
+    },
+    "layouthub-62993bcde8e6e702bf480d92": {
+      "XtMGRu7oTy": {
+        "home": "Home",
+        "title": "About Us"
+      },
+      "2awmQkRKcD": {
+        "title": "Our Journey",
+        "des_html": "The revolution is here.<!--lh-live-editor-->",
+        "lh_f330hg_text": "Eargasm Users",
+        "lh_f32xf7_text": "Reviews",
+        "lh_f32ucy_text": "Countries We Ship To",
+        "lh_f32rap_text": "Years of Eargasm"
+      },
+      "xa7tut9w41j": {
+        "title": "The Team"
+      },
+      "y6dryy1za2b": {
+        "lh_iy69ny_name": "Ryan Parry",
+        "lh_iy69ny_job": "Founder",
+        "lh_iy69ny_content_html": "Ryan founded Eargasm in 2015. He enjoys being hands on in all aspects of the company and is closely involved in its day to day operations.  When not busy serving Eargasm's customers he enjoys playing with his dog Joey and going to the beach.&nbsp; &nbsp;",
+        "lh_iy66lp_name": "Pan Shahbazian",
+        "lh_iy66lp_job": "Director of Operations",
+        "lh_iy66lp_content_html": "Pan enjoys working closely with the Eargasm team and its user base and finding new opportunities to make processes efficient and better. In her down-time, Pan likes listening to Dean Martin and eating good Italian food.&nbsp;",
+        "lh_iy63jg_name": "Miguel Rivera",
+        "lh_iy63jg_job": "Warehouse Operations Manager",
+        "lh_iy63jg_content": "Miguel was born and raised in the valley. He operates the day-to-day shipping operations at our local warehouse in southern California. He's also \"all about that plant life\".",
+        "lh_iy60h7_name": "Michael Roloff",
+        "lh_iy60h7_job_html": "Client Relations&nbsp;",
+        "lh_iy60h7_content": "Michael works with Eargasm's user base to ensure they're matched up with a product they'll love. In his off time, Michael enjoys surfing, cooking, and playing with his dogs.",
+        "lh_iy5xey_name": "Johana Coles",
+        "lh_iy5xey_job": "Head of Partnerships",
+        "lh_iy5xey_content": "Johana loves meeting new people and works closely with Eargasm's influencer base. On her off time, she operates her own small business and enjoys spending time with her family. Not to mention, she's also the BIGGEST Big Hero 6 fan! Balalalala!",
+        "lh_iy5ucp_name": "Lila Noori",
+        "lh_iy5ucp_job": "Brand Coordinator",
+        "lh_iy5ucp_content": "Lila works day to day maintaining Eargasm's thriving social media accounts. She loves going to live music events and festivals. She's always looking for the hotspot restaurants in town. She also enjoys trying out new recipes, and spending quality time with her family and friends.",
+        "lh_iy5rag_name": "Danny Gonzalez",
+        "lh_iy5rag_job": "Lead Graphic Designer",
+        "lh_iy5rag_content_html": "Danny is the lead graphic designer at Eargasm, and is driven by all things creative! When he's not working, he is most likely playing guitar, skating, or playing with his Mini Aussie, Scraps.&nbsp;",
+        "lh_iy5o87_name": "Alexey Barqawi",
+        "lh_iy5o87_job": "Lead Graphic Designer",
+        "lh_iy5o87_content_html": "Alexey works on making the Eargasm website the absolute best it can be, from user experience to functionality and design. In his free time, he likes to hike and do wood carving.&nbsp;"
+      },
+      "j0eril31u7a": {
+        "lh_hifzh_title": "Events"
+      },
+      "mh57rlz49o": {
+        "lh_hifzh_title_html": "Charities &amp; Organizations"
+      },
+      "mdtn4wm1gh": {
+        "lh_hifzh_title": "Partnerships"
+      },
+      "ml6o4n06x6m": {
+        "lh_hifzh_title": "In Media"
+      },
+      "mnfoi9acm": {
+        "lh_lstl57_success": "Thank you for contacting us! A member of the team will get back to you soon.",
+        "lh_4w3_title": "Contact Us",
+        "lh_4w3_desc_html": "If you have feedback, questions, concerns, or anything else you’d like to share please feel free to use the contact form below. <b>If inquiring about a product purchased from us, please include your order number in your email and we will respond within 1 business day. <\/b><div><b><br><\/b><\/div><div><font size=\"2\" style=\"\">💬 Chat with Us Live! Just Click The Icon to the Bottom Right<\/font><\/div><div><font size=\"2\" style=\"\">☎️  Call Us | <span style=\"color: rgb(98, 156, 215); text-decoration-line: underline;\"><a href=\"tel:8182083278\">(818) 208-3278 <\/a><\/span><\/font><br><\/div><!--lh-live-editor-->",
+        "lh_t453on_label": "Send Message",
+        "lh_4w3_email_html": "Available Monday-Friday, 9:00 AM - 5:30 PM PST | Excluding Holidays<br>",
+        "lh_4w3_address": "20929 Ventura Blvd, #47-482 , Los Angeles, CA, 91364"
+      }
+    },
+    "layouthub-62b37ee0ef6fd162362d20e2": {
+      "tbmsnik6j9j": {
+        "lh_a168_title": "Wholesale\/Custom Products",
+        "lh_a168_desc_html": "Is your store looking to carry Eargasm Earplugs? Or perhaps your company is looking for a custom branded earplug gift? Feel free to sign up by clicking the button below. <br>\nIf you have any questions, please use the contact form below.<!--lh-live-editor-->",
+        "lh_8huk_link": "Sign Up"
+      },
+      "oahwsi8c39": {
+        "lh_hifzh_title": "Wholesale Products"
+      },
+      "lobstnc69fm": {
+        "lh_hifzh_title": "Custom Product Samples"
+      },
+      "9vpb58j81e5": {
+        "lh_lstl57_success": "Thank you for contacting us! A member of the team will get back to you soon.",
+        "lh_4w3_title": "Contact Us",
+        "lh_4w3_desc_html": "If you have feedback, questions, concerns, or anything else you’d like to share please feel free to use the contact form below. <b>If inquiring about a product purchased from us, please include your order number in your email and we will respond within 1 business day. <\/b><div><b><br><\/b><\/div><div><font size=\"2\" style=\"\">💬 Chat with Us Live! Just Click The Icon to the Bottom Right<\/font><\/div><div><font size=\"2\" style=\"\">☎️  Call Us | <span style=\"color: rgb(98, 156, 215); text-decoration-line: underline;\"><a href=\"tel:8182083278\">(818) 208-3278 <\/a><\/span><\/font><br><\/div><!--lh-live-editor-->",
+        "lh_t453on_label": "Send Message",
+        "lh_4w3_email_html": "Available Monday-Friday, 9:00 AM - 5:30 PM PST | Excluding Holidays<br>",
+        "lh_4w3_address": "20929 Ventura Blvd, #47-482 , Los Angeles, CA, 91364"
+      }
+    },
+    "pxs-newsletter": {
+      "form": {
+        "placeholder": "Email address",
+        "submit": "Subscribe",
+        "success": "Thanks for subscribing!"
+      }
+    }
+  }
+}
