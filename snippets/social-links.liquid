@@ -7,7 +7,11 @@
   settings.vimeo-url.size > 0
 %}
   <aside class="social-links">
-    {% if settings.twitter-url.size > 0 %}<a href="{{ settings.twitter-url | escape }}" class="social-link twitter" target="_blank">{% render 'icon' with 'twitter' %} aria-label="twitter"</a>{% endif %}
+    {% if settings.twitter-url.size > 0 %}
+      <a href="{{ settings.twitter-url | escape }}" class="social-link twitter" target="_blank">
+        <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/logo-black.png?v=1696626680" alt="Twitter X Logo" style="width: 20px; height: 20px;">
+      </a>
+    {% endif %}
     {% if settings.facebook-url.size > 0 %}<a href="{{ settings.facebook-url | escape }}" class="social-link facebook" target="_blank">{% render 'icon' with 'facebook' %} aria-label="facebook"</a>{% endif %}
     {% if settings.pinterest-url.size > 0 %}<a href="{{ settings.pinterest-url | escape }}" class="social-link pinterest" target="_blank">{% render 'icon' with 'pinterest' %} aria-label="pinterest"</a>{% endif %}
     {% if settings.instagram-url.size > 0 %}<a href="{{ settings.instagram-url | escape }}" class="social-link instagram" target="_blank">{% render 'icon' with 'instagram' %} aria-label="instagram"</a>{% endif %}
