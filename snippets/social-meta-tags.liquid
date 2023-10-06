@@ -122,43 +122,27 @@
 {% endif %}
 
 {% if twitter_image != blank %}
-  {% capture twitter_image_tags %}
-    {% comment %}
-      Twitter summary requires 144 (w) x 144 (h) pixels minimum to share,
-      displays at a 1:1 aspect ratio
-      https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary
+{% capture twitter_image_tags %}
+  {% comment %}
+    Twitter summary requires 144 (w) x 144 (h) pixels minimum to share,
+    displays at a 1:1 aspect ratio
+    https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary
 
-      Twitter summary with large image require 300 (w) x 157 (h) pixels minimum to share,
-      display at a 2:1 aspect ratio
-      https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary-card-with-large-image
-    {% endcomment %}
-    {% assign width = 1200 %}
-    {% if twitter_image.aspect_ratio <= 1 %}
-      {% comment %}
-        Summary
-      {% endcomment %}
-      {% assign height = width | divided_by: 1 | round %}
-      <meta name="twitter:card" content="summary">
-    {% else %}
-      {% comment %}
-        Summary with large image
-      {% endcomment %}
-      {% assign height = width | divided_by: 2 | round %}
-      <meta name="twitter:card" content="summary_large_image">
-    {% endif %}
-    {% capture request_url %}{{ width }}x{{ height }}{% endcapture %}
-    <meta
-      property="twitter:image"
-      content="https:{{ twitter_image | img_url: request_url, crop: 'center' }}"
-    />
-    <meta property="twitter:image:width" content="{{ width }}" />
-    <meta property="twitter:image:height" content="{{ height }}" />
-    {% assign image_alt = twitter_image.alt %}
-    {% if twitter_image.alt == blank %}
-      {% assign image_alt = 'Social media image' %}
-    {% endif %}
-    <meta property="twitter:image:alt" content="{{ image_alt | escape }}" />
-  {% endcapture %}
+    Twitter summary with large image require 300 (w) x 157 (h) pixels minimum to share,
+    display at a 2:1 aspect ratio
+    https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary-card-with-large-image
+  {% endcomment %}
+  {% assign width = 144 %}
+  {% assign height = 144 %}
+  <meta
+    property="twitter:image"
+    content="https://cdn.shopify.com/s/files/1/1124/3298/files/logo-black.png?v=1696626680" <!-- Replace with the actual URL to the Twitter 'x' logo -->
+  />
+  <meta property="twitter:image:width" content="{{ width }}" />
+  <meta property="twitter:image:height" content="{{ height }}" />
+  <meta property="twitter:image:alt" content="Twitter X Logo" />
+{% endcapture %}
+
 {% endif %}
 
 <meta name="twitter:title" content="{{ twitter_title | escape }}">
