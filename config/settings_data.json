@@ -7,8 +7,8 @@
     "accent-colour": "#eae7e7",
     "button-text-colour": "#060202",
     "logotype-link-colour": "#0d0404",
-    "header-action-link-colour": "#1e0c0c",
-    "nav-link-colour": "#1e0c0c",
+    "header-action-link-colour": "#ffffff",
+    "nav-link-colour": "#ffffff",
     "nav-link-dropdown-colour": "#ffffff",
     "nav-background-colour": "#1e0c0c",
     "nav-border-colour": "#1e0c0c",
@@ -48,7 +48,7 @@
       "static-header": {
         "type": "static-header",
         "settings": {
-          "image": "shopify:\/\/shop_images\/logoname-whiteoutline.png",
+          "image": "shopify:\/\/shop_images\/Eargasm_Holiday_Logo_Test_Updated.png",
           "logo-width": "150",
           "header-layout": "minimal",
           "center-header": false,
