@@ -933,7 +933,7 @@ html .shopify-payment-button .shopify-payment-button__button--unbranded, .lsr-fo
   background-color: #0fd9ec;
   border: 1px solid #0fd9ec;
   border-radius: 0;
-  transition: 0.15s cubic-bezier(0.4, 0, 0.2, 1) background-color, 0.15s cubic-bezier(0.4, 0, 0.2, 1) border-color;
+  {% comment %} %transition: 0.15s cubic-bezier(0.4, 0, 0.2, 1) background-color, 0.15s cubic-bezier(0.4, 0, 0.2, 1) border-color; {% endcomment %}
 }
 html .shopify-payment-button .shopify-payment-button__button--unbranded:hover, .lsr-footer-viewall:hover, .collections .collection .browse:hover, .featured-collections .collection .browse:hover, .subcollection-link:hover, .pxs-newsletter-form-button:hover, .newsletter-wrap .submit:hover, .shopify-challenge__button:hover, .action-button:hover, .promo-block--button:hover, .product-card-interaction:hover, html .shopify-payment-button .shopify-payment-button__button:hover, .product-form-has-spb .submit:hover, .product-form .product-submit:hover, .password-page-field-wrap .submit:hover, .template-index .slide .content .call-to-action:hover, .cart-submit:hover, .customer.addresses .edit-add-address .submit-wrap .action-button:hover, .customer .account-form .submit-button:hover {
   color: {{ settings.button-text-colour }};
