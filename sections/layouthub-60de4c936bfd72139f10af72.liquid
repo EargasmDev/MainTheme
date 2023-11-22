@@ -1209,6 +1209,7 @@ Michael - Code for individual collection
                                              {% unless product.tags contains 'lolla' %}
                                                {% unless product.tags contains 'etips' %}
                                                  {% unless product.tags contains 'buy1' %}
+                                                   {% unless product.tags contains 'familybundle' %}
                                  
 							
 							<div class="lh-price-box">
@@ -1241,6 +1242,7 @@ Michael - Code for individual collection
                           {% endunless %}
                           {% endunless %}
                           {% endunless %}
+                           {% endunless %}
 								{% if product.tags contains 'headphones-e' %}
 							<div class="lh-price-box">
 								{% if first_variant.compare_at_price > first_variant.price  %}
@@ -1262,6 +1264,22 @@ Michael - Code for individual collection
 								{% endif %}
 									
 									<ins>$ 5.88</ins> 
+								
+									
+								
+								
+								
+							</div>
+
+                          {% endif %}
+
+                           {% if product.tags contains 'familybundle' %}
+							<div class="lh-price-box">
+								{% if first_variant.compare_at_price > first_variant.price  %}
+									<del>{{ first_variant.compare_at_price | money }}</del>
+								{% endif %}
+									
+									<ins>$ 85</ins> 
 								
 									
 								
