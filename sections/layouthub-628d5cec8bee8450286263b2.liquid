@@ -192,6 +192,7 @@
 						{% unless product.tags contains 'ebuddybundle' %}
 						{% unless product.tags contains 'sale' %}
 						{% unless product.tags contains 'ravebundle' %}
+                          {% unless product.tags contains 'hfparent' %}
 							<div class="lh-wrap-price">
 								{% if product.compare_at_price_max > product.price %}
 								<span class="lh-sale">{{product.compare_at_price_max | money}}</span>
@@ -203,6 +204,7 @@
 									{% endunless %}
 									{% endunless %}
 									{% endunless %}
+                          {% endunless %}
 					
 						</div>
 						
@@ -217,6 +219,13 @@
 						<div class="lh-wrap-price">
 							
 								<span class="lh-cost">$81.95</span>
+							</div>
+							{% endif %}
+
+              {% if product.tags contains 'hfparent' %}
+						<div class="lh-wrap-price">
+							
+								<span class="lh-cost">$43.95</span>
 							</div>
 							{% endif %}
 						
