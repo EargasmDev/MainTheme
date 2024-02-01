@@ -3,15 +3,6 @@
  You SHOULD NOT modify source code in this page because
  It is automatically generated from LayoutHub
  {% endcomment %} 
-
- <script type='text/javascript'>
-  window.smartlook||(function(d) {
-    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
-    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
-    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
-    })(document);
-    smartlook('init', '36a65fbfe5d1be138a8dc52ab5822635d230418f', { region: 'eu' });
-</script>
  <div class="lh-sections-wrapper" data-id="628d5cec8bee8450286263b2" data-type="page">
   
 <section id="" data-section-id="oxjmbhm1u4r" data-section="banner-50" data-dev="hongyen" data-lh-page-id="1455" data-lh-page-name="Greye" data-layouthub="section">  
@@ -22,14 +13,39 @@
       <div class="lh-content">
       <h3 class="lh-title"  data-lhi="txt_title" data-lh-lang>{{'oxjmbhm1u4r.lh_a168_title' | t }}</h3>
       <div class="lh-desc"  data-lhi="txt_desc" data-lh-lang>{{'oxjmbhm1u4r.lh_a168_desc_html' | t }}</div>
-      <p class="lh-btn"  data-lhi="btn_link" data-lh-lang data-lhi-child="a"><a href="https://eargasm.com/collections/eargasm-product-line/products/earlights" data-ga-action="btn_link" data-ga-label="Button" data-lhlink>{{'oxjmbhm1u4r.lh_8huk_link' | t }}</a></p>
+      <p class="lh-btn"  data-lhi="btn_link" data-lh-lang data-lhi-child="a"><a href="https://eargasm.com/collections/eargasm-product-line/products/eargasm-high-fidelity-earplugs?variant=44275577225517" data-ga-action="btn_link" data-ga-label="Button" data-lhlink>{{'oxjmbhm1u4r.lh_8huk_link' | t }}</a></p>
      
       </div>
     </div>
     <div class="lh-col-md-7">
-      <div class="lh-img"  data-lhi="img"><img src="https://cdn.shopify.com/s/files/1/1124/3298/files/rotating-gif-6mb_iq3p.gif?v=1704224251225" /></div>
+      <div class="lh-img"  data-lhi="img"><img src="https://cdn.shopify.com/s/files/1/1124/3298/files/pink-hf-3d-render-lower-fps_DOqW.gif?v=1706746099117" /></div>
       <div class="lh-pos">
          <p class="lh-price"  data-lhi="txt_price" data-lh-lang>{{'oxjmbhm1u4r.lh_a168_price_html' | t }}</p>
+      </div>
+    </div>
+    <div class="lh-col-md-12">
+      
+    </div>
+  </div>
+  </div>
+</div>
+  </section>  
+<section id="" data-section-id="6g7ejpn3dxs" data-section="banner-503" data-dev="hongyen" data-lh-page-id="1455" data-lh-page-name="Greye" data-layouthub="section">  
+ <div class="lh-banner">
+  <div class="lh-container"> 
+  <div class="lh-row ">
+    <div class="lh-col-md-5">
+      <div class="lh-content">
+      <h3 class="lh-title"  data-lhi="txt_title" data-lh-lang>{{'6g7ejpn3dxs.lh_a168_title' | t }}</h3>
+      <div class="lh-desc"  data-lhi="txt_desc" data-lh-lang>{{'6g7ejpn3dxs.lh_a168_desc_html' | t }}</div>
+      <p class="lh-btn"  data-lhi="btn_link" data-lh-lang data-lhi-child="a"><a href="https://eargasm.com/collections/eargasm-product-line/products/eargasm-high-fidelity-earplugs?variant=44275577225517" data-ga-action="btn_link" data-ga-label="Button" data-lhlink>{{'6g7ejpn3dxs.lh_8huk_link' | t }}</a></p>
+     
+      </div>
+    </div>
+    <div class="lh-col-md-7">
+      <div class="lh-img"  data-lhi="img"><img src="https://cdn.shopify.com/s/files/1/1124/3298/files/pink-hf-3d-render-lower-fps_DOqW.gif?v=1706746099314" /></div>
+      <div class="lh-pos">
+         <p class="lh-price"  data-lhi="txt_price" data-lh-lang>{{'6g7ejpn3dxs.lh_a168_price_html' | t }}</p>
       </div>
     </div>
     <div class="lh-col-md-12">
@@ -182,8 +198,9 @@
 							<a href="{{product.url | within: collection}}">{{product.title}}</a>
 						</div>
 							 
-											<div class="targetbay_star_container" id="{{product.id}}"></div>
-
+											<div class="lh-rating-wrapper">
+													{% render 'layouthub_review',  review_type: 'rating' ,product: product %}
+												</div>
 											 
 						<div class="">
 						
@@ -192,7 +209,6 @@
 						{% unless product.tags contains 'ebuddybundle' %}
 						{% unless product.tags contains 'sale' %}
 						{% unless product.tags contains 'ravebundle' %}
-                          {% unless product.tags contains 'hfparent' %}
 							<div class="lh-wrap-price">
 								{% if product.compare_at_price_max > product.price %}
 								<span class="lh-sale">{{product.compare_at_price_max | money}}</span>
@@ -204,28 +220,20 @@
 									{% endunless %}
 									{% endunless %}
 									{% endunless %}
-                          {% endunless %}
 					
 						</div>
 						
 						{% if product.tags contains 'ebuddybundle' %}
 						<div class="lh-wrap-price">
 							
-								<span class="lh-cost">$115.95</span>
+								<span class="lh-cost">$109.88</span>
 							</div>
 							{% endif %}
 							
 							{% if product.tags contains 'ravebundle' %}
 						<div class="lh-wrap-price">
 							
-								<span class="lh-cost">$81.95</span>
-							</div>
-							{% endif %}
-
-              {% if product.tags contains 'hfparent' %}
-						<div class="lh-wrap-price">
-							
-								<span class="lh-cost">$43.95</span>
+								<span class="lh-cost">$77.50</span>
 							</div>
 							{% endif %}
 						
@@ -279,7 +287,7 @@
           </div>
         </div>
       </div>
-      <div class="lh-col-md-6 lh-image"  data-lhi="image"><img src="https://cdn.shopify.com/s/files/1/1124/3298/files/hp-newarrivals-eargasm-image-01_T3Jp.png?v=1693265985519" alt="image" class="hub-img" /></div>
+      <div class="lh-col-md-6 lh-image"  data-lhi="image"><img src="https://cdn.shopify.com/s/files/1/1124/3298/files/hp-newarrivals-eargasm-image-01_T3Jp.png?v=1693265985836" alt="image" class="hub-img" /></div>
     </div>
   </div>
 </div>
@@ -347,26 +355,26 @@
         
         <div class="card-item">
             <a href="/collections/eargasm-product-line/musicians">
-                <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/58.png?v=1658874685563" alt="" class="card-img">
+                <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/58.png?v=1658874685925" alt="" class="card-img">
                 <h1 class="card-title">MUSIC</h1>
                 
             </a>
         </div>
         <div class="card-item">
             <a href="/collections/eargasm-product-line/noise-sensitivities">
-                <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/59.png?v=1658874685637" alt="" class="card-img">
+                <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/59.png?v=165887468581" alt="" class="card-img">
                <h1 class="card-title">NOISE SENSITIVITIES</h1>
             </a>
         </div>
         <div class="card-item">
             <a href="/collections/eargasm-product-line/motorcyclists">
-                <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/60.png?v=1658874685193" alt="" class="card-img">
+                <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/60.png?v=1658874685317" alt="" class="card-img">
                 <h1 class="card-title">ON THE ROAD</h1>
             </a>
         </div>
         <div class="card-item">
             <a href="/collections/eargasm-product-line/sleeping">
-                <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/61.png?v=1658874685192" alt="" class="card-img">
+                <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/61.png?v=1658874685361" alt="" class="card-img">
                 <h1 class="card-title">SLEEP</h1>
             </a>
         </div>
@@ -434,31 +442,31 @@
         
         <div class="card-item">
             <a href="/collections/eargasm-product-line/musicians">
-                <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/58.png?v=1658874685120" class="card-img">
+                <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/58.png?v=165887468599" class="card-img">
                 <h1 class="card-title">MUSIC</h1>
             </a>
         </div>
         <div class="card-item">
             <a href="/collections/eargasm-product-line/noise-sensitivities">
-                <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/59.png?v=1658874685637" class="card-img">
+                <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/59.png?v=1658874685627" class="card-img">
                <h1 class="card-title">NOISE SENSITIVITIES</h1>
             </a>
         </div>
         <div class="card-item">
             <a href="/collections/eargasm-product-line/motorcyclists">
-                <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/60.png?v=165887468554" class="card-img">
+                <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/60.png?v=1658874685625" class="card-img">
                 <h1 class="card-title">ON THE ROAD</h1>
             </a>
         </div>
         <div class="card-item">
             <a href="/collections/eargasm-product-line/sleeping">
-                <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/61.png?v=1658874685725" class="card-img">
+                <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/61.png?v=165887468565" class="card-img">
                 <h1 class="card-title">SLEEP</h1>
             </a>
         </div>
          <div class="card-item">
             <a href="/collections/eargasm-product-line/traveling">
-                <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/prodimages_website_variants_8.png?v=1658955053632" class="card-img">
+                <img src="https://cdn.shopify.com/s/files/1/1124/3298/files/prodimages_website_variants_8.png?v=1658955053641" class="card-img">
                 <h1 class="card-title">TRAVELING</h1>
             </a>
         </div>
@@ -571,7 +579,7 @@
                          <div class="lh-testimonials-item swiper-slide">
                             <div class="lh-row">
                                 <div class="lh-col-md-6">
-                                    <div class="lh-img"  data-lhi="group_testimonial[0]img" data-lhis="group_testimonial-img"><img src="https://cdn.shopify.com/s/files/1/1124/3298/t/50/assets/testimonial-1_lcL8.png?v=1643849819142" alt="Image" class="lh-testimonials__image" /></div>
+                                    <div class="lh-img"  data-lhi="group_testimonial[0]img" data-lhis="group_testimonial-img"><img src="https://cdn.shopify.com/s/files/1/1124/3298/t/50/assets/testimonial-1_lcL8.png?v=1643849819759" alt="Image" class="lh-testimonials__image" /></div>
                                 </div>
                                 <div class="lh-col-md-6">
                                     <div class="lh-detail">
@@ -596,7 +604,7 @@
                          <div class="lh-testimonials-item swiper-slide">
                             <div class="lh-row">
                                 <div class="lh-col-md-6">
-                                    <div class="lh-img"  data-lhi="group_testimonial[1]img" data-lhis="group_testimonial-img"><img src="https://cdn.shopify.com/s/files/1/1124/3298/t/50/assets/testimonial-2_tHi4.png?v=164384978276" alt="Image" class="lh-testimonials__image" /></div>
+                                    <div class="lh-img"  data-lhi="group_testimonial[1]img" data-lhis="group_testimonial-img"><img src="https://cdn.shopify.com/s/files/1/1124/3298/t/50/assets/testimonial-2_tHi4.png?v=1643849782895" alt="Image" class="lh-testimonials__image" /></div>
                                 </div>
                                 <div class="lh-col-md-6">
                                     <div class="lh-detail">
@@ -646,7 +654,7 @@
                          <div class="lh-testimonials-item swiper-slide">
                             <div class="lh-row">
                                 <div class="lh-col-md-6">
-                                    <div class="lh-img"  data-lhi="group_testimonial[3]img" data-lhis="group_testimonial-img"><img src="https://cdn.shopify.com/s/files/1/1124/3298/t/50/assets/testimonial-4_A3BR.png?v=1643849782348" alt="Image" class="lh-testimonials__image" /></div>
+                                    <div class="lh-img"  data-lhi="group_testimonial[3]img" data-lhis="group_testimonial-img"><img src="https://cdn.shopify.com/s/files/1/1124/3298/t/50/assets/testimonial-4_A3BR.png?v=164384978233" alt="Image" class="lh-testimonials__image" /></div>
                                 </div>
                                 <div class="lh-col-md-6">
                                     <div class="lh-detail">
@@ -671,7 +679,7 @@
                          <div class="lh-testimonials-item swiper-slide">
                             <div class="lh-row">
                                 <div class="lh-col-md-6">
-                                    <div class="lh-img"  data-lhi="group_testimonial[4]img" data-lhis="group_testimonial-img"><img src="https://cdn.shopify.com/s/files/1/1124/3298/t/50/assets/testimonial-6_EIDS.png?v=1643849783362" alt="Image" class="lh-testimonials__image" /></div>
+                                    <div class="lh-img"  data-lhi="group_testimonial[4]img" data-lhis="group_testimonial-img"><img src="https://cdn.shopify.com/s/files/1/1124/3298/t/50/assets/testimonial-6_EIDS.png?v=1643849783552" alt="Image" class="lh-testimonials__image" /></div>
                                 </div>
                                 <div class="lh-col-md-6">
                                     <div class="lh-detail">
@@ -696,7 +704,7 @@
                          <div class="lh-testimonials-item swiper-slide">
                             <div class="lh-row">
                                 <div class="lh-col-md-6">
-                                    <div class="lh-img"  data-lhi="group_testimonial[5]img" data-lhis="group_testimonial-img"><img src="https://cdn.shopify.com/s/files/1/1124/3298/t/50/assets/testimonial-3_ZKtd.png?v=164384978223" alt="Image" class="lh-testimonials__image" /></div>
+                                    <div class="lh-img"  data-lhi="group_testimonial[5]img" data-lhis="group_testimonial-img"><img src="https://cdn.shopify.com/s/files/1/1124/3298/t/50/assets/testimonial-3_ZKtd.png?v=1643849782617" alt="Image" class="lh-testimonials__image" /></div>
                                 </div>
                                 <div class="lh-col-md-6">
                                     <div class="lh-detail">
@@ -890,5 +898,5 @@
   </section>
 </div>
  {%schema%} 
-{"locales":{"en":{"oxjmbhm1u4r":{"lh_a168_title":"LIGHT UP","lh_a168_desc_html":"THE NIGHT<div><\/div>\n\n\n  <h1 style=\"color: white; font-size: 17px;\">While Protecting Your Hearing With Earlights<\/h1><!--lh-live-editor-->","lh_8huk_link":"BUY NOW","lh_a168_price_html":"<span>NEW ARRIVAL<\/span>"},"xmpw8kk98tr":{"lh_ku5mxb_title":"Free Shipping","lh_ku5mxb_des":"For US Orders Over $100","lh_ku5mxa_title":"Free Gifts","lh_ku5mxa_des":"For All Orders Over $115","lh_ku5mx9_title":"Prompt Support","lh_ku5mx9_des_html":"Live Chat. Email, &amp; Phone!"},"85wn4mxi6qp":{"lh_up5omg_view":"Quick View","lh_5hd_heading":"Best Sellers","lh_5hd_des_html":"Free Shipping on All Orders Over $100<!--lh-live-editor-->"},"o9ses89bumo":{"lh_556_title_html":"<p style=\"font-family: roboto;\">Discover The Latest<\/p>","lh_556_price_html":"<span style=\"font-family:  roboto;\">Shop New Collabs, Merch and More. <\/span>","cta":"SHOP NEW ARRIVALS"},"smob9fjf5u":{"lh_556_title_html":"<p style=\"font-family: cerebri;\">Discover The Latest<\/p>","lh_556_price_html":"<span style=\"font-family: cerebri;\">Shop New Collabs, Merch and More. <\/span>","cta":"NEW ARRIVALS"},"587i7x3h5wc":{"lh_9xy8_title":"Not Sure Which To Choose?","title":"Take the Quiz","desc_html":"<b>Take the quiz and get matched to your perfect pair-<br>or experience Eargasm live on our website.&nbsp;<br><\/b>","lh_gbw8q_1":"Quiz","lh_gbw8q_2":"Experience"},"tjsfayjfcw":{"text1":"Testimonials","lh_92gzf4_content_html":"\"Love having them on my keychain for work. Easy to keep and easy to use. They help immensely during live shows and construction.\"\n<!--lh-live-editor-->","lh_okt5z2_name":"Jake B.","lh_sksjvf_name":"CUSTOMER","lh_92gzf5_content_html":"\"I\u2019ve been searching for over 20 years for earplugs that are comfortable, fit, and work. These are the only ones that do it all.\"\n<!--lh-live-editor-->","lh_85xt1b_name":"Jerome G.","lh_sbewt6_name":"CUSTOMER","lh_92gzf6_content_html":"\"I bought these for my son who asked for them for Christmas. He loves to go to concerts and clubs in Orlando and they have protected his hearing but not hindered the experience at all. Wonderful purchase. Thank you.\"<!--lh-live-editor-->","lh_88xjwg_name":"Liane C.","lh_s219qx_name":"CUSTOMER","lh_92gzf7_content_html":"\"I struggle with tinnitus and my ears are sensitive to loud noises especially sustained. These earplugs have dramatically improved my ability to participate at church (where worship can get loud) as well as at NHL games without discomfort!\"<!--lh-live-editor-->","lh_onswu7_name":"James B.","lh_rsnmoo_name":"CUSTOMER","lh_92gzf8_content_html":"\"I bought a set each for myself and my boyfriend prior to attending a Metallica concert. My first metal show and one in a long line for him. Wanted to preserve my hearing and conserve his! We were both extremely satisfied and afterwards he marveled at how everything sounded great and his ears weren\u2019t ringing when we left the show like they usually do. Two thumbs up from both of us, and we can\u2019t wait to use them again.\"<!--lh-live-editor-->","lh_tyfs76_name":"Julia F.","lh_rj9zmf_name":"CUSTOMER","lh_92gzf9_content_html":"\"Heard about how awesome these were from many ppl who go to EDM shows. Finally picked up myself a pair with the additional DB canceling piece(s) and man I wish I had sooner! Took these to an Illenium show and just WOW!! I could hear ppl talk without ever canceling out the music. The music was still amazing through these! Pick up a pair, you'll wonder why you didn't sooner!!\"<!--lh-live-editor-->","lh_djkf9f_name":"Bryan S.","lh_r9wck6_name":"CUSTOMER"},"vzpth87f7h":{"title":"Testimonials","lh_uzghxl_text_html":"\"I bought a set each for myself and my boyfriend prior to attending a Metallica concert. My first metal show and one in a long line for him. Wanted to preserve my hearing and conserve his! We were both extremely satisfied and afterwards he marveled at how everything sounded great and his ears weren\u2019t ringing when we left the show like they usually do. Two thumbs up from both of us, and we can\u2019t wait to use them again.\"<!--lh-live-editor-->","lh_mj38lr_name":"Julia F.","lh_mj38lr_job":"Customer","lh_kv46d2_text_html":"\"Love having them on my keychain for work. Easy to keep and easy to use. They help immensely during live shows and construction.\"\n<!--lh-live-editor-->","lh_mj38ls_name":"Jake B.","lh_mj38ls_job":"Customer","lh_1oksol_text_html":"\"I\u2019ve been searching for over 20 years for earplugs that are comfortable, fit, and work. These are the only ones that do it all.\"\n<!--lh-live-editor-->","lh_mj38lt_name":"Jerome G.","lh_mj38lt_job":"Customer","lh_hhykzw_text_html":"\"I bought these for my son who asked for them for Christmas. He loves to go to concerts and clubs in Orlando and they have protected his hearing but not hindered the experience at all. Wonderful purchase. Thank you.\"<!--lh-live-editor-->","lh_mj38lu_name":"Liane C.","lh_mj38lu_job":"Customer","lh_ycm3ar_text_html":"\"I struggle with tinnitus and my ears are sensitive to loud noises especially sustained. These earplugs have dramatically improved my ability to participate at church (where worship can get loud) as well as at NHL games without discomfort!\"<!--lh-live-editor-->","lh_mj38lv_name":"James B.","lh_mj38lv_job":"Customer","lh_f62pma_text_html":"\"Heard about how awesome these were from many ppl who go to EDM shows. Finally picked up myself a pair with the additional DB canceling piece(s) and man I wish I had sooner! Took these to an Illenium show and just WOW!! I could hear ppl talk without ever canceling out the music. The music was still amazing through these! Pick up a pair, you'll wonder why you didn't sooner!!\"<!--lh-live-editor-->","lh_mj38lw_name":"Bryan S.","lh_mj38lw_job":"Customer"},"pryjh4z7qae":{"lh_f1jjom_success_html":"Thanks for Subscribing! Use Code <b>EMAIL10<\/b> for 10% Off.","lh_32_signup":"Sign Up","heading":"Sign Up to Our Newsletter","des_html":"<i>Join Our Mailing List to Get 10% Off on Your Next Purchase.<\/i>"}}},"name":"Homepage"}
+{"locales":{"en":{"oxjmbhm1u4r":{"lh_a168_title":"Show Your Ears","lh_a168_desc_html":"<span style=\"color:#de4a9b;\">Some Love<\/span><div><\/div>\n\n\n  <h1 style=\"color: white; font-size: 20px;\"><span style=\"font-weight: normal;\">Protect Your Hearing with High Fidelity Earplugs <\/span><\/h1><!--lh-live-editor-->","lh_8huk_link":"BUY NOW","lh_a168_price_html":"<span>NEW ARRIVAL<\/span>"},"6g7ejpn3dxs":{"lh_a168_title":"Show Your Ears","lh_a168_desc_html":"<span style=\"color:#de4a9b;\">Some Love<\/span><div><\/div>\n\n\n  <h1 style=\"color: white; font-size: 26px;\"><span style=\"font-weight: normal;\">Protect Your Hearing with High Fidelity Earplugs <\/span><\/h1><!--lh-live-editor-->","lh_8huk_link":"BUY NOW","lh_a168_price_html":"<span>NEW ARRIVAL<\/span>"},"xmpw8kk98tr":{"lh_ku5mxb_title":"Free Shipping","lh_ku5mxb_des":"For US Orders Over $100","lh_ku5mxa_title":"Free Gifts","lh_ku5mxa_des":"For All Orders Over $115","lh_ku5mx9_title":"Prompt Support","lh_ku5mx9_des_html":"Live Chat. Email, &amp; Phone!"},"85wn4mxi6qp":{"lh_up5omg_view":"Quick View","lh_5hd_heading":"Best Sellers","lh_5hd_des_html":"Free Shipping on All Orders Over $100<!--lh-live-editor-->"},"o9ses89bumo":{"lh_556_title_html":"<p style=\"font-family: roboto;\">Discover The Latest<\/p>","lh_556_price_html":"<span style=\"font-family:  roboto;\">Shop New Collabs, Merch and More. <\/span>","cta":"SHOP NEW ARRIVALS"},"smob9fjf5u":{"lh_556_title_html":"<p style=\"font-family: cerebri;\">Discover The Latest<\/p>","lh_556_price_html":"<span style=\"font-family: cerebri;\">Shop New Collabs, Merch and More. <\/span>","cta":"NEW ARRIVALS"},"587i7x3h5wc":{"lh_9xy8_title":"Not Sure Which To Choose?","title":"Take the Quiz","desc_html":"<b>Take the quiz and get matched to your perfect pair-<br>or experience Eargasm live on our website.&nbsp;<br><\/b>","lh_gbw8q_1":"Quiz","lh_gbw8q_2":"Experience"},"tjsfayjfcw":{"text1":"Testimonials","lh_92gzf4_content_html":"\"Love having them on my keychain for work. Easy to keep and easy to use. They help immensely during live shows and construction.\"\n<!--lh-live-editor-->","lh_okt5z2_name":"Jake B.","lh_sksjvf_name":"CUSTOMER","lh_92gzf5_content_html":"\"I\u2019ve been searching for over 20 years for earplugs that are comfortable, fit, and work. These are the only ones that do it all.\"\n<!--lh-live-editor-->","lh_85xt1b_name":"Jerome G.","lh_sbewt6_name":"CUSTOMER","lh_92gzf6_content_html":"\"I bought these for my son who asked for them for Christmas. He loves to go to concerts and clubs in Orlando and they have protected his hearing but not hindered the experience at all. Wonderful purchase. Thank you.\"<!--lh-live-editor-->","lh_88xjwg_name":"Liane C.","lh_s219qx_name":"CUSTOMER","lh_92gzf7_content_html":"\"I struggle with tinnitus and my ears are sensitive to loud noises especially sustained. These earplugs have dramatically improved my ability to participate at church (where worship can get loud) as well as at NHL games without discomfort!\"<!--lh-live-editor-->","lh_onswu7_name":"James B.","lh_rsnmoo_name":"CUSTOMER","lh_92gzf8_content_html":"\"I bought a set each for myself and my boyfriend prior to attending a Metallica concert. My first metal show and one in a long line for him. Wanted to preserve my hearing and conserve his! We were both extremely satisfied and afterwards he marveled at how everything sounded great and his ears weren\u2019t ringing when we left the show like they usually do. Two thumbs up from both of us, and we can\u2019t wait to use them again.\"<!--lh-live-editor-->","lh_tyfs76_name":"Julia F.","lh_rj9zmf_name":"CUSTOMER","lh_92gzf9_content_html":"\"Heard about how awesome these were from many ppl who go to EDM shows. Finally picked up myself a pair with the additional DB canceling piece(s) and man I wish I had sooner! Took these to an Illenium show and just WOW!! I could hear ppl talk without ever canceling out the music. The music was still amazing through these! Pick up a pair, you'll wonder why you didn't sooner!!\"<!--lh-live-editor-->","lh_djkf9f_name":"Bryan S.","lh_r9wck6_name":"CUSTOMER"},"vzpth87f7h":{"title":"Testimonials","lh_uzghxl_text_html":"\"I bought a set each for myself and my boyfriend prior to attending a Metallica concert. My first metal show and one in a long line for him. Wanted to preserve my hearing and conserve his! We were both extremely satisfied and afterwards he marveled at how everything sounded great and his ears weren\u2019t ringing when we left the show like they usually do. Two thumbs up from both of us, and we can\u2019t wait to use them again.\"<!--lh-live-editor-->","lh_mj38lr_name":"Julia F.","lh_mj38lr_job":"Customer","lh_kv46d2_text_html":"\"Love having them on my keychain for work. Easy to keep and easy to use. They help immensely during live shows and construction.\"\n<!--lh-live-editor-->","lh_mj38ls_name":"Jake B.","lh_mj38ls_job":"Customer","lh_1oksol_text_html":"\"I\u2019ve been searching for over 20 years for earplugs that are comfortable, fit, and work. These are the only ones that do it all.\"\n<!--lh-live-editor-->","lh_mj38lt_name":"Jerome G.","lh_mj38lt_job":"Customer","lh_hhykzw_text_html":"\"I bought these for my son who asked for them for Christmas. He loves to go to concerts and clubs in Orlando and they have protected his hearing but not hindered the experience at all. Wonderful purchase. Thank you.\"<!--lh-live-editor-->","lh_mj38lu_name":"Liane C.","lh_mj38lu_job":"Customer","lh_ycm3ar_text_html":"\"I struggle with tinnitus and my ears are sensitive to loud noises especially sustained. These earplugs have dramatically improved my ability to participate at church (where worship can get loud) as well as at NHL games without discomfort!\"<!--lh-live-editor-->","lh_mj38lv_name":"James B.","lh_mj38lv_job":"Customer","lh_f62pma_text_html":"\"Heard about how awesome these were from many ppl who go to EDM shows. Finally picked up myself a pair with the additional DB canceling piece(s) and man I wish I had sooner! Took these to an Illenium show and just WOW!! I could hear ppl talk without ever canceling out the music. The music was still amazing through these! Pick up a pair, you'll wonder why you didn't sooner!!\"<!--lh-live-editor-->","lh_mj38lw_name":"Bryan S.","lh_mj38lw_job":"Customer"},"pryjh4z7qae":{"lh_f1jjom_success_html":"Thanks for Subscribing! Use Code <b>EMAIL10<\/b> for 10% Off.","lh_32_signup":"Sign Up","heading":"Sign Up to Our Newsletter","des_html":"<i>Join Our Mailing List to Get 10% Off on Your Next Purchase.<\/i>"}}},"name":"Homepage"}
  {%endschema%}
