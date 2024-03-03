@@ -425,24 +425,7 @@ $(window).bind("pageshow", function(event) {
         {% endif %}
 
         <!-- load add to cart only when page loads -->
-       <script>
-document.onreadystatechange = function () {
-  var state = document.readyState
-  if (state == 'complete') {
-         document.getElementById('interactive');
-         document.getElementById('load').style.display="none";
-     document.getElementById('buttonload').style.display="block";
-    
-  }
-  else
-  {
-     document.getElementById('buttonload').style.display="none";
-  }
-}
-
-
-
-</script>
+       
         
     {% unless product.tags contains 'headphones' %}
         
