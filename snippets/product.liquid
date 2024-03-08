@@ -252,6 +252,13 @@ $(window).bind("pageshow", function(event) {
           
           
           {% endif %} 
+
+            {% if product.tags contains 'marchsale' %}
+          
+          <i style = "color:red;font-size: medium;"> Use Code 'LUCKY15' to Save Even More! </i></span>
+          
+          
+          {% endif %} 
           
           
           {% if product.tags contains 'outright' %}
