@@ -132,16 +132,43 @@ $(window).bind("pageshow", function(event) {
         </h1>
         
         
-        {% if product.tags contains 'noadd'%}
-        
-<div class="options 
-            {% if show_quantity and product.variants.size > 0 %}has-no-variants
-            {% endif %} {% if product.available %}
-            available
-            {% endif %}">
-        
-        
-        {% endif %}
+       {% if product.tags contains 'noadd' %}
+    <div class="options 
+        {% if show_quantity and product.variants.size > 0 %}has-no-variants{% endif %} 
+        {% if product.available %}available{% endif %}">
+        <!-- Your button code goes here -->
+        <div id="buttonload" style="display: none;">
+            <button 
+                class="addtocart 
+                    product-submit
+                    action-button
+                    submit
+                "
+                {% unless selected_variant.available %}
+                    disabled
+                {% endunless %}
+                {% if onboarding %}
+                    disabled
+                {% endif %}
+                data-product-submit
+                data-product-variant-id="{{ product.selected_or_first_available_variant.id }}"
+            >
+                {% if product.selected_or_first_available_variant.available %}
+                    {{ 'products.product_item.add_to_cart' | t }}
+                {% else %}
+                    {{ 'products.product_item.sold_out' | t }}
+                {% endif %}
+            </button>
+            <span class="product-card-interaction-addtocart-error">
+                {{ 'products.product_item.unavailable' | t }}
+            </span>
+            <div class="product-card-interaction-addtocart-spinner">
+                {% render 'icon' with 'spinner' %}
+            </div>
+        </div>
+    </div>
+{% endif %}
+
         
             {% unless product.tags contains 'headphones'%}
  {% unless product.tags contains 'hifinew'%}
