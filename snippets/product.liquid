@@ -354,13 +354,13 @@ $(window).bind("pageshow", function(event) {
             
             <div class="product-form-grid product-form-grid-{{ variant_options_style }}">
               {% unless is_default %}
-           {% comment %}     {%
+                {%
                   render 'product-options',
                   product: product,
                   form_id: form_id,
                   selected_variant: selected_variant,
                   style: variant_options_style,
-                %}{% endcomment %}
+                %}
               {% else %}
                 <input
                   class="
