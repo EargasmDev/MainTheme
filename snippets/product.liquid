@@ -362,7 +362,7 @@ $(window).bind("pageshow", function(event) {
                   style: variant_options_style,
                 %}
               {% else %}
-               {% comment %} <input
+                <input
                   class="
                     product-select
                   "
@@ -370,7 +370,7 @@ $(window).bind("pageshow", function(event) {
                   value="{{ product.variants[0].id }}"
                   type="hidden"
                   data-variant-title="{{ product.variants[0].title }}"
-                />{% endcomment %}
+                />
               {% endunless %}
            
               
