@@ -350,6 +350,8 @@ $(window).bind("pageshow", function(event) {
         <div class="juo-wrapper">
         {%- render 'juo-widget', block: block, product: product %}
         </div>
+
+            {% comment %}
             <div class="product-form-grid product-form-grid-{{ variant_options_style }}">
               {% unless is_default %}
                 {%
@@ -371,7 +373,7 @@ $(window).bind("pageshow", function(event) {
                 />
               {% endunless %}
            
-              {% comment %}
+              
               <div class="bold_options" data-product-id="{{ product.id }}"></div>{% endcomment %}
               <div class="mw-apo-options"></div>
               <div class="product-infiniteoptions js-required side-labels" id="infiniteoptions-container"></div>
