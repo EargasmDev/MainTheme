@@ -1,59 +1,12 @@
 <!DOCTYPE html>
 <html class="no-js no-touch" lang="{{ request.locale.iso_code }}">
 <head>
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1557037201254921');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1557037201254921&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-
-  
-  <script type='text/javascript'>
-  window.smartlook||(function(d) {
-    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
-    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
-    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
-    })(document);
-    smartlook('init', '36a65fbfe5d1be138a8dc52ab5822635d230418f', { region: 'eu' });
-</script>
-
-  <script> !function(w,d,s,t,a){if(w.amzn)return;w.amzn=a=function(){w.amzn.q.push([arguments,(new Date).getTime()])};a.q=[];a.version="0.0";s=d.createElement("script");s.src="https://c.amazon-adsystem.com/aat/amzn.js";s.id="amzn-pixel";s.async=true; t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t)}(window,document); amzn("setRegion", "NA"); amzn("addTag", "6e50e0fb-14e6-4e77-b1af-d97b31d5427a"); amzn("trackEvent", "PageView"); </script> <noscript> <img src="https://s.amazon-adsystem.com/iu3?pid=6e50e0fb-14e6-4e77-b1af-d97b31d5427a&event=PageView" width="1" height="1" border="0"> </noscript>
-
-
-   <script> 
-
-!function(){var o=window.tdl=window.tdl||[];if(o.invoked)window.console&&console.error&&console.error("Tune snippet has been included more than once.");else{o.invoked=!0,o.methods=["init","identify","convert"],o.factory=function(n){return function(){var e=Array.prototype.slice.call(arguments);return e.unshift(n),o.push(e),o}};for(var e=0;e<o.methods.length;e++){var n=o.methods[e];o[n]=o.factory(n)}o.init=function(e){var n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://js.go2sdk.com/v2/tune.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(n,t),o.domain=e}}}();
-
-tdl.init("https://aspireiq.go2cloud.org/aff_c?offer_id=8030&aff_id=1&source=testoffer&aff_sub=testoffer") 
-tdl.identify() 
-</script>
-
-  
-  <link rel="shortcut icon" href="{{ 'favicon.ico' | asset_url }}" type="image/png" />
-
- {% render 'favicon' %}
-{% include 'ymq_image-initializer' %}
-
-	{% include "pandectes-rules" %}
-	{% include "pandectes-rules" %}
-	{% include "pandectes-rules" %}
 	{% include "pandectes-rules" %}{% render 'pagefly-head' %}
-
-
   
+  <!-- STAMPEDIO REVIEW BADGE -->
+<!--  <div id="stamped-reviews-widget" data-widget-type="drawer" data-show-avatar="true" data-position="left" data-background-color="#629cd7" data-style-color-button-text="#ffffff" data-style-color-star="#ffe100" data-min-rating="5"></div>
+  -->
+  <!-- END STAMPEDIO REVIEW BADGE -->
   
   <!-- FB DOMAIN VERIFICATION -->
   
@@ -139,7 +92,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="description" content="{% if page_description %}{{ page_description }}{% else %}{{ shop.description }}{% endif %}">
   {% endif %}
 
- 
+  {% render 'favicon' %}
 
   {% if template contains 'collection' and current_tags %}
     <meta name="robots" content="noindex" />
@@ -236,7 +189,7 @@ _affirm_config = {
   
   
  {% include 'discount-combine' %}
-  <script src="https://cdn.younet.network/main.js" async></script>
+  <script src="https://cdn.younet.network/main.js"></script>
   {% comment %} <script src="https://shopoe.net/app.js"></script>{% endcomment %}
   {{ 'shopstorm-apps.scss.css' | asset_url | stylesheet_tag }}
   {% render 'shopstorm-scripttags' %}
@@ -246,16 +199,20 @@ _affirm_config = {
   
   
  
-
+{% render 'digismoothie-giftbox' %}
 <script async src="https://assets.apphero.co/script_tags/356929_827693.js"></script>
-
-
   
-  <script async src="https://assets.apphero.co/script_tags/641609_148417.js"></script><script async src="https://assets.apphero.co/script_tags/994024_175054.js"></script><script async src="https://assets.apphero.co/script_tags/982142_593130.js"></script><script async src="https://assets.apphero.co/script_tags/564753_365660.js"></script><script async src="https://assets.apphero.co/script_tags/4642_200453.js"></script><script async src="https://assets.apphero.co/script_tags/624467_541343.js"></script><script async src="https://assets.apphero.co/script_tags/86097_953293.js"></script>
-{% comment %} PRODUCT PAGE SLIDER APP CODE START {% endcomment %}{% render 'pmslider_inline.liquid' %}{% comment %} PRODUCT PAGE SLIDER APP CODE END {% endcomment %}
-
- 
-
+  <script type='text/javascript'>
+  window.smartlook||(function(d) {
+    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', '36a65fbfe5d1be138a8dc52ab5822635d230418f', { region: 'eu' });
+</script>
+  
+  
+  <script async src="https://assets.apphero.co/script_tags/641609_148417.js"></script><script async src="https://assets.apphero.co/script_tags/994024_175054.js"></script><script async src="https://assets.apphero.co/script_tags/982142_593130.js"></script><script async src="https://assets.apphero.co/script_tags/564753_365660.js"></script><script async src="https://assets.apphero.co/script_tags/4642_950530.js"></script><script async src="https://assets.apphero.co/script_tags/624467_541343.js"></script><script async src="https://assets.apphero.co/script_tags/86097_37749.js"></script>
 </head>
 
 <body id="{{page_title| handleize}}"
@@ -429,7 +386,7 @@ document.addEventListener("userway:init_completed", function(event) {
  
 
 </script>
-<script type="text/javascript" src="https://cdn.userway.org/widget.js" async> 
+<script type="text/javascript" src="https://cdn.userway.org/widget.js"> 
  UserWay.iconVisibilityOff();
 
 </script> 
@@ -666,7 +623,10 @@ document.addEventListener("userway:init_completed", function(event) {
     </script><br>
   <!--End Stamped.io Bazaarvoice Integration-->
 
- 
+
+<!-- Stamped - Begin script -->
+<script async type="text/javascript" id="stamped-script-widget" data-api-key="pubkey-6kRON6LZZop95g1KF1104M6UEO8z3o" src="https://cdn1.stamped.io/files/widget.min.js"></script>
+<!-- Stamped - End script -->  
 <div data-app="mm" data-product="{{product.id}}"></div>
 <script>
   if(window.BOLD && BOLD.common){
@@ -681,17 +641,5 @@ document.addEventListener("userway:init_completed", function(event) {
     }
   }
 </script>
-
-<script async src="https://cdn.rebuyengine.com/onsite/js/rebuy.js?shop={{ shop.permanent_domain }}"></script>
-
-{% capture tbCommonContent %}{% render 'tb-shopify' %}{% endcapture %}
-                                {% if tbCommonContent contains "Could not find asset" %}
-                                    {% comment %} do nothing {% endcomment %}
-                                {% else %}
-                                    {% render 'tb-shopify' %}
-                                {% endif %}
-                                {% render 'rebuy-smartcart-extensions' %}
-</body>
-  {% render 'rebuy-smartcart-extensions' %}
 </body>
 </html>
