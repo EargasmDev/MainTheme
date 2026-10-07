@@ -91,7 +91,7 @@
   {% endcapture %}
 
   {%- capture prodcustomizer_options -%}
-    {% render 'product-customizer' with skip_js_init: true %}
+    {% render 'product-customizer' with skip_js_init, skip_js_init: true %}
   {% endcapture %}
 
   {% capture ss_script %}
@@ -275,3 +275,13 @@
   }
   window.addEventListener('DOMContentLoaded', checkjQuery);
 </script>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'product-customizer' with skip_js_init: true %}"
+  to: "{% render 'product-customizer' with skip_js_init, skip_js_init: true %}"
+  position: 8615..8686
+{% endcomment %}
